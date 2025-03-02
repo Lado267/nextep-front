@@ -12,12 +12,12 @@ export default {
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
-			primaryproject: 'hsl(var(--primary-project))',
-			secondaryProject: 'hsl(var(--secondary-project))',
-			tertiaryProject: 'hsl(var(--tertiary-project))',
-			quaternaryProject: 'hsl(var(--quaternary-project))',
-			textProject: 'hsl(var(--text-project))',
-			whiteProject: 'hsl(var(--white-project))',
+			primaryProject: 'var(--primary-project)',
+			secondaryProject: 'var(--secondary-project)',
+			tertiaryProject: 'var(--tertiary-project)',
+			quaternaryProject: 'var(--quaternary-project)',
+			textProject: 'var(--text-project)',
+			whiteProject: 'var(--white-project)',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
