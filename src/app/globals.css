@@ -6,8 +6,12 @@ header {
   margin: 0 0px;
 }
 
-.content {
+.content-margin {
   margin: 0 28px;
+}
+
+.align-content {
+  align-items: center;
 }
 
 @media(min-width: 640px) {
@@ -15,8 +19,12 @@ header {
     margin: 0 160px;
   }
 
-  .content {
+  .content-margin {
     margin: 0 160px;
+  }
+
+  .align-content {
+    align-items: flex-start;
   }
 }
 
