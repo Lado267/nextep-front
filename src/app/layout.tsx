@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "../elements/header";
+import Header from "../elements/header.tsx";
 
 export const metadata: Metadata = {
   title: "NextEp",
@@ -20,7 +20,9 @@ export default function RootLayout({
       >
         <Header/>
         <main className="bg-primaryProject">
-          {children}
+          <div className="content">
+            {children}
+          </div>
         </main>
       </body>
     </html>
