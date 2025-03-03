@@ -1,0 +1,22 @@
+
+.header_background_color {
+    background-color: var(--primary-project);
+}
+
+.header_button_visible {
+    display: none;
+}
+
+
+@media (min-width: 1024px) {
+    .header_background_color {
+        background-color: white;
+    }
+    
+    .header_button_visible {
+        display: inline-flex;
+    }
+}
+
+
+

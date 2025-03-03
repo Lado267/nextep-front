@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "../elements/header.tsx";
+import Header from "../elements/header";
 
 export const metadata: Metadata = {
   title: "NextEp",
@@ -8,16 +8,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body
         className={`antialiased`}
       >
-        <Header />
+        <Header/>
         <main className="bg-primaryProject">
           {children}
         </main>
