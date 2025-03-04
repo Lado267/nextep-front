@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../elements/header.tsx";
+import Head from 'next/head'
 
 export const metadata: Metadata = {
   title: "NextEp",

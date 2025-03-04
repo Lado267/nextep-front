@@ -11,6 +11,13 @@
     display: none;
 }
 
+.header-logo-width {
+    width: 100px;
+}
+
+.header-padding {
+    padding: 12px;
+}
 
 @media(min-width: 640px) {
     .header_background_color {
@@ -23,6 +30,14 @@
 
     .header_button_visible {
         display: inline-flex;
+    }
+
+    .header-logo-width {
+        width: 204px;
+    }
+
+    .header-padding {
+        padding: 32px 0px;
     }
 }
 
