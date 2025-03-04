@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "../elements/header.tsx";
-import Head from 'next/head'
+import Header from "../elements/header/header";
+import Navigation from "../elements/navigation/navigation.tsx";
 
 export const metadata: Metadata = {
   title: "NextEp",
@@ -20,11 +20,13 @@ export default function RootLayout({
         className={`antialiased`}
       >
         <Header className="header_margin"/>
-        <main className="bg-primaryProject">
-          <div className="content-margin align-content flex flex-col">
-            {children}
-          </div>
-        </main>
+        <Navigation>
+          <main className="bg-primaryProject">
+            <div className="content-margin align-content flex flex-col">
+              {children}
+            </div>
+          </main>
+        </Navigation>
       </body>
     </html>
   );

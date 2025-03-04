@@ -1,0 +1,20 @@
+
+.tabbar_appearance {
+    display: flex;
+}
+
+.menu_appearance {
+    display: none;
+}
+
+@media(min-width: 640px) {
+    .tabbar_appearance {
+        display: none;
+    }
+    
+    .menu_appearance {
+        display: flex;
+    }
+}
+
+
