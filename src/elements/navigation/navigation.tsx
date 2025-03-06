@@ -1,33 +1,26 @@
 import "./navigation.css";
 import "../../app/globals.css";
 import { Button } from "../../components/ui/button";
-
-function MenuItem(props: any) {
-    return (
-      <a href={props.href}>
-        {props.children}
-      </a>
-    );
-}
+// import { headers } from "next/headers";
+import MenuItem from "./menuItem";
 
 export default function Navigation({ children }: { children: any }) {
+
   return (
     <div className="flex flex-col min-h-screen">
       <nav className="bg-quaternaryProject menu_appearance">
         <ol className="content-margin flex flex-row ">
           <li>
-            <MenuItem href="/">
-              <Button variant="projectSelected">Home</Button>
-            </MenuItem>
+            <MenuItem href="/" title="HOME"/>
           </li>
           <li>
-            <MenuItem href="/projects">Projects</MenuItem>
+            <MenuItem href="/projects" title="PROJECTS"/>
           </li>
           <li>
-            <MenuItem href="/about">About</MenuItem>
+            <MenuItem href="/about" title="ABOUT"/>
           </li>
           <li>
-            <MenuItem href="/contact">Contact</MenuItem>
+            <MenuItem href="/contact" title="CONTACT"/>
           </li>
         </ol>
       </nav>
@@ -36,18 +29,18 @@ export default function Navigation({ children }: { children: any }) {
       </div>
       <nav className="bg-quaternaryProject tabbar_appearance">
           <ol className="flex flex-row content-margin">
-              <li>
-                  <MenuItem href="/">Home</MenuItem>
-              </li>
-              <li>
-                  <MenuItem href="/projects">Projects</MenuItem>
-              </li>
-              <li>
-                  <MenuItem href="/about">About</MenuItem>
-              </li>
-              <li>
-                  <MenuItem href="/contact">Contact</MenuItem>
-              </li>
+            <li>
+              <MenuItem href="/" title="HOME"/>
+            </li>
+            <li>
+              <MenuItem href="/projects" title="PROJECTS"/>
+            </li>
+            <li>
+              <MenuItem href="/about" title="ABOUT"/>
+            </li>
+            <li>
+              <MenuItem href="/contact" title="CONTACT"/>
+            </li>
           </ol>
       </nav>
     </div>

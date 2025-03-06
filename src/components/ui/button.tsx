@@ -21,7 +21,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         projectSelected: "bg-secondaryProject text-white rounded-[4px] hover:bg-tertiaryProject active:bg-secondaryProject font-button-nextep",
-        projectUnselected: "bg-secondaryProject text-white rounded-[4px] hover:bg-tertiaryProject active:bg-secondaryProject font-button-nextep"
+        projectUnselected: "bg-opacity-0 text-white rounded-[4px] hover:bg-tertiaryProject active:bg-secondaryProject font-button-nextep"
       },
       size: {
         default: "h-9 px-4 py-2",
