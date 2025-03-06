@@ -17,7 +17,7 @@ export default function Navigation({ children }: { children: any }) {
         <ol className="content-margin flex flex-row ">
           <li>
             <MenuItem href="/">
-              <Button variant="project">Home</Button>
+              <Button variant="projectSelected">Home</Button>
             </MenuItem>
           </li>
           <li>

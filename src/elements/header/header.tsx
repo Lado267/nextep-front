@@ -15,7 +15,7 @@ export default function Header(props: any) {
               className="w-[100px] h-[32px] header-logo-width"></Image>
             </li>
             <li>
-              <Button variant='project' className="header_button_visible">Get in touch</Button>
+              <Button variant='projectSelected' className="header_button_visible">Get in touch</Button>
             </li>
           </ol>
         </div>
