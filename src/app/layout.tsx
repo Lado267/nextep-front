@@ -19,7 +19,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <Header className="header_margin"/>
+        <Header/>
         <Navigation>
           <main className="bg-primaryProject">
             <div className="content-margin align-content flex flex-col">

@@ -20,7 +20,8 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        project: "bg-secondaryProject text-white hover:bg-tertiaryProject active:bg-secondaryProject font-button-nextep",
+        projectSelected: "bg-secondaryProject text-white rounded-[4px] hover:bg-tertiaryProject active:bg-secondaryProject font-button-nextep",
+        projectUnselected: "bg-secondaryProject text-white rounded-[4px] hover:bg-tertiaryProject active:bg-secondaryProject font-button-nextep"
       },
       size: {
         default: "h-9 px-4 py-2",

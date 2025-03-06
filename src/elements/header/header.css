@@ -3,6 +3,13 @@
     background-color: var(--primary-project);
 }
 
+.header_position {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    margin: 0px 0px;
+}
+
 .header_justify_content {
     justify-content: center;
 }
@@ -21,7 +28,7 @@
 
 @media(min-width: 640px) {
     .header_background_color {
-        background-color: var(--white-project);
+        background-color: white;
     }
 
     .header_justify_content {
