@@ -5,7 +5,7 @@ import CompanyCarousel from "../elements/carousel/company_carousel";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <>
       {/* <section>
         <div className="flex flex-row items-center justify-center">
           <div className="flex flex-col">
@@ -25,9 +25,10 @@ export default function Home() {
                  src={HomePageAlt.mobile.hero.heroImageSrc}
                  className="mt-[24px] w-[90vw]"/>
       </section>
-      <section>
-        <CompanyCarousel companies={HomePageAlt.mobile.carousel.companies} isMobile={true}/>
+      <section className="">
+        <CompanyCarousel companies={HomePageAlt.mobile.carousel.companies} 
+                         isMobile={true}/>
       </section>
-    </div>
+    </>
   );
 }

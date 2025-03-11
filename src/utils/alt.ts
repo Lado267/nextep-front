@@ -53,6 +53,7 @@ export const HomePageAlt = {
             "heroImageSrc": MobileHomeHeroImage,
         },
         "carousel": {
+            "title": "We have worked with",
             "companies": mobileCarouselData
         }
     },
@@ -65,6 +66,7 @@ export const HomePageAlt = {
             "heroImageSrc": DesktopHomeHeroImage,
         },
         "carousel": {
+            "title": "We have worked with",
             "companies": desktopCarouselData
         }
     }

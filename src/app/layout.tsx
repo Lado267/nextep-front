@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../elements/header/header";
-import Navigation from "../elements/navigation/navigation.tsx";
+import Navigation from "../elements/navigation/navigation";
 
 export const metadata: Metadata = {
   title: "NextEp",
@@ -22,7 +22,7 @@ export default function RootLayout({
         <Header/>
         <Navigation>
           <main className="bg-primaryProject">
-            <div className="content-margin align-content flex flex-col">
+            <div className="align-content flex flex-col gap-[24px]">
               {children}
             </div>
           </main>

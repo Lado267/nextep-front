@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../components/ui/carousel"
 import { cn } from "@/lib/utils"
 import "./company_carousel.css"
+import { HomePageAlt } from "@/utils/alt"
 
 // Define the company data type
 export interface Company {
@@ -23,15 +24,16 @@ export default function CompanyCarousel({ companies, className, isMobile }: Comp
     })
 
   return (
-    <div className={cn("w-[90vw]", className)}>
+    <div className={cn("w-[100vw] flex flex-col gap-[12px]", className)}>
+      <h3 className="text-tertiaryProject">{HomePageAlt.mobile.carousel.title}</h3>
       <Carousel
         opts={{
-          align: "center",
+          align: "start",
           loop: false,
         }}
-        className="w-[90vw]"
+        className="w-full"
       >
-        <CarouselContent className="-ml-4">
+        <CarouselContent className="">
           {carouselItems.map((group, groupIndex) => (
             <CarouselItem
               key={`group-${groupIndex}`}
@@ -41,7 +43,7 @@ export default function CompanyCarousel({ companies, className, isMobile }: Comp
                 {group.map((company) => (
                   <div
                     key={company.id}
-                    className="bg-white rounded-lg p-6 h-[100vh] flex flex-col items-center justify-center shadow-sm border border-gray-100"
+                    className="rounded-lg p-6 h-[100vh] flex flex-col items-center justify-center shadow-sm border border-gray-100"
                   >
                     <div className={`relative ${isMobile ? "w-[100px] h-[40px]" : "w-[240px] h-[100px]"} h-16`}>
                       <Image

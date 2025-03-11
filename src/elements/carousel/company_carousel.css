@@ -2,6 +2,7 @@
 .carousel-grid {
     display: grid;
     grid-template-columns: 1fr; /* One column that takes up the full width */
+    background-color: var(--white-project);
 }
 
 @media(min-width: 640px) {

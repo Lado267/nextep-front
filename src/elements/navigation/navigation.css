@@ -12,7 +12,7 @@
 .menu_appearance {
     display: none;
     position: sticky;
-    top: 38px; /* Adjust this value based on your header height for mobile */
+    top: 52px; /* Adjust this value based on your header height for mobile */
     z-index: 30;
 }
 
