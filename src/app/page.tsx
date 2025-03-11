@@ -23,10 +23,10 @@ export default function Home() {
           <Button variant="projectSelected">Get in touch</Button>
           <Image alt={HomePageAlt.mobile.hero.heroImageAlt} 
                  src={HomePageAlt.mobile.hero.heroImageSrc}
-                 className="mt-[24px] w-[100vw]"/>
+                 className="mt-[24px] w-[90vw]"/>
       </section>
       <section>
-        <CompanyCarousel companies={HomePageAlt.mobile.carousel.companies}/>
+        <CompanyCarousel companies={HomePageAlt.mobile.carousel.companies} isMobile={true}/>
       </section>
     </div>
   );

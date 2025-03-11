@@ -13,22 +13,23 @@ export interface Company {
 interface CompanyCarouselProps {
   companies: Company[]
   className?: string
+  isMobile: boolean
 }
 
-export default function CompanyCarousel({ companies, className }: CompanyCarouselProps) {
+export default function CompanyCarousel({ companies, className, isMobile }: CompanyCarouselProps) {
 
     let carouselItems = companies.map((company) => {
         return [company]
     })
 
   return (
-    <div className={cn("w-[100vw]", className)}>
+    <div className={cn("w-[90vw]", className)}>
       <Carousel
         opts={{
-          align: "start",
-          loop: true,
+          align: "center",
+          loop: false,
         }}
-        className="w-[100vw]"
+        className="w-[90vw]"
       >
         <CarouselContent className="-ml-4">
           {carouselItems.map((group, groupIndex) => (
@@ -42,7 +43,7 @@ export default function CompanyCarousel({ companies, className }: CompanyCarouse
                     key={company.id}
                     className="bg-white rounded-lg p-6 h-[100vh] flex flex-col items-center justify-center shadow-sm border border-gray-100"
                   >
-                    <div className="relative w-[100vw] h-16">
+                    <div className={`relative ${isMobile ? "w-[100px] h-[40px]" : "w-[240px] h-[100px]"} h-16`}>
                       <Image
                         src={company.logoUrl || "/placeholder.svg?height=64&width=200"}
                         alt={`${company.name} logo`}
@@ -57,8 +58,6 @@ export default function CompanyCarousel({ companies, className }: CompanyCarouse
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden sm:flex" />
-        <CarouselNext className="hidden sm:flex" />
       </Carousel>
     </div>
   )

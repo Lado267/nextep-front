@@ -2,6 +2,7 @@
 
 import { Button } from "../../components/ui/button";
 import { usePathname } from 'next/navigation'
+import "./menuItem.css";
 
 export default function MenuItem(props: any) {
 
@@ -11,7 +12,7 @@ export default function MenuItem(props: any) {
 
     return (
       <a href={props.href}>
-        <Button variant={path === props.href ? "projectSelected" : "projectUnselected"}>
+        <Button className="menu_item-font" variant={path === props.href ? "projectSelected" : "projectUnselected"}>
             {props.title}
         </Button>
       </a>
