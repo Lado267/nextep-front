@@ -9,7 +9,7 @@ export default function Navigation({ children }: { children: any }) {
   return (
     <div className="flex flex-col min-h-screen">
       <nav className="bg-quaternaryProject menu_appearance">
-        <ol className="content-margin flex flex-row ">
+        <ol className="content-margin flex flex-row items-center">
           <li>
             <MenuItem href="/" title="HOME"/>
           </li>
@@ -28,7 +28,7 @@ export default function Navigation({ children }: { children: any }) {
         {children}
       </div>
       <nav className="bg-quaternaryProject tabbar_appearance">
-          <ol className="flex flex-row content-margin">
+          <ol className="flex flex-row content-margin items-center">
             <li>
               <MenuItem href="/" title="HOME"/>
             </li>

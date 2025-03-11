@@ -1,0 +1,13 @@
+
+.carousel-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* One column that takes up the full width */
+}
+
+@media(min-width: 640px) {
+    .carousel-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* One column that takes up the full width */
+        grid-template-rows: repeat(2, auto); /* Two rows, height determined by content */
+    }
+}
