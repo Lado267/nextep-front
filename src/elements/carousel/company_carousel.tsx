@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../components/ui/carousel"
 import { cn } from "@/lib/utils"
 import "./company_carousel.css"
@@ -8,7 +8,7 @@ import { HomePageAlt } from "@/utils/alt"
 export interface Company {
   id: string
   name: string
-  logoUrl: string
+  logoUrl: StaticImageData
 }
 
 interface CompanyCarouselProps {
@@ -24,7 +24,7 @@ export default function CompanyCarousel({ companies, className, isMobile }: Comp
     })
 
   return (
-    <div className={cn("w-[100vw] flex flex-col gap-[12px]", className)}>
+    <div className={cn("flex flex-col gap-[12px]", className)}>
       <h3 className="text-tertiaryProject">{HomePageAlt.mobile.carousel.title}</h3>
       <Carousel
         opts={{
@@ -37,23 +37,24 @@ export default function CompanyCarousel({ companies, className, isMobile }: Comp
           {carouselItems.map((group, groupIndex) => (
             <CarouselItem
               key={`group-${groupIndex}`}
-              className="pl-4 basis-full basis-1/2"
+              className={`pl-4`}
             >
               <div className={cn("grid gap-4", "carousel-grid")}>
                 {group.map((company) => (
                   <div
                     key={company.id}
-                    className="rounded-lg p-6 h-[100vh] flex flex-col items-center justify-center shadow-sm border border-gray-100"
+                    className={`rounded-lg p-3 flex flex-col items-center justify-center shadow-sm border border-gray-100 w-[100px] h-[42px]`}
                   >
-                    <div className={`relative ${isMobile ? "w-[100px] h-[40px]" : "w-[240px] h-[100px]"} h-16`}>
+                    <div className="relative h-[28px] w-[100px] flex items-center justify-center">
                       <Image
-                        src={company.logoUrl || "/placeholder.svg?height=64&width=200"}
+                        src={company.logoUrl}
                         alt={`${company.name} logo`}
-                        fill
                         className="object-contain"
+                        width={0}
+                        height={28}
+                        style={{ width: 'auto', height: '28px' }}
                       />
                     </div>
-                    <p className="mt-2 text-sm font-medium text-gray-700">{company.name}</p>
                   </div>
                 ))}
               </div>

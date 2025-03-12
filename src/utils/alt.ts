@@ -2,41 +2,49 @@ import DesktopHomeHeroImage from "../../public/desktopHero.png";
 import MobileHomeHeroImage from "../../public/mobileHero.png";
 import { prepareCompaniesForCarousel } from "./functions";
 
+import bog from "../../public/companyLogos/mobile/bog.png";
+import arcton from "../../public/companyLogos/mobile/arcton.png";
+import access from "../../public/companyLogos/mobile/access.png";
+import extra from "../../public/companyLogos/mobile/extra.png";
+import croco from "../../public/companyLogos/mobile/croco.png";
+import sweeft from "../../public/companyLogos/mobile/sweeft.png";
+import philip from "../../public/companyLogos/mobile/philip.png";
+
 const mobileCarouselData = [
     {
       id: "1",
       name: "Bank of Georgia",
-      logoUrl: "/placeholder.svg?height=64&width=200", // Replace with actual URL
+      logoUrl: bog, // Replace with actual URL
     },
     {
       id: "2",
-      name: "Arclon",
-      logoUrl: "/placeholder.svg?height=64&width=200", // Replace with actual URL
+      name: "Arcton",
+      logoUrl: arcton, // Replace with actual URL
     },
     {
       id: "3",
       name: "Making Science",
-      logoUrl: "/placeholder.svg?height=64&width=200", // Replace with actual URL
+      logoUrl: sweeft, // Replace with actual URL
     },
     {
       id: "4",
       name: "Philip Morris International",
-      logoUrl: "/placeholder.svg?height=64&width=200", // Replace with actual URL
+      logoUrl: philip, // Replace with actual URL
     },
     {
       id: "5",
-      name: "GreenYellow",
-      logoUrl: "/placeholder.svg?height=64&width=200", // Replace with actual URL
+      name: "Crocobet",
+      logoUrl: croco, // Replace with actual URL
     },
     {
       id: "6",
       name: "AccessBank",
-      logoUrl: "/placeholder.svg?height=64&width=200", // Replace with actual URL
+      logoUrl: access, // Replace with actual URL
     },
     {
       id: "7",
       name: "Extra",
-      logoUrl: "/placeholder.svg?height=64&width=200", // Replace with actual URL
+      logoUrl: extra, // Replace with actual URL
     },
 ]
 
