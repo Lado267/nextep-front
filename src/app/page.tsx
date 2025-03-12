@@ -16,16 +16,16 @@ export default function Home() {
             <Image alt={HomePageAlt.mobile.hero.heroImageAlt} src={HomePageAlt.mobile.hero.heroImageSrc}></Image>
         </div>
       </section> */}
-      <section className="flex flex-col gap-[12px] items-center justify-center">
+      <section className="flex flex-col gap-[12px] items-center justify-center w-[90vw]">
           <h1 className="text-center">{HomePageAlt.mobile.hero.heroTitle}</h1>
           <h4 className="text-center text-tertiaryProject">{HomePageAlt.mobile.hero.heroSubtitle1}</h4>
           <h4 className="text-center text-tertiaryProject">{HomePageAlt.mobile.hero.heroSubtitle2}</h4>
           <Button variant="projectSelected">Get in touch</Button>
           <Image alt={HomePageAlt.mobile.hero.heroImageAlt} 
                  src={HomePageAlt.mobile.hero.heroImageSrc}
-                 className="mt-[24px] w-[90vw]"/>
+                 className="mt-[24px] w-full"/>
       </section>
-      <section className="">
+      <section className="w-[100vw]">
         <CompanyCarousel companies={HomePageAlt.mobile.carousel.companies} 
                          isMobile={true}/>
       </section>
