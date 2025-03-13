@@ -22,14 +22,14 @@ export default function CompanyCarouselDesktop({ companies, className }: Company
   console.log(companies)
 
   return (
-    <div className={cn("flex flex-col w-[100vw] gap-[12px] p-4", className)}>
-      <h3 className="text-tertiaryProject text-center">{HomePageAlt.mobile.carousel.title}</h3>
+    <div className={cn("flex flex-col w-[100vw] gap-[16px] p-4", className)}>
+      <h3 className="text-tertiaryProject text-start">{HomePageAlt.desktop.carousel.title}</h3>
       <Carousel
         opts={{
           align: "start",
           loop: false,
         }}
-        className="w-full h-[42px]"
+        className="w-full h-[244px]"
       >
         <CarouselContent className="">
           {companies.map((group, groupIndex) => (
@@ -37,20 +37,20 @@ export default function CompanyCarouselDesktop({ companies, className }: Company
               key={uuidv4()}
               className={`pl-4`}
             >
-              <div className={cn("grid gap-4 rounded-lg", "carousel-grid")}>
+              <div className={cn("grid gap-4 rounded-lg", "")}>
                 {group.map((company) => (
                   <div
                     key={uuidv4()}
-                    className={`carousel-item-size-mobile rounded-lg p-3 flex flex-col items-center justify-center shadow-sm border border-gray-100`}
+                    className={`carousel-grid-desktop carousel-item-size-desktop rounded-lg p-3 flex flex-col items-center justify-center shadow-sm border border-gray-100`}
                   >
-                    <div className="h-[28px] flex items-center justify-center">
+                    <div className="h-[60px] flex items-center justify-center">
                       <Image
                         src={company.logoUrl}
                         alt={`${company.name} logo`}
                         className="object-contain"
                         width={0}
-                        height={28}
-                        style={{ width: 'auto', height: '28px' }}
+                        height={60}
+                        style={{ width: 'auto', height: '60px' }}
                       />
                     </div>
                   </div>

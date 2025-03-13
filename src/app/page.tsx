@@ -12,17 +12,17 @@ export default function Home() {
       <section className="desktop-content-appearance w-full desktop-background mt-[44px]">
           <div className="flex flex-col gap-[24px] mt-[8px]">
             <h1>{HomePageAlt.desktop.hero.heroTitle}</h1>
-            <div className="flex flex-col gap-[28px]">
-              <h4>{HomePageAlt.desktop.hero.heroSubtitle1}</h4>
-              <h4>{HomePageAlt.desktop.hero.heroSubtitle2}</h4>
+            <div className="flex flex-col gap-[20px]">
+              <h4 className="text-tertiaryProject">{HomePageAlt.desktop.hero.heroSubtitle1}</h4>
+              <h4 className="text-tertiaryProject">{HomePageAlt.desktop.hero.heroSubtitle2}</h4>
               <div className="flex flex-row gap-[16px]">
-                <Button variant="projectSecondary">View Projects</Button>
-                <Button variant="projectSelected">Get in touch</Button>
+                <Button className="w-[160px] h-[40px] secondary-button-font" variant="projectSecondary">Projects</Button>
+                <Button className="w-[160px] h-[40px] hero-button-font" variant="projectSelected">Get in touch</Button>
               </div>
             </div>
           </div>
       </section>
-      <section className="desktop-content-appearance">
+      <section className="desktop-content-appearance mt-[44px]">
         <CompanyCarouselDesktop companies={HomePageAlt.desktop.carousel.companies}/>
       </section>
 
