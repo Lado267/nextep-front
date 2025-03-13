@@ -63,6 +63,7 @@ h4 {
 
   .align-content {
     align-items: flex-start;
+    padding: 0 160px;
   }
 }
 

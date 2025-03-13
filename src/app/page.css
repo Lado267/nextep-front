@@ -14,4 +14,10 @@
     .desktop-content-appearance {
         display: flex;
     }
+
+    .desktop-background {
+        background-image: url("../../public/desktopHero.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
 }

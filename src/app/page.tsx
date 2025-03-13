@@ -4,19 +4,23 @@ import { Button } from "../components/ui/button";
 import CompanyCarouselMobile from "../elements/carousel/mobile/company_carousel_mobile";
 import CompanyCarouselDesktop from "../elements/carousel/desktop/company_carousel_desktop";
 import "./page.css"
+import "./globals.css"
 
 export default function Home() {
   return (
     <>
-      <section className="desktop-content-appearance">
-        <div className="flex flex-row items-center justify-center">
-          <div className="flex flex-col">
+      <section className="desktop-content-appearance w-full desktop-background">
+          <div className="flex flex-col gap-[24px] mt-[44px]">
             <h1>{HomePageAlt.desktop.hero.heroTitle}</h1>
-            <h4>{HomePageAlt.desktop.hero.heroSubtitle1}</h4>
-            <h4>{HomePageAlt.desktop.hero.heroSubtitle2}</h4>
+            <div className="flex flex-col gap-[28px]">
+              <h4>{HomePageAlt.desktop.hero.heroSubtitle1}</h4>
+              <h4>{HomePageAlt.desktop.hero.heroSubtitle2}</h4>
+              <div className="flex flex-row gap-[16px]">
+                <Button variant="projectUnselected">View Projects</Button>
+                <Button variant="projectSelected">Get in touch</Button>
+              </div>
+            </div>
           </div>
-            <Image alt={HomePageAlt.desktop.hero.heroImageAlt} src={HomePageAlt.desktop.hero.heroImageSrc}></Image>
-        </div>
       </section>
       <section className="desktop-content-appearance">
         <CompanyCarouselDesktop companies={HomePageAlt.desktop.carousel.companies}/>
