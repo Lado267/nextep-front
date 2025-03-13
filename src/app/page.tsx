@@ -9,14 +9,14 @@ import "./globals.css"
 export default function Home() {
   return (
     <>
-      <section className="desktop-content-appearance w-full desktop-background">
-          <div className="flex flex-col gap-[24px] mt-[44px]">
+      <section className="desktop-content-appearance w-full desktop-background mt-[44px]">
+          <div className="flex flex-col gap-[24px] mt-[8px]">
             <h1>{HomePageAlt.desktop.hero.heroTitle}</h1>
             <div className="flex flex-col gap-[28px]">
               <h4>{HomePageAlt.desktop.hero.heroSubtitle1}</h4>
               <h4>{HomePageAlt.desktop.hero.heroSubtitle2}</h4>
               <div className="flex flex-row gap-[16px]">
-                <Button variant="projectUnselected">View Projects</Button>
+                <Button variant="projectSecondary">View Projects</Button>
                 <Button variant="projectSelected">Get in touch</Button>
               </div>
             </div>

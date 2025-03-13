@@ -21,3 +21,9 @@
         background-position: right;
     }
 }
+
+@media(max-width: 1355px) {
+    .desktop-background  {
+        background-image: none;
+    }
+}
