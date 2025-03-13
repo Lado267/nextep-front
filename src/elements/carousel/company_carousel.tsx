@@ -24,14 +24,14 @@ export default function CompanyCarousel({ companies, className, isMobile }: Comp
     })
 
   return (
-    <div className={cn("flex flex-col gap-[12px]", className)}>
-      <h3 className="text-tertiaryProject">{HomePageAlt.mobile.carousel.title}</h3>
+    <div className={cn("flex flex-col gap-[12px] p-4", className)}>
+      <h3 className="text-tertiaryProject text-center">{HomePageAlt.mobile.carousel.title}</h3>
       <Carousel
         opts={{
           align: "start",
           loop: false,
         }}
-        className="w-full"
+        className="w-full h-[42px]"
       >
         <CarouselContent className="">
           {carouselItems.map((group, groupIndex) => (
@@ -39,13 +39,13 @@ export default function CompanyCarousel({ companies, className, isMobile }: Comp
               key={`group-${groupIndex}`}
               className={`pl-4`}
             >
-              <div className={cn("grid gap-4", "carousel-grid")}>
+              <div className={cn("grid gap-4 rounded-lg", "carousel-grid")}>
                 {group.map((company) => (
                   <div
                     key={company.id}
-                    className={`rounded-lg p-3 flex flex-col items-center justify-center shadow-sm border border-gray-100 w-[100px] h-[42px]`}
+                    className={`carousel-item-size rounded-lg p-3 flex flex-col items-center justify-center shadow-sm border border-gray-100`}
                   >
-                    <div className="relative h-[28px] w-[100px] flex items-center justify-center">
+                    <div className="h-[28px] flex items-center justify-center">
                       <Image
                         src={company.logoUrl}
                         alt={`${company.name} logo`}

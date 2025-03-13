@@ -5,6 +5,11 @@
     background-color: var(--white-project);
 }
 
+.carousel-item-size {
+    width: 100px;
+    height: 42px;
+}
+
 @media(min-width: 640px) {
     .carousel-grid {
         display: grid;
