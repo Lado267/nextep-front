@@ -10,6 +10,14 @@ import croco from "../../public/companyLogos/mobile/croco.png";
 import sweeft from "../../public/companyLogos/mobile/sweeft.png";
 import philip from "../../public/companyLogos/mobile/philip.png";
 
+import bogDesktop from "../../public/companyLogos/desktop/bogDesktop.png";
+import arctonDesktop from "../../public/companyLogos/desktop/arctonDesktop.png";
+import accessDesktop from "../../public/companyLogos/desktop/accessDesktop.png";
+import extraDesktop from "../../public/companyLogos/desktop/extraDesktop.png";
+import crocoDesktop from "../../public/companyLogos/desktop/crocoDesktop.png";
+import sweeftDesktop from "../../public/companyLogos/desktop/sweeftDesktop.png";
+import philipDesktop from "../../public/companyLogos/desktop/philipDesktop.png";
+
 const mobileCarouselData = [
     {
       id: "1",
@@ -47,8 +55,45 @@ const mobileCarouselData = [
       logoUrl: extra, // Replace with actual URL
     },
 ]
+const desktopCompanyData = [
+  {
+    id: "1",
+    name: "Bank of Georgia",
+    logoUrl: bogDesktop,
+  },
+  {
+    id: "2",
+    name: "Arcton",
+    logoUrl: arctonDesktop,
+  },
+  {
+    id: "3",
+    name: "Making Science",
+    logoUrl: sweeftDesktop,
+  },
+  {
+    id: "4",
+    name: "Philip Morris International",
+    logoUrl: philipDesktop,
+  },
+  {
+    id: "5",
+    name: "Crocobet",
+    logoUrl: crocoDesktop,
+  },
+  {
+    id: "6",
+    name: "AccessBank",
+    logoUrl: accessDesktop,
+  },
+  {
+    id: "7",
+    name: "Extra",
+    logoUrl: extraDesktop,
+  },
+]
 
-const desktopCarouselData = prepareCompaniesForCarousel(mobileCarouselData, false)
+const desktopCarouselData = prepareCompaniesForCarousel(desktopCompanyData, false)
 
 
 export const HomePageAlt = {
@@ -67,9 +112,9 @@ export const HomePageAlt = {
     },
     "desktop": {
         "hero": {
-            "heroTitle": "Take a step from the legacy methods towards digital business excellence",
-            "heroSubtitle1": "Every modern business needs digital representation or an innovative technological solution.",
-            "heroSubtitle2": "We will level up your business to the Nextep of technological evolution",
+            "heroTitle": "Take a step from the legacy methods\ntowards digital business excellence",
+            "heroSubtitle1": "Every modern business needs digital representation\nor an innovative technological solution.",
+            "heroSubtitle2": "We will level up your business to the\nNextep of technological evolution",
             "heroImageAlt": "Digital business transformation expert examining interactive call-to-action interface, showcasing modern tech solutions",
             "heroImageSrc": DesktopHomeHeroImage,
         },

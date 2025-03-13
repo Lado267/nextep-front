@@ -1,8 +1,9 @@
 import Image, { StaticImageData } from "next/image"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../components/ui/carousel"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../../components/ui/carousel"
 import { cn } from "@/lib/utils"
-import "./company_carousel.css"
+import "./company_carousel_mobile.css"
 import { HomePageAlt } from "@/utils/alt"
+import { v4 as uuidv4 } from 'uuid';
 
 // Define the company data type
 export interface Company {
@@ -14,17 +15,16 @@ export interface Company {
 interface CompanyCarouselProps {
   companies: Company[]
   className?: string
-  isMobile: boolean
 }
 
-export default function CompanyCarousel({ companies, className, isMobile }: CompanyCarouselProps) {
+export default function CompanyCarouselMobile({ companies, className }: CompanyCarouselProps) {
 
     let carouselItems = companies.map((company) => {
         return [company]
     })
 
   return (
-    <div className={cn("flex flex-col gap-[12px] p-4", className)}>
+    <div className={cn("flex flex-col w-[100vw] gap-[12px] p-4", className)}>
       <h3 className="text-tertiaryProject text-center">{HomePageAlt.mobile.carousel.title}</h3>
       <Carousel
         opts={{
@@ -36,14 +36,14 @@ export default function CompanyCarousel({ companies, className, isMobile }: Comp
         <CarouselContent className="">
           {carouselItems.map((group, groupIndex) => (
             <CarouselItem
-              key={`group-${groupIndex}`}
+              key={uuidv4()}
               className={`pl-4`}
             >
               <div className={cn("grid gap-4 rounded-lg", "carousel-grid")}>
                 {group.map((company) => (
                   <div
                     key={company.id}
-                    className={`carousel-item-size rounded-lg p-3 flex flex-col items-center justify-center shadow-sm border border-gray-100`}
+                    className={`carousel-item-size-mobile rounded-lg p-3 flex flex-col items-center justify-center shadow-sm border border-gray-100`}
                   >
                     <div className="h-[28px] flex items-center justify-center">
                       <Image

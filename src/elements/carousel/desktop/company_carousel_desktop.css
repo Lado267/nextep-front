@@ -1,0 +1,11 @@
+
+.carousel-grid-desktop {
+    display: grid;
+    grid-template-columns: 1fr; /* One column that takes up the full width */
+    background-color: var(--white-project);
+}
+
+.carousel-item-size-desktop {
+    width: 100px;
+    height: 42px;
+}

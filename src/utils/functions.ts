@@ -1,4 +1,4 @@
-import { Company } from "../elements/carousel/company_carousel"
+import { Company } from "../elements/carousel/mobile/company_carousel_mobile"
 
   // For desktop, we need to group companies into pairs for the grid layout
 export function prepareCompaniesForCarousel(companies: Company[], isMobile: boolean) {
@@ -12,10 +12,9 @@ export function prepareCompaniesForCarousel(companies: Company[], isMobile: bool
 
         // Group companies into chunks for the grid
         for (let i = 0; i < companies.length; i += itemsPerSlide) {
-        const group = companies.slice(i, i + itemsPerSlide)
-        result.push(group)
+            const group = companies.slice(i, i + itemsPerSlide)
+            result.push(group)
         }
-
         return result
     }
 }
