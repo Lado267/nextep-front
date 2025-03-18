@@ -10,9 +10,11 @@ export default function Header(props: any) {
         <div className="w-full">
           <ol className="header-padding flex flex-row header_justify_content items-center content-margin">
             <li>
-              <Image src={Logo} 
-              alt="Nextep, a software development company logo" 
-              className="w-[100px] h-[32px] header-logo-width"></Image>
+              <a href="/">
+                <Image src={Logo} 
+                alt="Nextep, a software development company logo" 
+                className="w-[100px] h-[32px] header-logo-width"></Image>
+              </a>
             </li>
             <li>
               <Button variant='projectSelected' className="header_button_visible">Get in touch</Button>

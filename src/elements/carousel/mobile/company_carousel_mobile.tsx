@@ -43,7 +43,7 @@ export default function CompanyCarouselMobile({ companies, className }: CompanyC
                 {group.map((company) => (
                   <div
                     key={company.id}
-                    className={`carousel-item-size-mobile rounded-lg p-3 flex flex-col items-center justify-center shadow-sm border border-gray-100`}
+                    className={`carousel-grid-mobile carousel-item-size-mobile rounded-lg p-3 flex flex-col items-center justify-center shadow-sm border border-gray-100`}
                   >
                     <div className="h-[28px] flex items-center justify-center">
                       <Image

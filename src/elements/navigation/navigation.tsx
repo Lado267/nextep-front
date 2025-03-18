@@ -18,7 +18,7 @@ export default function Navigation({ children }: { children: any }) {
             <MenuItem href="/projects" title="PROJECTS"/>
           </li>
           <li>
-            <MenuItem href="/about" title="ABOUT"/>
+            <MenuItem href="/services" title="SERVICES"/>
           </li>
           <li>
             <MenuItem href="/contact" title="CONTACT"/>
