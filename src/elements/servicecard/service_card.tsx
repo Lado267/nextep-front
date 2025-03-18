@@ -15,7 +15,7 @@ export default function ServiceCard({ icon, iconAlt, title, description }: Servi
         <Image src={icon} alt={iconAlt} className="service-card-image-size"/>
         <div className="flex flex-col pt-[4px] w-full h-full flex-1">
             <h3 className='service-card-title truncate'>{title}</h3>
-            <h4 className='line-clamp-3 break-words w-full h-full'>{description}</h4>
+            <text className='line-clamp-3 break-words w-full h-full service-card-desc'>{description}</text>
         </div>
       </div>
     );

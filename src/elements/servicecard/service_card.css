@@ -23,6 +23,12 @@
     background-color: var(--white-project);
 }
 
+.service-card-desc {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
 @media(min-width: 640px) {
     .service-card-image-size {
         width: 140px;
@@ -40,5 +46,11 @@
     .service-card-sizing {
         width: 464px;
         height: 164px;
+    }
+
+    .service-card-desc {
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
     }
 }
