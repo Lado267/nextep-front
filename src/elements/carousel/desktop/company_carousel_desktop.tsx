@@ -19,8 +19,6 @@ interface CompanyCarouselProps {
 
 export default function CompanyCarouselDesktop({ companies, className }: CompanyCarouselProps) {
 
-  console.log(companies)
-
   return (
     <div className={cn("flex flex-col w-[100vw] gap-[16px]", className)}>
       <h3 className="text-tertiaryProject text-start">{HomePageAlt.desktop.carousel.title}</h3>

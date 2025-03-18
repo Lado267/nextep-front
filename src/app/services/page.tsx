@@ -1,37 +1,57 @@
-import ServiceCard from "../../elements/servicecard/service_card";
 import desktopServiceIcon from "../../../public/serviceIcons/desktopIcon.png"
 import backendIcon from "../../../public/serviceIcons/backendIcon.png"
 import mobileIcon from "../../../public/serviceIcons/mobileIcon.png"
 import designIcon from "../../../public/serviceIcons/designIcon.png"
 import Image, { StaticImageData } from "next/image";
+import "./page.css"
+import "../../app/globals.css";
 
-  export default function Services() {
-    return (
-      <div className="flex flex-col gap-[16px]  items-center justify-center">
-        <ServiceCard
-          icon={desktopServiceIcon}
-          iconAlt="Icon for web development service card"
-          title="Web Development"
-          description="lorem ipsum custom description lorem"
-        />
-        <ServiceCard
-          icon={backendIcon}
-          iconAlt="Icon for backend development service card"
-          title="Backend Development"
-          description="We design and develop websites that are visually appealing and user-friendly."
-        />
-        <ServiceCard
-          icon={mobileIcon}
-          iconAlt="Icon for mobile development service card"
-          title="Mobile Development"
-          description="lorem ipsum custom description lorem appealing and user-friendly."
-        />
-        <ServiceCard
-          icon={designIcon}
-          iconAlt="Icon for design service card"
-          title="User Interface Design"
-          description="We design and develop websites lorem ipsum custom description lorem lorem ipsum custom"
-        />
+export default function Services() {
+  return (
+    <div className="services-container">
+      <h1 className="services-title">Our Services</h1>
+      
+      <div className="services-grid">
+        <div className="service-card">
+          <div className="service-icon">
+            <Image src={desktopServiceIcon} alt="icon for web development service"/>
+          </div>
+          <div className="service-content">
+            <h2 className="service-title">Web Development</h2>
+            <p className="service-description">Lorem ipsum custom description lorem</p>
+          </div>
+        </div>
+        
+        <div className="service-card">
+          <div className="service-icon">
+            <Image src={backendIcon} alt="icon for backend development service"/>
+          </div>
+          <div className="service-content">
+            <h2 className="service-title">Backend Development</h2>
+            <p className="service-description">Lorem ipsum custom description lorem</p>
+          </div>
+        </div>
+        
+        <div className="service-card">
+          <div className="service-icon">
+            <Image src={mobileIcon} alt="icon for mobile development service"/>
+          </div>
+          <div className="service-content">
+            <h2 className="service-title">Mobile Development</h2>
+            <p className="service-description">Lorem ipsum custom description lorem</p>
+          </div>
+        </div>
+        
+        <div className="service-card">
+          <div className="service-icon">
+            <Image src={designIcon} alt="icon for User Interface design service"/>
+          </div>
+          <div className="service-content">
+            <h2 className="service-title">User Interface Design</h2>
+            <p className="service-description">Lorem ipsum custom description lorem</p>
+          </div>
+        </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
