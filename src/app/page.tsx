@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { HomePageAlt } from "../utils/alt";
 import { Button } from "../components/ui/button";
+import Footer from "../elements/footer/footer";
 import CompanyCarouselMobile from "../elements/carousel/mobile/company_carousel_mobile";
 import CompanyCarouselDesktop from "../elements/carousel/desktop/company_carousel_desktop";
 import "./page.css"
@@ -16,8 +17,12 @@ export default function Home() {
               <h4 className="text-tertiaryProject">{HomePageAlt.desktop.hero.heroSubtitle1}</h4>
               <h4 className="text-tertiaryProject">{HomePageAlt.desktop.hero.heroSubtitle2}</h4>
               <div className="flex flex-row gap-[16px]">
-                <Button className="w-[160px] h-[40px] secondary-button-font" variant="projectSecondary">Projects</Button>
-                <Button className="w-[160px] h-[40px] hero-button-font" variant="projectSelected">Get in touch</Button>
+                <a href="/projects">
+                  <Button className="w-[160px] h-[40px] secondary-button-font" variant="projectSecondary">Projects</Button>
+                </a>
+                <a href="/contact">
+                  <Button className="w-[160px] h-[40px] hero-button-font" variant="projectSelected">Get in touch</Button>
+                </a>
               </div>
             </div>
           </div>
@@ -30,7 +35,9 @@ export default function Home() {
           <h1 className="text-center">{HomePageAlt.mobile.hero.heroTitle}</h1>
           <h4 className="text-center text-tertiaryProject">{HomePageAlt.mobile.hero.heroSubtitle1}</h4>
           <h4 className="text-center text-tertiaryProject">{HomePageAlt.mobile.hero.heroSubtitle2}</h4>
-          <Button variant="projectSelected">Get in touch</Button>
+          <a href="/contact">
+            <Button variant="projectSelected">Get in touch</Button>
+          </a>
           <Image alt={HomePageAlt.mobile.hero.heroImageAlt} 
                  src={HomePageAlt.mobile.hero.heroImageSrc}
                  className="mt-[24px] w-full"/>

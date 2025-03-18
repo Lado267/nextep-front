@@ -1,0 +1,47 @@
+
+
+.footer-bg {
+    background-color: var(--quaternary-project);
+}
+
+.main-vertical-gap {
+    gap: 20px;
+}
+
+.vertical-gap {
+    gap: 8px;
+}
+
+.main-padding {
+    padding: 20px 0;
+}
+
+.horizental-gap {
+    gap: 100px;
+}
+
+.footer-text-color {
+    color: var(--white-project);
+}
+
+@media(min-width: 640px) {
+    .main-vertical-gap {
+        gap: 32px;
+    }
+
+    .vertical-gap {
+        gap: 8px;
+    }
+
+    .main-padding {
+        padding: 32px 0;
+    }
+
+    .horizental-gap {
+        gap: 100px;
+    }
+
+    .footer-text-color {
+        color: var(--white-project);
+    }
+}
