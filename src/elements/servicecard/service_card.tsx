@@ -1,0 +1,22 @@
+import Image from 'next/image';
+import { StaticImageData } from 'next/image';
+import "./service_card.css";
+
+interface ServiceCardProps {
+  icon: StaticImageData;
+  iconAlt: string;
+  title: string;
+  description: string;
+}
+
+export default function ServiceCard({ icon, iconAlt, title, description }: ServiceCardProps) {
+    return (
+      <div className="flex flex-row p-4 items-start justify-center bg-projectWhite gap-[12px] service-card-sizing">
+        <Image src={icon} alt={iconAlt} className="service-card-image-size"/>
+        <div className="flex flex-col pt-[4px] w-full h-full">
+            <h3 className='service-card-title w-full'>{title}</h3>
+            <h4 className='w-full'>{description}</h4>
+        </div>
+      </div>
+    );
+}
