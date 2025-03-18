@@ -19,6 +19,10 @@
     height: 88px;
 }
 
+.service-card-bg {
+    background-color: var(--white-project);
+}
+
 @media(min-width: 640px) {
     .service-card-image-size {
         width: 140px;

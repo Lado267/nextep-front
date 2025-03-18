@@ -11,11 +11,11 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ icon, iconAlt, title, description }: ServiceCardProps) {
     return (
-      <div className="flex flex-row p-4 items-start justify-center bg-projectWhite gap-[12px] service-card-sizing">
+      <div className="flex flex-row p-2 rounded-lg shadow-sm items-start justify-start bg-projectWhite gap-[12px] service-card-sizing service-card-bg">
         <Image src={icon} alt={iconAlt} className="service-card-image-size"/>
-        <div className="flex flex-col pt-[4px] w-full h-full">
-            <h3 className='service-card-title w-full'>{title}</h3>
-            <h4 className='w-full'>{description}</h4>
+        <div className="flex flex-col pt-[4px] w-full h-full flex-1">
+            <h3 className='service-card-title truncate'>{title}</h3>
+            <h4 className='line-clamp-3 break-words w-full h-full'>{description}</h4>
         </div>
       </div>
     );
