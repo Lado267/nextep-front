@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+  padding-bottom: 40px; /* Match the height of your tabbar */
+}
+
 header {
   margin: 0 0px;
 }
@@ -48,6 +53,10 @@ h5 {
 }
 
 @media(min-width: 640px) {
+
+  body {
+    padding-bottom: 0px; /* Match the height of your tabbar */
+  }
 
   h1 {
     font-size: 44px;
