@@ -8,7 +8,7 @@ import MenuItem from "./menuItem";
 export default function Navigation({ children }: { children: any }) {
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col min-h-screen">
       <nav className="bg-quaternaryProject menu_appearance">
         <ol className="content-margin flex flex-row gap-2 items-center">
           <li>
@@ -25,7 +25,7 @@ export default function Navigation({ children }: { children: any }) {
           </li>
         </ol>
       </nav>
-      <div className="flex-grow">
+      <div className="flex-grow flex flex-col">
         {children}
       </div>
       <nav className="bg-quaternaryProject tabbar_appearance">

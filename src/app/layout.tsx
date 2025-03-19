@@ -22,8 +22,8 @@ export default function RootLayout({
       >
         <Header/>
         <Navigation>
-          <main className="bg-primaryProject">
-            <div className="align-content flex flex-col gap-[24px]">
+          <main className="bg-primaryProject flex flex-col items-stretch min-h-screen">
+            <div className="align-content flex flex-col gap-[24px] flex-grow">
               {children}
             </div>
             <Footer/>
