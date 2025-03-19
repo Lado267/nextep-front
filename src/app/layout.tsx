@@ -23,7 +23,7 @@ export default function RootLayout({
         <Header/>
         <Navigation>
           <main className="bg-primaryProject">
-            <div className="align-content flex flex-col gap-[24px] h-[90vh]">
+            <div className="align-content flex flex-col gap-[24px]">
               {children}
             </div>
             <Footer/>

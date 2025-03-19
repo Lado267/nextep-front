@@ -1,0 +1,235 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 20%;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem 0.5rem 0.5rem;
+  background-color: var(--light-bg);
+  max-width: 100%;
+  margin-bottom: 60px; /* Prevent overlap with footer */
+}
+
+.contact-image {
+  display: none; /* Hide image on mobile */
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--tertiary-project);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.divider-light {
+  height: 1px;
+  background-color: var(--quaternary-project);
+  margin: 1rem 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-project);
+  font-weight: 500;
+}
+
+.pricing-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+}
+
+.pricing-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.center-text {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.pricing-formula {
+  font-size: 1.3rem;
+  color: var(--secondary-project);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 8px;
+}
+
+.email-title {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: var(--secondary-project);
+}
+
+.response-time {
+  text-align: center;
+  color: var(--tertiary-project);
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--subtitle-color);
+}
+
+input {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.submit-button {
+  background-color: var(--secondary-project);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .main-content {
+    max-width: 50%;
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .contact-image {
+    display: none;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    margin-top: 8rem;
+    
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  
+  .subtitle {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    text-align: left;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .pricing-card {
+    background-color: #f9f9f9;
+  }
+  
+  .email-title {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  
+  .response-time {
+    text-align: left;
+  }
+  
+  .social-links {
+    justify-content: flex-start;
+    gap: 1.2rem;
+  }
+  
+  .social-icon img {
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover img {
+    transform: scale(1.1);
+  }
+
+  .contact-methods{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+  }
+}
