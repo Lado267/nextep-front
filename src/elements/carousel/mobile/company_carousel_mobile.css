@@ -1,11 +1,10 @@
 
 .carousel-grid-mobile {
-    display: grid;
-    grid-template-columns: 1fr; /* One column that takes up the full width */
     background-color: var(--white-project);
 }
 
 .carousel-item-size-mobile {
-    width: 100px;
+    width: 120px;
+    min-width: 120px;
     height: 42px;
 }
