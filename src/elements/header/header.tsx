@@ -17,7 +17,9 @@ export default function Header(props: any) {
               </a>
             </li>
             <li>
-              <Button variant='projectSelected' className="header_button_visible">Get in touch</Button>
+              <a href="/contact">
+                <Button variant='projectSelected' className="header_button_visible">Get in touch</Button>
+              </a>
             </li>
           </ol>
         </div>

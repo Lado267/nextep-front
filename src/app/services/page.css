@@ -25,6 +25,7 @@
     align-items: flex-start;
     gap: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease-in-out;
   }
   
   .service-icon {
@@ -53,6 +54,20 @@
     font-size: 14px;
     color: var(--text-project);
     opacity: 0.8;
+  }
+  
+  .service-card-link {
+    text-decoration: none;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .service-card-link:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card-link:hover .service-card {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   }
   
   /* Desktop styles */
