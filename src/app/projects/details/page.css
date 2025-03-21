@@ -1,0 +1,459 @@
+.project-details-container {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .project-header {
+    margin-bottom: 24px;
+  }
+  
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--secondary-project);
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
+  .project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--text-project);
+  }
+  
+  .project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--tertiary-project);
+    font-size: 14px;
+  }
+  
+  .meta-item-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .project-tag {
+    background-color: var(--light-bg);
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 14px;
+    color: var(--secondary-project);
+  }
+  
+  .hero-section {
+    margin-bottom: 32px;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 200px;
+    background-color: var(--quaternary-project);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .section {
+    margin-bottom: 32px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: var(--secondary-project);
+  }
+  
+  .project-description {
+    color: var(--tertiary-project);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  .tech-stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .tech-icon {
+    width: 24px;
+    height: 24px;
+    background-color: var(--light-bg);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tech-name {
+    font-size: 14px;
+    color: var(--text-project);
+  }
+  
+  .highlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .highlight-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .highlight-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text-project);
+  }
+  
+  .highlight-description {
+    font-size: 14px;
+    color: var(--tertiary-project);
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .gallery-image {
+    height: 200px;
+    background-color: var(--quaternary-project);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .results-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .metric-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .metric-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--secondary-project);
+    margin-bottom: 4px;
+  }
+  
+  .metric-label {
+    font-size: 14px;
+    color: var(--tertiary-project);
+    text-align: center;
+  }
+  
+  .testimonial {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    color: var(--tertiary-project);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--quaternary-project);
+  }
+  
+  .author-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .author-name {
+    font-weight: 500;
+    color: var(--text-project);
+  }
+  
+  .author-position {
+    font-size: 12px;
+    color: var(--tertiary-project);
+  }
+  
+  .cta-section {
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .cta-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: var(--text-project);
+  }
+  
+  .cta-description {
+    margin-bottom: 24px;
+    color: var(--tertiary-project);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: var(--secondary-project);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--primary-project);
+  }
+  
+  .related-projects {
+    margin-bottom: 32px;
+  }
+  
+  .related-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .related-card {
+    flex: 0 0 280px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .related-image {
+    width: 100%;
+    height: 140px;
+    background-color: var(--quaternary-project);
+  }
+  
+  .related-content {
+    padding: 16px;
+  }
+  
+  .related-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text-project);
+  }
+  
+  .related-description {
+    font-size: 14px;
+    color: var(--tertiary-project);
+    margin-bottom: 12px;
+  }
+  
+  .related-link {
+    color: var(--secondary-project);
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .related-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Desktop styles */
+  @media(min-width: 640px) {
+    .project-details-container {
+      padding: 40px 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .project-header {
+      margin-bottom: 40px;
+    }
+  
+    .back-button {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+  
+    .project-title {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+  
+    .meta-item {
+      font-size: 16px;
+    }
+  
+    .project-tag {
+      font-size: 14px;
+    }
+  
+    .hero-image {
+      height: 400px;
+    }
+  
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  
+    .project-description {
+      font-size: 16px;
+    }
+  
+    .tech-stack {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .tech-name {
+      font-size: 16px;
+    }
+  
+    .highlights {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .gallery-image {
+      height: 240px;
+    }
+  
+    .results-metrics {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .metric-value {
+      font-size: 32px;
+    }
+  
+    .testimonial {
+      padding: 32px;
+    }
+  
+    .author-avatar {
+      width: 56px;
+      height: 56px;
+    }
+  
+    .author-name {
+      font-size: 18px;
+    }
+  
+    .author-position {
+      font-size: 14px;
+    }
+  
+    .cta-section {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cta-title {
+      font-size: 28px;
+    }
+  
+    .cta-description {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .related-scroll {
+      gap: 24px;
+    }
+  
+    .related-card {
+      flex: 0 0 320px;
+    }
+  
+    .related-image {
+      height: 180px;
+    }
+  
+    .related-content {
+      padding: 20px;
+    }
+  
+    .related-name {
+      font-size: 18px;
+    }
+  }
