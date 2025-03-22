@@ -1,17 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import './page.css';
+import { projectData } from "../../utils/projectData"
 
 export default function ProjectsPage() {
   // These would typically come from your backend or CMS
   const webProjects = [
     {
       id: 1,
-      name: "E-commerce Platform",
+      name: "Silhouette",
       description: "Modern online store with payment integration and inventory management",
       image: "/placeholder-project.jpg",
       tags: ["React", "Node.js", "MongoDB"],
-      link: "/projects/details"
+      link: "/projects/details",
+      slug: "silhouette"
     },
     {
       id: 2,
@@ -19,7 +21,8 @@ export default function ProjectsPage() {
       description: "Responsive business website with custom CMS and analytics",
       image: "/placeholder-project.jpg",
       tags: ["Next.js", "Tailwind CSS", "GraphQL"],
-      link: "/projects/details"
+      link: "/projects/details",
+      slug: "corporate-website"
     },
     {
       id: 3,
@@ -27,7 +30,8 @@ export default function ProjectsPage() {
       description: "Full-featured travel booking platform with user accounts",
       image: "/placeholder-project.jpg",
       tags: ["React", "Express", "PostgreSQL"],
-      link: "/projects/details"
+      link: "/projects/details",
+      slug: "travel-booking-app"
     },
     {
       id: 4,
@@ -35,7 +39,8 @@ export default function ProjectsPage() {
       description: "Property listing and management system with advanced search",
       image: "/placeholder-project.jpg",
       tags: ["Vue.js", "Django", "Redis"],
-      link: "/projects/details"
+      link: "/projects/details",
+      slug: "real-estate-portal"
     }
   ];
 
@@ -46,7 +51,8 @@ export default function ProjectsPage() {
       description: "Mobile app for ordering food with real-time tracking",
       image: "/placeholder-project.jpg",
       tags: ["React Native", "Firebase", "Stripe"],
-      link: "/projects/details"
+      link: "/projects/details",
+      slug: "food-delivery-app"
     },
     {
       id: 6,
@@ -54,7 +60,8 @@ export default function ProjectsPage() {
       description: "Health and fitness monitoring app with social features",
       image: "/placeholder-project.jpg",
       tags: ["Flutter", "Firebase", "REST API"],
-      link: "/projects/details"
+      link: "/projects/details",
+      slug: "fitness-tracker"
     },
     {
       id: 7,
@@ -62,7 +69,8 @@ export default function ProjectsPage() {
       description: "Interactive language learning platform with progress tracking",
       image: "/placeholder-project.jpg",
       tags: ["Swift", "Kotlin", "Node.js"],
-      link: "/projects/details"
+      link: "/projects/details",
+      slug: "language-learning-app"
     }
   ];
 
@@ -73,7 +81,8 @@ export default function ProjectsPage() {
       description: "Secure payment processing system with multi-currency support",
       image: "/placeholder-project.jpg",
       tags: ["Node.js", "Express", "MongoDB"],
-      link: "/projects/details"
+      link: "/projects/details",
+      slug: "payment-gateway"
     },
     {
       id: 9,
@@ -81,7 +90,8 @@ export default function ProjectsPage() {
       description: "Customer relationship management with analytics dashboard",
       image: "/placeholder-project.jpg",
       tags: ["Python", "Django", "PostgreSQL"],
-      link: "/projects/details"
+      link: "/projects/details",
+      slug: "crm-system"
     },
     {
       id: 10,
@@ -89,97 +99,51 @@ export default function ProjectsPage() {
       description: "Real-time inventory tracking system with barcode scanning",
       image: "/placeholder-project.jpg",
       tags: ["Java", "Spring Boot", "MySQL"],
-      link: "/projects/details"
+      link: "/projects/details",
+      slug: "inventory-management"
     }
+  ];
+
+  // Combine all projects into one array with sections
+  const allProjects = [
+    { section: "Web Development", projects: webProjects },
+    { section: "Mobile Development", projects: mobileProjects },
+    { section: "Backend Development", projects: backendProjects }
   ];
 
   return (
     <div className="projects-container">
       <h1 className="projects-title">Our Projects</h1>
 
-      <div className="section-container">
-        <h2 className="section-title">Web Development</h2>
-        <div className="project-scroll">
-          {webProjects.map((project) => (
-            <div key={project.id} className="project-card">
-              <div className="project-image">
-                <Image src={project.image} alt={project.name} fill style={{ objectFit: 'cover' }} />
-              </div>
-              <div className="project-content">
-                <h3 className="project-name">{project.name}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-tags">
-                  {project.tags.map((tag, index) => (
-                    <span key={index} className="project-tag">{tag}</span>
-                  ))}
+      {allProjects.map((section) => (
+        <div key={section.section} className="section-container">
+          <h2 className="section-title">{section.section}</h2>
+          <div className="project-scroll">
+            {section.projects.map((project) => (
+              <div key={project.id} className="project-card">
+                <div className="project-image">
+                  <Image src={project.image} alt={project.name} fill style={{ objectFit: 'cover' }} />
                 </div>
-                <Link href={project.link} className="project-button">
-                  View details
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="view-all-container">
-          <button className="view-all-button">View all web projects</button>
-        </div>
-      </div>
-
-      <div className="section-container">
-        <h2 className="section-title">Mobile Development</h2>
-        <div className="project-scroll">
-          {mobileProjects.map((project) => (
-            <div key={project.id} className="project-card">
-              <div className="project-image">
-                <Image src={project.image} alt={project.name} fill style={{ objectFit: 'cover' }} />
-              </div>
-              <div className="project-content">
-                <h3 className="project-name">{project.name}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-tags">
-                  {project.tags.map((tag, index) => (
-                    <span key={index} className="project-tag">{tag}</span>
-                  ))}
+                <div className="project-content">
+                  <h3 className="project-name">{project.name}</h3>
+                  <p className="project-description">{project.description}</p>
+                  <div className="project-tags">
+                    {project.tags.map((tag, index) => (
+                      <span key={index} className="project-tag">{tag}</span>
+                    ))}
+                  </div>
+                  <Link href={`${project.link}?slug=${project.slug}`} className="project-button">
+                    View details
+                  </Link>
                 </div>
-                <Link href={project.link} className="project-button">
-                  View details
-                </Link>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="view-all-container">
+            <button className="view-all-button">View all {section.section.toLowerCase()} projects</button>
+          </div>
         </div>
-        <div className="view-all-container">
-          <button className="view-all-button">View all mobile projects</button>
-        </div>
-      </div>
-
-      <div className="section-container">
-        <h2 className="section-title">Backend Development</h2>
-        <div className="project-scroll">
-          {backendProjects.map((project) => (
-            <div key={project.id} className="project-card">
-              <div className="project-image">
-                <Image src={project.image} alt={project.name} fill style={{ objectFit: 'cover' }} />
-              </div>
-              <div className="project-content">
-                <h3 className="project-name">{project.name}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-tags">
-                  {project.tags.map((tag, index) => (
-                    <span key={index} className="project-tag">{tag}</span>
-                  ))}
-                </div>
-                <Link href={project.link} className="project-button">
-                  View details
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="view-all-container">
-          <button className="view-all-button">View all backend projects</button>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

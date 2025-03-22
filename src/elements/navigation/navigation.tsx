@@ -29,7 +29,7 @@ export default function Navigation({ children }: { children: any }) {
         {children}
       </div>
       <nav className="bg-quaternaryProject tabbar_appearance">
-          <ol className="flex flex-row menu-gap  h-full content-margin items-center justify-center p-[8px]">
+          <ol className="flex flex-row menu-gap h-full content-margin items-center justify-center p-[8px]">
             <li className="menu_item-width">
               <MenuItem href="/" title="HOME"/>
             </li>
