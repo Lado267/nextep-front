@@ -2,15 +2,17 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import SilhouetteMainImage from "../../../../public/projects/silhouette/silhouette-main.png"
+import Silhouette2 from "../../../../public/projects/silhouette/silhouette-2.png"
+import Silhouette3 from "../../../../public/projects/silhouette/silhouette-3.png"
 
 export default function ProjectDetails() {
   return (
-    <main className="project-details-container">
-      <Image src={SilhouetteMainImage} alt="main cover image of project"></Image>
+    <main className="project-details-container flex flex-col gap-[20px]">
       <div className="hero-section">
         <div className="hero-image">
           {/* Hero image would go here */}
           {/* <Image src="/images/ecommerce-hero.jpg" alt="E-commerce platform showcase" width={1200} height={600} /> */}
+          <Image src={SilhouetteMainImage} alt="main cover image of project" className='mt-[40px] rounded-lg shadow-sm'></Image>
         </div>
       </div>
 
@@ -94,12 +96,9 @@ export default function ProjectDetails() {
 
       <div className="section">
         <h2 className="section-title">UI/UX Gallery</h2>
-        <div className="gallery">
-          {[1, 2, 3, 4, 5, 6].map((num) => (
-            <div key={num} className="gallery-image">
-              {/* <Image src={`/images/ecommerce-gallery-${num}.jpg`} alt={`UI screenshot ${num}`} width={400} height={300} /> */}
-            </div>
-          ))}
+        <div className="gallery grid grid-cols-1 gap-4 mb-6 md:grid-cols-3">
+          <Image src={Silhouette2} alt='image showcasing project'></Image>
+          <Image src={Silhouette3} alt='image showcasing project'></Image>
         </div>
       </div>
 
