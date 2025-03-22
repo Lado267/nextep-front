@@ -4,8 +4,28 @@ import Image from 'next/image';
 import SilhouetteMainImage from "../../../../public/projects/silhouette/silhouette-main.png"
 import Silhouette2 from "../../../../public/projects/silhouette/silhouette-2.png"
 import Silhouette3 from "../../../../public/projects/silhouette/silhouette-3.png"
+import { Card, CardContent } from "../../../components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
+} from "../../../components/ui/carousel"
 
 export default function ProjectDetails() {
+
+  const techStack = [
+    { icon: "R", name: "React" },
+    { icon: "N", name: "Node.js" },
+    { icon: "M", name: "MongoDB" },
+    { icon: "S", name: "Stripe API" },
+    { icon: "R", name: "Redis" },
+    { icon: "G", name: "GraphQL" },
+    { icon: "A", name: "AWS" },
+    { icon: "D", name: "Docker" },
+  ];
+
   return (
     <main className="project-details-container flex flex-col gap-[20px]">
       <div className="hero-section">
@@ -28,39 +48,24 @@ export default function ProjectDetails() {
 
       <div className="section">
         <h2 className="section-title">Technology Stack</h2>
-        <div className="tech-stack">
-          <div className="tech-item">
-            <div className="tech-icon">R</div>
-            <span className="tech-name">React</span>
-          </div>
-          <div className="tech-item">
-            <div className="tech-icon">N</div>
-            <span className="tech-name">Node.js</span>
-          </div>
-          <div className="tech-item">
-            <div className="tech-icon">M</div>
-            <span className="tech-name">MongoDB</span>
-          </div>
-          <div className="tech-item">
-            <div className="tech-icon">S</div>
-            <span className="tech-name">Stripe API</span>
-          </div>
-          <div className="tech-item">
-            <div className="tech-icon">R</div>
-            <span className="tech-name">Redis</span>
-          </div>
-          <div className="tech-item">
-            <div className="tech-icon">G</div>
-            <span className="tech-name">GraphQL</span>
-          </div>
-          <div className="tech-item">
-            <div className="tech-icon">A</div>
-            <span className="tech-name">AWS</span>
-          </div>
-          <div className="tech-item">
-            <div className="tech-icon">D</div>
-            <span className="tech-name">Docker</span>
-          </div>
+        <div className="max-w-full overflow-hidden">
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-1">
+              {techStack.map((item, index) => (
+                <CarouselItem key={index} className="pl-1 md:basis-1/4 lg:basis-1/6">
+                  <div className="p-1">
+                    <Card>
+                      <CardContent className="flex aspect-[2/1] items-center justify-center p-6">
+                        <span className="text-xl md:text-2xl font-semibold">{item.name}</span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
 
