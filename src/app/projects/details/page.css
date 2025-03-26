@@ -151,7 +151,7 @@
   
   .gallery {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
     margin-bottom: 24px;
   }
@@ -391,11 +391,11 @@
     }
   
     .gallery {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr;
     }
   
     .gallery-image {
-      height: 240px;
+      height: auto;
     }
   
     .results-metrics {

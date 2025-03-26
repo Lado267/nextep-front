@@ -12,6 +12,7 @@ import {
   CarouselNext,
   CarouselPrevious
 } from "../../../components/ui/carousel"
+import './page.css';
 
 export default function ProjectDetails() {
 
@@ -54,7 +55,7 @@ export default function ProjectDetails() {
   ];
 
   return (
-    <main className="project-details-container flex flex-col gap-[20px]">
+    <main className="project-details-container flex flex-col gap-[4px]">
       <div className="hero-section">
         <div className="hero-image">
           {/* Hero image would go here */}
@@ -79,14 +80,14 @@ export default function ProjectDetails() {
           <Carousel className="w-full">
         <CarouselContent className="-ml-3 gap-[0px]">
           {techStack.map((item, index) => (
-          <CarouselItem key={index} className="pl-3 sm:basis-1/6 basis-1/4">
+          <CarouselItem key={index} className="pl-2 sm:basis-1/6 basis-1/4">
         <div className="">
           <Card>
             <CardContent className="flex h-[84px] items-center justify-center p-6">
             <img 
           src={item.desktopIcon} 
           alt={`${item.name} logo`} 
-          className='tech-icon object-contain py-2'
+          className='tech-icon object-contain'
             />
             </CardContent>
           </Card>
@@ -104,35 +105,41 @@ export default function ProjectDetails() {
         <h2 className="section-title">Key Features</h2>
         <div className="highlights">
           <div className="highlight-item">
-            <h3 className="highlight-title">Advanced Search</h3>
-            <p className="highlight-description">Implemented Elasticsearch for fast and accurate product search with filters and recommendations.</p>
+            <h3 className="highlight-title highlight-search">Advanced Search</h3>
+            <p className="highlight-description">
+              Lightning-fast product search powered by Elasticsearch, with smart filters and personalized recommendations to help customers find exactly what they need.
+            </p>
           </div>
           <div className="highlight-item">
-            <h3 className="highlight-title">Secure Payments</h3>
-            <p className="highlight-description">Integrated Stripe for secure payment processing with support for multiple currencies and payment methods.</p>
+            <h3 className="highlight-title highlight-payments">Secure Payments</h3>
+            <p className="highlight-description">
+              PCI-compliant payment processing via Stripe, supporting 135+ currencies, multiple payment methods, and advanced fraud protection.
+            </p>
           </div>
           <div className="highlight-item">
-            <h3 className="highlight-title">Inventory Sync</h3>
-            <p className="highlight-description">Real-time inventory synchronization between online store and physical locations.</p>
+            <h3 className="highlight-title highlight-inventory">Inventory Sync</h3>
+            <p className="highlight-description">
+              Real-time inventory management across all sales channels, with automated stock alerts and seamless integration with warehouse systems.
+            </p>
           </div>
           <div className="highlight-item">
-            <h3 className="highlight-title">Customer Accounts</h3>
-            <p className="highlight-description">Personalized user accounts with order history, wishlists, and saved payment methods.</p>
+            <h3 className="highlight-title highlight-accounts">Customer Accounts</h3>
+            <p className="highlight-description">
+              Feature-rich customer profiles with order tracking, wishlists, saved payments, and personalized shopping experiences.
+            </p>
           </div>
           <div className="highlight-item">
-            <h3 className="highlight-title">Admin Dashboard</h3>
-            <p className="highlight-description">Comprehensive admin panel for product management, order processing, and analytics.</p>
-          </div>
-          <div className="highlight-item">
-            <h3 className="highlight-title">Mobile Optimization</h3>
-            <p className="highlight-description">Fully responsive design with dedicated mobile optimization for seamless shopping on any device.</p>
+            <h3 className="highlight-title highlight-admin">Admin Dashboard</h3>
+            <p className="highlight-description">
+              Powerful admin interface with real-time analytics, order management, and comprehensive reporting tools for data-driven decisions.
+            </p>
           </div>
         </div>
       </div>
 
       <div className="section">
         <h2 className="section-title">UI/UX Gallery</h2>
-        <div className="gallery grid grid-cols-1 gap-4 mb-6 md:grid-cols-3">
+        <div className="gallery">
           <Image src={Silhouette2} alt='image showcasing project'></Image>
           <Image src={Silhouette3} alt='image showcasing project'></Image>
         </div>
