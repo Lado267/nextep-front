@@ -1,15 +1,43 @@
-export const projectData = {
+export const projectDetails = {
     "silhouette": {
         techStack: [
-            { icon: "R", name: "React" },
-            { icon: "N", name: "Node.js" },
-            { icon: "M", name: "MongoDB" },
-            { icon: "S", name: "Stripe API" },
-            { icon: "R", name: "Redis" },
-            { icon: "G", name: "GraphQL" },
-            { icon: "A", name: "AWS" },
-            { icon: "D", name: "Docker" },
+            { 
+              slug: "react",
+              desktopIcon: "/techLogos/desktop/react.png",
+              mobileIcon: "/techLogos/mobile/react.png"
+            },
+            { 
+              slug: "nodejs",
+              desktopIcon: "/techLogos/desktop/nodejs.png",
+              mobileIcon: "/techLogos/mobile/nodejs.png"
+            },
+            { 
+              slug: "nextjs",
+              desktopIcon: "/techLogos/desktop/nextjs.png",
+              mobileIcon: "/techLogos/mobile/nextjs.png"
+            },
+            { 
+              slug: "typescript",
+              desktopIcon: "/techLogos/desktop/typescript.png",
+              mobileIcon: "/techLogos/mobile/typescript.png"
+            },
+            { 
+              slug: "python",
+              desktopIcon: "/techLogos/desktop/python.png",
+              mobileIcon: "/techLogos/mobile/python.png"
+            },
+            { 
+              slug: "fastapi",
+              desktopIcon: "/techLogos/desktop/fastapi.png",
+              mobileIcon: "/techLogos/mobile/fastapi.png"
+            },
+            { 
+              slug: "postgresql",
+              desktopIcon: "/techLogos/desktop/postgresql.png",
+              mobileIcon: "/techLogos/mobile/postgresql.png"
+            }
         ],
+        typeSlug: "web",
         projectOverview: [
             "This comprehensive e-commerce platform was developed for Global Retail Inc. to modernize their online shopping experience and integrate with their existing inventory management system. The solution includes a responsive frontend for customers, an admin dashboard for staff, and robust APIs for third-party integrations.",
             "The client needed a scalable solution that could handle seasonal traffic spikes and support their expansion into new markets. Our platform was built with performance and flexibility in mind, allowing them to quickly adapt to changing business requirements."
