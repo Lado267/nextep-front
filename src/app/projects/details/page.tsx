@@ -16,14 +16,41 @@ import {
 export default function ProjectDetails() {
 
   const techStack = [
-    { icon: "R", name: "React" },
-    { icon: "N", name: "Node.js" },
-    { icon: "M", name: "MongoDB" },
-    { icon: "S", name: "Stripe API" },
-    { icon: "R", name: "Redis" },
-    { icon: "G", name: "GraphQL" },
-    { icon: "A", name: "AWS" },
-    { icon: "D", name: "Docker" },
+    { 
+      name: "React",
+      desktopIcon: "/techLogos/desktop/react.png",
+      mobileIcon: "/techLogos/mobile/react.png"
+    },
+    { 
+      name: "Node.js",
+      desktopIcon: "/techLogos/desktop/nodejs.png",
+      mobileIcon: "/techLogos/mobile/nodejs.png"
+    },
+    { 
+      name: "Next.js",
+      desktopIcon: "/techLogos/desktop/nextjs.png",
+      mobileIcon: "/techLogos/mobile/nextjs.png"
+    },
+    { 
+      name: "TypeScript",
+      desktopIcon: "/techLogos/desktop/typescript.png",
+      mobileIcon: "/techLogos/mobile/typescript.png"
+    },
+    { 
+      name: "Python",
+      desktopIcon: "/techLogos/desktop/python.png",
+      mobileIcon: "/techLogos/mobile/python.png"
+    },
+    { 
+      name: "FastAPI",
+      desktopIcon: "/techLogos/desktop/fastapi.png",
+      mobileIcon: "/techLogos/mobile/fastapi.png"
+    },
+    { 
+      name: "PostgreSQL",
+      desktopIcon: "/techLogos/desktop/postgresql.png",
+      mobileIcon: "/techLogos/mobile/postgresql.png"
+    }
   ];
 
   return (
@@ -50,21 +77,25 @@ export default function ProjectDetails() {
         <h2 className="section-title">Technology Stack</h2>
         <div className="max-w-full overflow-hidden">
           <Carousel className="w-full">
-            <CarouselContent className="-ml-1">
-              {techStack.map((item, index) => (
-                <CarouselItem key={index} className="pl-1 md:basis-1/4 lg:basis-1/6">
-                  <div className="p-1">
-                    <Card>
-                      <CardContent className="flex aspect-[2/1] items-center justify-center p-6">
-                        <span className="text-xl md:text-2xl font-semibold">{item.name}</span>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+        <CarouselContent className="-ml-3 gap-[0px]">
+          {techStack.map((item, index) => (
+          <CarouselItem key={index} className="pl-3 sm:basis-1/6 basis-1/4">
+        <div className="">
+          <Card>
+            <CardContent className="flex h-[84px] items-center justify-center p-6">
+            <img 
+          src={item.desktopIcon} 
+          alt={`${item.name} logo`} 
+          className='tech-icon object-contain py-2'
+            />
+            </CardContent>
+          </Card>
+        </div>
+          </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
           </Carousel>
         </div>
       </div>
