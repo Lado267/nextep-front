@@ -17,11 +17,14 @@ export function Gallery({ images }: GalleryProps) {
         {images.map((image, index) => (
           <div key={index} className="gallery-item">
             <Image 
-              src={image} 
-              alt={`Project showcase image ${index + 1}`}
-              className="rounded-lg shadow-sm"
-              fill
-              style={{ objectFit: 'cover' }}
+                src={image} 
+                alt={`Project showcase image ${index + 1}`}
+                className="rounded-lg shadow-sm"
+                fill
+                style={{ 
+                    objectFit: 'cover',
+                    objectPosition: 'top' // This ensures the top is always visible
+                }}
             />
             <div className="gallery-overlay">
               <Button 

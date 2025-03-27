@@ -17,7 +17,7 @@ export default function ProjectsPage() {
             {section.projects.map((project) => (
               <div key={project.id} className="project-card">
                 <div className="project-image">
-                  <Image src={project.image} alt={project.name} fill style={{ objectFit: 'cover' }} />
+                  <Image src={project.image} alt={project.name} fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
                 </div>
                 <div className="project-content">
                   <div className="project-info">

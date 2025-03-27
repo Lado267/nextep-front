@@ -20,7 +20,10 @@ export function HeroImage({ src, alt }: HeroImageProps) {
           alt={alt} 
           className='rounded-lg shadow-sm'
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ 
+            objectFit: 'cover',
+            objectPosition: 'top' // This ensures the top is always visible
+        }}
         />
         <div className="gallery-overlay">
           <Button 
