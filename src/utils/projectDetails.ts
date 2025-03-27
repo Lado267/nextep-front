@@ -11,6 +11,11 @@ import TradingAnalystCodeView from "../../public/projects/tradingAnalyst/image1.
 import TradingAnalystResultsView from "../../public/projects/tradingAnalyst/image2.png"
 import TradingAnalystResultsView2 from "../../public/projects/tradingAnalyst/image3.png"
 
+import QuotieMainImage from "../../public/projects/quotie/mainImage.png"
+import Quotie2 from "../../public/projects/quotie/image1.png"
+import Quotie3 from "../../public/projects/quotie/image2.png"
+import Quotie4 from "../../public/projects/quotie/image3.png"
+
 export const projectDetails = {
     "silhouette": {
         mainImage: SilhouetteMainImage,
@@ -192,6 +197,64 @@ export const projectDetails = {
           { name: "Strategy Editor", description: "Advanced code editor for trading algorithms" },
           { name: "Backtesting Engine", description: "Comprehensive performance analysis and strategy validation" },
           { name: "Exchange Connector", description: "Secure API integrations with multiple trading platforms" }
+      ]
+    },
+    "quotie": {
+      mainImage: QuotieMainImage, // Placeholder for main image
+      gallery: [
+          Quotie2, // Replace with actual image paths
+          Quotie3, 
+          Quotie4
+      ],
+      techStack: [
+          { 
+            slug: "swift",
+            desktopIcon: "/techLogos/desktop/swift.png",
+            mobileIcon: "/techLogos/mobile/swift.png"
+          },
+          { 
+            slug: "vapor",
+            desktopIcon: "/techLogos/desktop/vapor.png",
+            mobileIcon: "/techLogos/mobile/vapor.png"
+          }
+      ],
+      typeSlug: "mobile",
+      projectOverview: [
+          "Quotie is an innovative mobile application for discovering, categorizing, and exploring inspirational quotes from notable figures.",
+          "The app provides a user-friendly interface for browsing quotes across various categories and themes."
+      ],
+      keyFeatures: [
+          { title: "Quote Categories", description: "Multiple categories including Relationships, Self Improvement, and more." },
+          { title: "Diverse Quote Sources", description: "Quotes from influential personalities like Einstein, Socrates, Elon Musk, and Paolo Coelho." },
+          { title: "Category Filtering", description: "Easy filtering by topics such as Friendship, Attitude, Education, Fitness, and Love." },
+          { title: "Gallery View", description: "Visually appealing gallery of quotes with background images." },
+          { title: "Quote Details", description: "Comprehensive quote information with author profiles." },
+          { title: "Download Option", description: "Ability to download and share quotes" }
+      ],
+      developmentProcess: [
+          "Developed using modern mobile app technologies with a focus on user experience and content discovery.",
+          "1. Design Phase: Created intuitive UI/UX for quote browsing",
+          "2. Frontend Development: Implemented responsive iOS Native components",
+          "3. Content Integration: Curated quotes from various notable figures",
+          "4. Testing & Optimization: Ensured smooth navigation and content presentation"
+      ],
+      resultsMetrics: [
+          { value: "6+", label: "Quote Categories" },
+          { value: "10+", label: "Featured Authors" },
+          { value: "100+", label: "Quotes Available" },
+          { value: "Multiple", label: "Filtering Options" }
+      ],
+      testimonial: {
+          text: "A beautifully designed app that brings inspiration and wisdom from great minds right to your fingertips.",
+          author: {
+              name: "User",
+              position: "Quote Enthusiast"
+          }
+      },
+      relatedProjects: [
+          { name: "Category Browsing", description: "Intuitive quote category navigation" },
+          { name: "Author Profiles", description: "Detailed information about quote authors" },
+          { name: "Quote Sharing", description: "Easy sharing and download functionality" }
       ]
   }
 };

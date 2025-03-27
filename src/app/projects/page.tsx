@@ -20,22 +20,21 @@ export default function ProjectsPage() {
                   <Image src={project.image} alt={project.name} fill style={{ objectFit: 'cover' }} />
                 </div>
                 <div className="project-content">
-                  <h3 className="project-name">{project.name}</h3>
-                  <p className="project-description">{project.description}</p>
-                  <div className="project-tags">
-                    {project.slugs.map((slug, index) => (
-                      <span key={index} className="project-tag">{slug}</span>
-                    ))}
+                  <div className="project-info">
+                    <h3 className="project-name">{project.name}</h3>
+                    <p className="project-description">{project.description}</p>
+                    <div className="project-tags">
+                      {project.slugs.map((slug, index) => (
+                        <span key={index} className="project-tag">{slug}</span>
+                      ))}
+                    </div>
                   </div>
-                  <Link href={`${project.link}`} className="">
+                  <Link href={`${project.link}`} className="project-link">
                     <Button variant="projectSelected">View Details</Button>
                   </Link>
                 </div>
               </div>
             ))}
-          </div>
-          <div className="view-all-container">
-            <button className="view-all-button">View all {section.section.toLowerCase()} projects</button>
           </div>
         </div>
       ))}

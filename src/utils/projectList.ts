@@ -1,6 +1,7 @@
 import SilhouetteMainImage from "../../public/projects/silhouette/silhouette-main.png"
 import MasteryMainImage from "../../public/projects/mastery/mainImage.png"
 import TradingAnalystMainImage from "../../public/projects/tradingAnalyst/mainImage.png"
+import QuotieMainImage from "../../public/projects/quotie/mainImage.png"
 
 // These would typically come from your backend or CMS
   const webProjects = [
@@ -39,31 +40,13 @@ import TradingAnalystMainImage from "../../public/projects/tradingAnalyst/mainIm
   const mobileProjects = [
     {
       id: 5,
-      name: "Food Delivery App",
-      description: "Mobile app for ordering food with real-time tracking",
-      image: "/placeholder-project.jpg",
-      slugs: ["react-native", "firebase", "stripe"],
-      link: "/projects/food-delivery-app",
-      slug: "food-delivery-app"
+      name: "Quotie - Quotes App",
+      description: "Mobile app for getting inspired by quotes and sharing them",
+      image: QuotieMainImage,
+      slugs: ["swift", "vapor", "postgresql"],
+      link: "/projects/quotie",
+      slug: "quotie"
     },
-    {
-      id: 6,
-      name: "Fitness Tracker",
-      description: "Health and fitness monitoring app with social features",
-      image: "/placeholder-project.jpg",
-      slugs: ["flutter", "firebase", "rest-api"],
-      link: "/projects/fitness-tracker",
-      slug: "fitness-tracker"
-    },
-    {
-      id: 7,
-      name: "Language Learning App",
-      description: "Interactive language learning platform with progress tracking",
-      image: "/placeholder-project.jpg",
-      slugs: ["swift", "kotlin", "nodejs"],
-      link: "/projects/language-learning-app",
-      slug: "language-learning-app"
-    }
   ];
 
   const backendProjects = [

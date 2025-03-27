@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Card, CardContent } from "../../../components/ui/card"
+import { Button } from "../../../components/ui/button"
 import {
   Carousel,
   CarouselContent,
@@ -12,9 +13,10 @@ import {
 import { projectDetails } from '../../../utils/projectDetails';
 import './page.css';
 
-export default function ProjectDetails({ params }) {
+export default async function ProjectDetails({ params }) {
 
-  const project = projectDetails[params.slug];
+  const { slug } = await params;
+  const project = projectDetails[slug];
 
   return (
     <main className="project-details-container flex flex-col gap-[4px]">
@@ -117,53 +119,14 @@ export default function ProjectDetails({ params }) {
         </p>
       </div>
 
-      <div className="section">
-        <h2 className="section-title">Client Testimonial</h2>
-        <div className="testimonial">
-          <p className="testimonial-text">
-        {project.testimonial.text}
-          </p>
-          <div className="testimonial-author">
-        <div className="author-avatar">
-          {/* <Image src="/images/sarah-johnson.jpg" alt="Sarah Johnson" width={60} height={60} className="avatar-image" /> */}
-        </div>
-        <div className="author-info">
-          <div className="author-name">{project.testimonial.author.name}</div>
-          <div className="author-position">{project.testimonial.author.position}</div>
-        </div>
-          </div>
-        </div>
-      </div>
-
       <div className="cta-section">
         <h2 className="cta-title">Ready to transform your business?</h2>
         <p className="cta-description">
           Let's discuss how we can help you build a modern digital solution tailored to your unique business needs.
         </p>
-        <Link href="/contact" className="cta-button">Start Your Project</Link>
-      </div>
-
-      <div className="section related-projects">
-        <h2 className="section-title">Related Projects</h2>
-        <div className="related-scroll">
-          {project.relatedProjects.map((relatedProject, index) => (
-        <div key={index} className="related-card">
-          <div className="related-image">
-            {/* <Image src={`/images/related-${index + 1}.jpg`} alt={relatedProject.name} width={300} height={200} /> */}
-          </div>
-          <div className="related-content">
-            <h3 className="related-name">{relatedProject.name}</h3>
-            <p className="related-description">{relatedProject.description}</p>
-            <Link href="#" className="related-link">
-          View details
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-            </Link>
-          </div>
-        </div>
-          ))}
-        </div>
+        <Link href="/contact" className="">
+          <Button variant="projectSelected" className='w-[200px] h-auto'>Get in touch</Button>
+        </Link>
       </div>
     </main>
   );
