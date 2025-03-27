@@ -1,5 +1,6 @@
 import SilhouetteMainImage from "../../public/projects/silhouette/silhouette-main.png"
 import MasteryMainImage from "../../public/projects/mastery/mainImage.png"
+import TradingAnalystMainImage from "../../public/projects/tradingAnalyst/mainImage.png"
 
 // These would typically come from your backend or CMS
   const webProjects = [
@@ -15,30 +16,24 @@ import MasteryMainImage from "../../public/projects/mastery/mainImage.png"
     {
       id: 2,
       name: "Mastery",
-      description: "Responsive business website with custom CMS and analytics",
+      description: "The platform offers interactive chapter-based learning with quizzes",
       image: MasteryMainImage,
-      slugs: ["nextjs"],
+      slugs: ["react", "nodejs", "postgresql", "strapi"],
       link: "/projects/mastery",
       slug: "mastery"
     },
-    {
-      id: 3,
-      name: "Travel Booking App",
-      description: "Full-featured travel booking platform with user accounts",
-      image: "/placeholder-project.jpg",
-      slugs: ["react", "express", "postgresql"],
-      link: "/projects/travel-booking-app",
-      slug: "travel-booking-app"
-    },
+  ];
+
+  const macosProjects = [ 
     {
       id: 4,
-      name: "Real Estate Portal",
-      description: "Property listing and management system with advanced search",
-      image: "/placeholder-project.jpg",
-      slugs: ["vuejs", "django", "redis"],
-      link: "/projects/real-estate-portal",
-      slug: "real-estate-portal"
-    }
+      name: "Crypto Trading Strategy Analyst",
+      description: "The application allows users to create and backtest trading algorithms",
+      image: TradingAnalystMainImage,
+      slugs: ["swift", "vapor", "postgresql"],
+      link: "/projects/trading",
+      slug: "trading"
+    },
   ];
 
   const mobileProjects = [
@@ -104,6 +99,7 @@ import MasteryMainImage from "../../public/projects/mastery/mainImage.png"
   // Combine all projects into one array with sections
   export const allProjects = [
     { section: "Web Development", projects: webProjects },
+    { section: "macOS Development", projects: macosProjects},
     { section: "Mobile Development", projects: mobileProjects },
     { section: "Backend Development", projects: backendProjects }
   ];

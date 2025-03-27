@@ -6,6 +6,11 @@ import MasteryMainImage from "../../public/projects/mastery/mainImage.png"
 import MasteryChapterPage from "../../public/projects/mastery/image1.png"
 import MasteryBooksPage from "../../public/projects/mastery/image2.png"
 
+import TradingAnalystMainImage from "../../public/projects/tradingAnalyst/mainImage.png"
+import TradingAnalystCodeView from "../../public/projects/tradingAnalyst/image1.png"
+import TradingAnalystResultsView from "../../public/projects/tradingAnalyst/image2.png"
+import TradingAnalystResultsView2 from "../../public/projects/tradingAnalyst/image3.png"
+
 export const projectDetails = {
     "silhouette": {
         mainImage: SilhouetteMainImage,
@@ -84,6 +89,11 @@ export const projectDetails = {
               slug: "postgresql",
               desktopIcon: "/techLogos/desktop/postgresql.png",
               mobileIcon: "/techLogos/mobile/postgresql.png"
+            },
+            { 
+              slug: "strapi",
+              desktopIcon: "/techLogos/desktop/strapi.png",
+              mobileIcon: "/techLogos/mobile/postgresql.png"
             }
         ],
         typeSlug: "web",
@@ -124,6 +134,65 @@ export const projectDetails = {
             { name: "Book Summaries", description: "Concise key insights from popular books" },
             { name: "Progress Tracking", description: "User learning progress and achievement system" }
         ]
-    }
+    },
+    "trading": {
+      mainImage: TradingAnalystMainImage,
+      gallery: [
+        TradingAnalystMainImage, 
+        TradingAnalystCodeView, 
+        TradingAnalystResultsView, 
+        TradingAnalystResultsView2
+      ],
+      techStack: [
+          { 
+            slug: "swift",
+            desktopIcon: "/techLogos/desktop/swift.png",
+            mobileIcon: "/techLogos/mobile/swift.png"
+          },
+          { 
+            slug: "vapor",
+            desktopIcon: "/techLogos/desktop/vapor.png",
+            mobileIcon: "/techLogos/mobile/vapor.png"
+          }
+      ],
+      typeSlug: "trading",
+      projectOverview: [
+          "Trading Strategy Analyst is a sophisticated Swift-based platform for developing, testing, and analyzing cryptocurrency trading strategies.",
+          "The application allows users to create and backtest trading algorithms across different exchanges and trading pairs."
+      ],
+      keyFeatures: [
+          { title: "Multi-Exchange Support", description: "Trading strategies can be developed for Binance, Bittrex, and other exchanges." },
+          { title: "Flexible Interval Selection", description: "Support for multiple candlestick intervals including 1 Hour and 1 Day." },
+          { title: "Cryptocurrency Pair Trading", description: "Trade multiple cryptocurrency pairs like ADA/GEL, BTC/USD, ETH/EUR." },
+          { title: "Strategy Development", description: "Write custom trading strategies in Python with comprehensive testing capabilities." },
+          { title: "Backtesting", description: "Detailed test results and performance metrics for developed trading strategies." },
+          { title: "Strategy Management", description: "Save and manage multiple trading strategies within the application." }
+      ],
+      developmentProcess: [
+          "Developed using Python with a focus on algorithmic trading and strategy analysis.",
+          "1. Design Phase: Created intuitive UI for trading strategy development",
+          "2. Backend Development: Implemented robust Swift trading algorithm framework",
+          "3. Exchange Integration: Developed secure API connections with multiple exchanges",
+          "4. Testing & Optimization: Ensured comprehensive backtesting and strategy validation"
+      ],
+      resultsMetrics: [
+          { value: "2+", label: "Supported Exchanges" },
+          { value: "5+", label: "Cryptocurrency Pairs" },
+          { value: "2", label: "Candlestick Intervals" },
+          { value: "Unlimited", label: "Strategy Saves" }
+      ],
+      testimonial: {
+          text: "A powerful tool for developing and testing cryptocurrency trading strategies with unparalleled flexibility.",
+          author: {
+              name: "Trader",
+              position: "Algorithmic Trading Enthusiast"
+          }
+      },
+      relatedProjects: [
+          { name: "Strategy Editor", description: "Advanced code editor for trading algorithms" },
+          { name: "Backtesting Engine", description: "Comprehensive performance analysis and strategy validation" },
+          { name: "Exchange Connector", description: "Secure API integrations with multiple trading platforms" }
+      ]
+  }
 };
 

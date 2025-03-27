@@ -14,7 +14,6 @@ import './page.css';
 
 export default function ProjectDetails({ params }) {
 
-  console.log(params.slug);
   const project = projectDetails[params.slug];
 
   return (

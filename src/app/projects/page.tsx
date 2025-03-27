@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import './page.css';
 import { allProjects } from '../../utils/projectList';
+import { Button } from '../../components/ui/button';
 
 export default function ProjectsPage() {
 
@@ -26,8 +27,8 @@ export default function ProjectsPage() {
                       <span key={index} className="project-tag">{slug}</span>
                     ))}
                   </div>
-                  <Link href={`${project.link}`} className="project-button">
-                    View details
+                  <Link href={`${project.link}`} className="">
+                    <Button variant="projectSelected">View Details</Button>
                   </Link>
                 </div>
               </div>
