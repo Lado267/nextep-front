@@ -20,7 +20,7 @@ export default function Services() {
             </div>
             <div className="service-content">
               <h2 className="service-title">Web Development</h2>
-              <p className="service-description">Lorem ipsum custom description lorem</p>
+              <p className="service-description">Modern web apps with responsive design and fast load times</p>
             </div>
           </div>
         </Link>
@@ -32,7 +32,7 @@ export default function Services() {
             </div>
             <div className="service-content">
               <h2 className="service-title">Backend Development</h2>
-              <p className="service-description">Lorem ipsum custom description lorem</p>
+              <p className="service-description">Robust APIs and scalable server infrastructure solutions</p>
             </div>
           </div>
         </Link>
@@ -44,7 +44,7 @@ export default function Services() {
             </div>
             <div className="service-content">
               <h2 className="service-title">Mobile Development</h2>
-              <p className="service-description">Lorem ipsum custom description lorem</p>
+              <p className="service-description">Native and cross-platform apps for iOS and Android</p>
             </div>
           </div>
         </Link>
@@ -56,7 +56,7 @@ export default function Services() {
             </div>
             <div className="service-content">
               <h2 className="service-title">User Interface Design</h2>
-              <p className="service-description">Lorem ipsum custom description lorem</p>
+              <p className="service-description">Intuitive and engaging user interfaces with UX focus</p>
             </div>
           </div>
         </Link>
