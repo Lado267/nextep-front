@@ -156,6 +156,14 @@
     margin-bottom: 24px;
   }
   
+  .gallery-item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* Creates a 1:1 aspect ratio */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
   .gallery-image {
     height: 200px;
     background-color: var(--quaternary-project);
@@ -391,7 +399,12 @@
     }
   
     .gallery {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+  
+    .gallery-item {
+      padding-bottom: 100%; /* Maintains 1:1 aspect ratio on desktop */
     }
   
     .gallery-image {

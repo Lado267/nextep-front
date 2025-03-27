@@ -11,7 +11,9 @@ import {
   CarouselPrevious
 } from "../../../components/ui/carousel"
 import { projectDetails } from '../../../utils/projectDetails';
+import { Gallery } from '../../../elements/gallery/gallery';
 import './page.css';
+import { HeroImage } from './hero_image';
 
 export default async function ProjectDetails({ params }) {
 
@@ -21,11 +23,10 @@ export default async function ProjectDetails({ params }) {
   return (
     <main className="project-details-container flex flex-col gap-[4px]">
       <div className="hero-section">
-        <div className="hero-image">
-          {/* Hero image would go here */}
-          {/* <Image src="/images/ecommerce-hero.jpg" alt="E-commerce platform showcase" width={1200} height={600} /> */}
-          <Image src={project.mainImage} alt="main cover image of project" className='rounded-lg shadow-sm'></Image>
-        </div>
+        <HeroImage 
+          src={project.mainImage} 
+          alt="main cover image of project" 
+        />
       </div>
 
       <div className="section">
@@ -83,16 +84,7 @@ export default async function ProjectDetails({ params }) {
 
       <div className="section">
         <h2 className="section-title">UI/UX Gallery</h2>
-        <div className="gallery">
-          {project.gallery.map((image, index) => (
-        <Image 
-          key={index}
-          src={image} 
-          alt={`Project showcase image ${index + 1}`}
-          className="rounded-lg shadow-sm"
-        />
-          ))}
-        </div>
+        <Gallery images={project.gallery} />
       </div>
 
       <div className="section">

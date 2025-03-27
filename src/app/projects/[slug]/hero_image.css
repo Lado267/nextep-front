@@ -1,0 +1,80 @@
+.hero-image {
+    width: 100%;
+    height: 200px;
+    background-color: var(--quaternary-project);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  @media(min-width: 640px) {
+    .hero-image {
+      height: 400px;
+    }
+  }
+  
+  .gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+  }
+  
+  .expand-button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .expand-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .expanded-image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .expanded-image-container {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .expanded-image {
+    border-radius: 8px;
+  }
