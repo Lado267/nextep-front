@@ -1,11 +1,13 @@
+import SilhouetteMainImage from "../../public/projects/silhouette/silhouette-main.png"
+
 // These would typically come from your backend or CMS
   const webProjects = [
     {
       id: 1,
       name: "Silhouette",
       description: "Modern online store with payment integration and inventory management",
-      image: "/placeholder-project.jpg",
-      slugs: ["react", "nodejs", "nextjs", "typescript", "python", "fastapi", "postgresql"],
+      image: SilhouetteMainImage,
+      slugs: ["react", "nodejs", "postgresql"],
       link: "/projects/details",
       slug: "silhouette",
     },

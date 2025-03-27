@@ -1,9 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import SilhouetteMainImage from "../../../../public/projects/silhouette/silhouette-main.png"
-import Silhouette2 from "../../../../public/projects/silhouette/silhouette-2.png"
-import Silhouette3 from "../../../../public/projects/silhouette/silhouette-3.png"
 import { Card, CardContent } from "../../../components/ui/card"
 import {
   Carousel,
@@ -25,7 +22,7 @@ export default function ProjectDetails() {
         <div className="hero-image">
           {/* Hero image would go here */}
           {/* <Image src="/images/ecommerce-hero.jpg" alt="E-commerce platform showcase" width={1200} height={600} /> */}
-          <Image src={SilhouetteMainImage} alt="main cover image of project" className='rounded-lg shadow-sm'></Image>
+          <Image src={project.mainImage} alt="main cover image of project" className='rounded-lg shadow-sm'></Image>
         </div>
       </div>
 
@@ -85,8 +82,14 @@ export default function ProjectDetails() {
       <div className="section">
         <h2 className="section-title">UI/UX Gallery</h2>
         <div className="gallery">
-          <Image src={Silhouette2} alt='image showcasing project'></Image>
-          <Image src={Silhouette3} alt='image showcasing project'></Image>
+          {project.gallery.map((image, index) => (
+        <Image 
+          key={index}
+          src={image} 
+          alt={`Project showcase image ${index + 1}`}
+          className="rounded-lg shadow-sm"
+        />
+          ))}
         </div>
       </div>
 

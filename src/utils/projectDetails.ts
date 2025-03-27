@@ -1,5 +1,11 @@
+import SilhouetteMainImage from "../../public/projects/silhouette/silhouette-main.png"
+import Silhouette2 from "../../public/projects/silhouette/silhouette-2.png"
+import Silhouette3 from "../../public/projects/silhouette/silhouette-3.png"
+
 export const projectDetails = {
     "silhouette": {
+        mainImage: SilhouetteMainImage,
+        gallery: [SilhouetteMainImage, Silhouette2, Silhouette3],
         techStack: [
             { 
               slug: "react",
@@ -12,26 +18,6 @@ export const projectDetails = {
               mobileIcon: "/techLogos/mobile/nodejs.png"
             },
             { 
-              slug: "nextjs",
-              desktopIcon: "/techLogos/desktop/nextjs.png",
-              mobileIcon: "/techLogos/mobile/nextjs.png"
-            },
-            { 
-              slug: "typescript",
-              desktopIcon: "/techLogos/desktop/typescript.png",
-              mobileIcon: "/techLogos/mobile/typescript.png"
-            },
-            { 
-              slug: "python",
-              desktopIcon: "/techLogos/desktop/python.png",
-              mobileIcon: "/techLogos/mobile/python.png"
-            },
-            { 
-              slug: "fastapi",
-              desktopIcon: "/techLogos/desktop/fastapi.png",
-              mobileIcon: "/techLogos/mobile/fastapi.png"
-            },
-            { 
               slug: "postgresql",
               desktopIcon: "/techLogos/desktop/postgresql.png",
               mobileIcon: "/techLogos/mobile/postgresql.png"
@@ -39,41 +25,42 @@ export const projectDetails = {
         ],
         typeSlug: "web",
         projectOverview: [
-            "This comprehensive e-commerce platform was developed for Global Retail Inc. to modernize their online shopping experience and integrate with their existing inventory management system. The solution includes a responsive frontend for customers, an admin dashboard for staff, and robust APIs for third-party integrations.",
-            "The client needed a scalable solution that could handle seasonal traffic spikes and support their expansion into new markets. Our platform was built with performance and flexibility in mind, allowing them to quickly adapt to changing business requirements."
+            "Silhouette is an e-commerce platform specializing in high-quality bodywear and shapewear, offering a seamless online shopping experience for customers.",
+            "The website provides a user-friendly interface with detailed product information, size selection, and streamlined purchasing process."
         ],
         keyFeatures: [
-            { title: "Advanced Search", description: "Implemented Elasticsearch for fast and accurate product search with filters and recommendations." },
-            { title: "Secure Payments", description: "Integrated Stripe for secure payment processing with support for multiple currencies and payment methods." },
-            { title: "Inventory Sync", description: "Real-time inventory synchronization between online store and physical locations." },
-            { title: "Customer Accounts", description: "Personalized user accounts with order history, wishlists, and saved payment methods." },
-            { title: "Admin Dashboard", description: "Comprehensive admin panel for product management, order processing, and analytics." },
-            { title: "Mobile Optimization", description: "Fully responsive design with dedicated mobile optimization for seamless shopping on any device." }
+            { title: "Product Variety", description: "Multiple styles of bodywear and shapewear with detailed product images and descriptions." },
+            { title: "Size Selection", description: "Comprehensive size options from XXS to 2XL with clear size guide." },
+            { title: "Color Options", description: "Multiple color choices for products, including black and neutral tones." },
+            { title: "Responsive Design", description: "Mobile-friendly interface with consistent user experience across devices." },
+            { title: "Product Zoom", description: "Multiple product view angles and detailed image gallery." },
+            { title: "Easy Checkout", description: "Simplified ordering process with multiple delivery options." }
         ],
         developmentProcess: [
-            "We followed an Agile methodology with two-week sprints and regular client reviews. The project was broken down into four phases:",
-            "1. Discovery & Planning: Conducted user research, competitive analysis, and defined the technical architecture. Created detailed wireframes and user flows for approval.",
-            "2. Design & Frontend Development: Designed the UI components, implemented responsive layouts, and developed reusable React components. Focus on performance and accessibility.",
-            "3. Backend Implementation: Built the Node.js API layer, MongoDB database structure, and integrated third-party services. Implemented security measures and data validation.",
-            "4. Testing & Deployment: Conducted comprehensive testing, including performance, security, and usability. Implemented CI/CD pipeline and deployed to AWS infrastructure."
+            "Developed using modern web technologies with a focus on user experience and performance.",
+            "1. Design Phase: Created intuitive UI/UX for bodywear e-commerce platform",
+            "2. Frontend Development: Implemented responsive React components",
+            "3. Backend Integration: Developed secure API endpoints for product and order management",
+            "4. Testing & Optimization: Ensured cross-device compatibility and performance"
         ],
         resultsMetrics: [
-            { value: "42%", label: "Increase in online sales" },
-            { value: "3.2s", label: "Average page load time reduction" },
-            { value: "27%", label: "Increase in mobile conversions" },
-            { value: "99.9%", label: "Uptime during peak seasons" }
+            { value: "4+", label: "Product Categories" },
+            { value: "129 ₾", label: "Average Product Price" },
+            { value: "7", label: "Size Options per Product" },
+            { value: "2", label: "Color Options" }
         ],
         testimonial: {
-            text: "The Nextep team delivered beyond our expectations. Our new e-commerce platform has transformed our business, allowing us to scale operations and provide a better experience for our customers. The attention to detail and technical expertise demonstrated throughout the project was exceptional.",
+            text: "Silhouette offers an exceptional online shopping experience with high-quality bodywear and an intuitive platform.",
             author: {
-                name: "Sarah Johnson",
-                position: "CTO, Global Retail Inc."
+                name: "Customer",
+                position: "Verified Buyer"
             }
         },
         relatedProjects: [
-            { name: "CRM System", description: "Customer relationship management with analytics dashboard" },
-            { name: "Payment Gateway", description: "Secure payment processing system with multi-currency support" },
-            { name: "Mobile App", description: "Mobile app for ordering and tracking deliveries" }
+            { name: "Product Catalog", description: "Detailed bodywear and shapewear product listings" },
+            { name: "Size Guide", description: "Comprehensive sizing information and recommendations" },
+            { name: "Checkout System", description: "Streamlined online purchasing process" }
         ]
     }
 };
+
