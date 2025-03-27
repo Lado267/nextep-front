@@ -12,9 +12,10 @@ import {
 import { projectDetails } from '../../../utils/projectDetails';
 import './page.css';
 
-export default function ProjectDetails() {
+export default function ProjectDetails({ params }) {
 
-  const project = projectDetails["silhouette"];
+  console.log(params.slug);
+  const project = projectDetails[params.slug];
 
   return (
     <main className="project-details-container flex flex-col gap-[4px]">

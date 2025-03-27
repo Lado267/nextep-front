@@ -26,7 +26,7 @@ export default function ProjectsPage() {
                       <span key={index} className="project-tag">{slug}</span>
                     ))}
                   </div>
-                  <Link href={`${project.link}?slug=${project.slug}`} className="project-button">
+                  <Link href={`${project.link}`} className="project-button">
                     View details
                   </Link>
                 </div>
