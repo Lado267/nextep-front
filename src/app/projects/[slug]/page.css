@@ -80,7 +80,7 @@
   }
   
   .section {
-    margin-bottom: 32px;
+    margin-bottom: 12px;
   }
   
   .section-title {
@@ -93,7 +93,7 @@
   .project-description {
     color: var(--tertiary-project);
     line-height: 1.6;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
   
   .tech-stack {
@@ -272,15 +272,15 @@
     border: none;
     border-radius: 6px;
     padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 400;
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.2s ease;
   }
   
   .cta-button:hover {
-    background-color: var(--primary-project);
+    background-color: var(--tertiary-project);
   }
   
   .related-projects {
@@ -373,8 +373,8 @@
     }
   
     .section-title {
-      font-size: 24px;
-      margin-bottom: 24px;
+      font-size: 28px;
+      margin-bottom: 20px;
     }
   
     .project-description {
@@ -399,12 +399,15 @@
     }
   
     .gallery {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      max-width: 1200px;
+      margin: 0;
     }
   
     .gallery-item {
       padding-bottom: 100%; /* Maintains 1:1 aspect ratio on desktop */
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     }
   
     .gallery-image {
@@ -437,14 +440,14 @@
     }
   
     .cta-section {
-      padding: 40px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
   
     .cta-title {
-      font-size: 28px;
+      font-size: 32px;
     }
   
     .cta-description {

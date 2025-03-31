@@ -67,6 +67,15 @@ export default async function ProjectDetails({ params }) {
       </div>
 
       <div className="section">
+        <h2 className="section-title">Development Process</h2>
+        {project.developmentProcess.map((process, index) => (
+          <p key={index} className="project-description">
+        {process}
+          </p>
+        ))}
+      </div>
+
+      {/* <div className="section">
         <h2 className="section-title">Key Features</h2>
         <div className="highlights">
           {project.keyFeatures.map((feature, index) => (
@@ -80,23 +89,16 @@ export default async function ProjectDetails({ params }) {
         </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <div className="section">
         <h2 className="section-title">UI/UX Gallery</h2>
         <Gallery images={project.gallery} />
       </div>
 
-      <div className="section">
-        <h2 className="section-title">Development Process</h2>
-        {project.developmentProcess.map((process, index) => (
-          <p key={index} className="project-description">
-        {process}
-          </p>
-        ))}
-      </div>
+     
 
-      <div className="section">
+      {/* <div className="section">
         <h2 className="section-title">Results & Impact</h2>
         <div className="results-metrics">
           {project.resultsMetrics.map((metric, index) => (
@@ -109,15 +111,15 @@ export default async function ProjectDetails({ params }) {
         <p className="project-description">
           The platform successfully handled the client's Black Friday sale with over 200,000 concurrent users and zero downtime. The implementation of the new search functionality improved product discoverability, leading to a significant increase in average order value.
         </p>
-      </div>
-
+      </div> */}
+      <div className='h-[1px] w-full bg-red'></div>
       <div className="cta-section">
-        <h2 className="cta-title">Ready to transform your business?</h2>
+        <h2 className="cta-title">Ready to take the Next Step?</h2>
         <p className="cta-description">
-          Let's discuss how we can help you build a modern digital solution tailored to your unique business needs.
+          Let us discuss how we can help you build a modern digital solution tailored to your unique business needs.
         </p>
         <Link href="/contact" className="">
-          <Button variant="projectSelected" className='w-[200px] h-auto'>Get in touch</Button>
+            <button className='cta-button'>Get in touch</button>
         </Link>
       </div>
     </main>

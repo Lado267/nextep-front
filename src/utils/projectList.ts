@@ -2,6 +2,10 @@ import SilhouetteMainImage from "../../public/projects/silhouette/silhouette-mai
 import MasteryMainImage from "../../public/projects/mastery/mainImage.png"
 import TradingAnalystMainImage from "../../public/projects/tradingAnalyst/mainImage.png"
 import QuotieMainImage from "../../public/projects/quotie/mainImage.png"
+import BiMainImage from "../../public/projects/biAnalysis/mainImage.jpg"
+import IncidentManagerMainImage from "../../public/projects/incidentManager/mainImage.png"
+import InsightPediaMainImage from "../../public/projects/insightPedia/mainImage.jpeg"
+import RAGMainImage from "../../public/projects/RAG/mainImage.png"
 
 // These would typically come from your backend or CMS
   const webProjects = [
@@ -52,30 +56,39 @@ import QuotieMainImage from "../../public/projects/quotie/mainImage.png"
   const backendProjects = [
     {
       id: 8,
-      name: "Payment Gateway",
-      description: "Secure payment processing system with multi-currency support",
-      image: "/placeholder-project.jpg",
-      slugs: ["nodejs", "express", "mongodb"],
-      link: "/projects/payment-gateway",
-      slug: "payment-gateway"
+      name: "AI Incident Manager",
+      description: "AI-powered incident management system integrated into JIRA",
+      image: IncidentManagerMainImage,
+      slugs: ["python", "llm", "jira"],
+      link: "/projects/ai-incident-manager",
+      slug: "ai-incident-manager"
     },
     {
       id: 9,
-      name: "CRM System",
-      description: "Customer relationship management with analytics dashboard",
-      image: "/placeholder-project.jpg",
-      slugs: ["python", "django", "postgresql"],
-      link: "/projects/crm-system",
-      slug: "crm-system"
+      name: "AI DB Analyzer", 
+      description: "Database analysis tool with AI capabilities for beginners",
+      image: BiMainImage,
+      slugs: ["python", "llm", "postgresql"],
+      link: "/projects/ai-db-analyzer",
+      slug: "ai-db-analyzer"
     },
     {
-      id: 10,
-      name: "Inventory Management",
-      description: "Real-time inventory tracking system with barcode scanning",
-      image: "/placeholder-project.jpg",
-      slugs: ["java", "spring-boot", "mysql"],
-      link: "/projects/inventory-management",
-      slug: "inventory-management"
+      id: 11,
+      name: "InsightPedia",
+      description: "App that searches Wikipedia and provides AI-generated summaries for topics",
+      image: InsightPediaMainImage,
+      slugs: ["python", "llm", "sql"],
+      link: "/projects/insightpedia",
+      slug: "insightpedia"
+    },
+    {
+      id: 12,
+      name: "Legal RAG System",
+      description: "Retrieval-Augmented Generation system for legal document analysis",
+      image: RAGMainImage,
+      slugs: ["python", "llm", "jira", "vectro-db"],
+      link: "/projects/legal-rag",
+      slug: "legal-rag"
     }
   ];
 
