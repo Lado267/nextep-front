@@ -44,14 +44,14 @@
     color: var(--tertiary-project);
 }
 
-.service-content {
+.service-content_details {
     background-color: white;
     border-radius: 8px;
     padding: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.service-content h2 {
+.service-content_details h2 {
     font-size: 20px;
     color: var(--secondary-project);
     margin-bottom: 16px;
@@ -215,54 +215,6 @@
     background-color: var(--primary-project);
 }
 
-/* Footer Styles */
-footer {
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 40px 0;
-    margin-top: 50px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-logo img {
-    width: 100px;
-    height: auto;
-}
-
-.footer-contact, .footer-links {
-    line-height: 1.8;
-}
-
-.footer-links a {
-    color: var(--white);
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    .service-hero {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .service-icon {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 @media(min-width: 640px) {
     .service-details {
         padding: 40px 0;
@@ -275,7 +227,7 @@ footer {
         margin-bottom: 40px;
     }
 
-    .service-content h2 {
+    .service-content_details h2 {
         font-size: 24px;
         margin-bottom: 24px;
     }

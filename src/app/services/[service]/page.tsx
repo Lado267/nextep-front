@@ -19,7 +19,7 @@ export default async function ServiceDetails({ params }) {
                 </div>
             </div>
             
-            <div className="service-content">
+            <div className="service-content_details">
                 <h2>What We Offer</h2>
                 <div className="feature-grid">
                     <div className="feature-item">
