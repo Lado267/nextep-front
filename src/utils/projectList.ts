@@ -94,8 +94,8 @@ import RAGMainImage from "../../public/projects/RAG/mainImage.png"
 
   // Combine all projects into one array with sections
   export const allProjects = [
+    { section: "Backend Development", projects: backendProjects },
     { section: "Web Development", projects: webProjects },
     { section: "macOS Development", projects: macosProjects},
-    { section: "Mobile Development", projects: mobileProjects },
-    { section: "Backend Development", projects: backendProjects }
+    { section: "Mobile Development", projects: mobileProjects }
   ];

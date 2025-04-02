@@ -380,10 +380,6 @@
     .project-description {
       font-size: 16px;
     }
-  
-    .tech-stack {
-      /* grid-template-columns: repeat(4, 1fr); */
-    }
 
     .tech-icon {
       width: auto;
