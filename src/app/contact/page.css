@@ -8,7 +8,6 @@
 
 .main-content {
   flex: 1;
-  padding: 1rem 0.5rem 0.5rem;
   background-color: var(--light-bg);
   max-width: 100%;
   margin-bottom: 60px; /* Prevent overlap with footer */
@@ -19,11 +18,10 @@
 }
 
 .page-title {
-  font-size: 2.5rem;
-  color: var(--text-color);
-  margin-bottom: 0.8rem;
-  text-align: center;
-  font-weight: 500;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--secondary-project);
 }
 
 .subtitle {
@@ -154,6 +152,39 @@ input {
   font-weight: 500;
 }
 
+/* Add these new container styles */
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.horizontal-container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.content-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image-section {
+  flex-shrink: 0;
+}
+
 @media (min-width: 640px) {
   .contact-container {
     flex-direction: row;
@@ -164,7 +195,7 @@ input {
   
   .main-content {
     max-width: 50%;
-    padding-top: 1rem;
+    padding-top: 40px;
     margin-bottom: 0;
   }
   
@@ -174,14 +205,11 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 2rem;
-    margin-top: 8rem;
-    
   }
   
   .page-title {
-    font-size: 2.5rem;
-    text-align: left;
+    font-size: 32px;
+    margin-bottom: 40px;
   }
   
   .subtitle {

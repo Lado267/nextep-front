@@ -13,11 +13,15 @@ import TradingAnalystResultsView2 from "../../public/projects/tradingAnalyst/ima
 
 import BiAnalysisMainImage from "../../public/projects/biAnalysis/mainImage.jpg";
 
-
 import QuotieMainImage from "../../public/projects/quotie/mainImage.png";
 import Quotie2 from "../../public/projects/quotie/image1.png";
 import Quotie3 from "../../public/projects/quotie/image2.png";
 import Quotie4 from "../../public/projects/quotie/image3.png";
+
+import IncidentManagerMainImage from "../../public/projects/incidentManager/mainImage.png";
+import InsightPediaMainImage from "../../public/projects/insightPedia/mainImage.jpeg";
+
+import RAGMainImage from "../../public/projects/RAG/mainImage.png";
 
 export const projectDetails = {
   silhouette: {
@@ -342,7 +346,7 @@ export const projectDetails = {
       { name: "Quote Sharing", description: "Easy sharing and download functionality" },
     ],
   },
-  biAnalysis: {
+  "ai-db-analyzer": {
     mainImage: BiAnalysisMainImage,
     gallery: [],
     techStack: [
@@ -352,12 +356,17 @@ export const projectDetails = {
         mobileIcon: "/techLogos/mobile/python.png",
       },
       {
-        slug: "pandas",
-        desktopIcon: "/techLogos/desktop/pandas.png",
-        mobileIcon: "/techLogos/mobile/pandas.png",
+        slug: "llm",
+        desktopIcon: "/techLogos/desktop/llm.jpg",
+        mobileIcon: "/techLogos/mobile/llm.jpg",
+      },
+      {
+        slug: "postgresql",
+        desktopIcon: "/techLogos/desktop/postgresql.png",
+        mobileIcon: "/techLogos/mobile/postgresql.png",
       },
     ],
-    typeSlug: "analysis",
+    typeSlug: "backend",
     projectOverview: [
       "BiAnalysis is a comprehensive business intelligence tool for analyzing and visualizing complex business data.",
       "The platform provides powerful data processing capabilities and generates insightful reports for decision making.",
@@ -399,10 +408,213 @@ export const projectDetails = {
         position: "Business Analyst",
       },
     },
+  },
+  "ai-incident-manager": {
+    mainImage: IncidentManagerMainImage,
+    gallery: [],
+    techStack: [
+      {
+        slug: "python",
+        desktopIcon: "/techLogos/desktop/python.png",
+        mobileIcon: "/techLogos/mobile/python.png",
+      },
+      {
+        slug: "llm",
+        desktopIcon: "/techLogos/desktop/llm.jpg",
+        mobileIcon: "/techLogos/mobile/llm.jpg",
+      },
+      {
+        slug: "jira",
+        desktopIcon: "/techLogos/desktop/jira.png",
+        mobileIcon: "/techLogos/mobile/jira.png",
+      },
+    ],
+    typeSlug: "backend",
+    projectOverview: [
+      "AI Incident Manager is an intelligent system integrated with JIRA for automated incident management.",
+      "The system leverages AI to streamline incident response and resolution processes.",
+    ],
+    keyFeatures: [
+      {
+        title: "JIRA Integration",
+        description: "Seamless integration with JIRA for incident tracking.",
+      },
+      {
+        title: "AI Analysis",
+        description: "Intelligent incident analysis and categorization.",
+      },
+      {
+        title: "Automated Response",
+        description: "AI-powered incident response suggestions.",
+      },
+    ],
+    developmentProcess: [
+      "Built using Python with AI/ML integration for incident management.",
+      "1. Planning: Defined AI integration points with JIRA",
+      "2. Development: Implemented AI analysis algorithms",
+      "3. Integration: Connected with JIRA API",
+      "4. Testing: Validated AI response accuracy",
+    ],
+    resultsMetrics: [
+      { value: "90%", label: "Accuracy Rate" },
+      { value: "50%", label: "Time Saved" },
+      { value: "24/7", label: "Monitoring" },
+    ],
+    testimonial: {
+      text: "This AI-powered system has revolutionized our incident management process.",
+      author: {
+        name: "Operations Manager",
+        position: "Enterprise Client",
+      },
+    },
     relatedProjects: [
-      { name: "Data Processing", description: "Automated data cleaning and preparation" },
-      { name: "Analysis Engine", description: "Core statistical analysis functionality" },
-      { name: "Report Builder", description: "Custom business report generation" },
+      { name: "Incident Analysis", description: "AI-based incident pattern recognition" },
+      { name: "JIRA Automation", description: "Automated incident workflow management" },
+    ],
+  },
+  insightpedia: {
+    mainImage: InsightPediaMainImage,
+    gallery: [],
+    techStack: [
+      {
+        slug: "python",
+        desktopIcon: "/techLogos/desktop/python.png",
+        mobileIcon: "/techLogos/mobile/python.png",
+      },
+      {
+        slug: "llm",
+        desktopIcon: "/techLogos/desktop/llm.jpg",
+        mobileIcon: "/techLogos/mobile/llm.jpg",
+      },
+      {
+        slug: "sql",
+        desktopIcon: "/techLogos/desktop/sql.png",
+        mobileIcon: "/techLogos/mobile/sql.png",
+      },
+    ],
+    typeSlug: "backend",
+    projectOverview: [
+      "InsightPedia is an application that searches Wikipedia and provides AI-generated summaries for topics.",
+      "The platform makes complex Wikipedia content more accessible through intelligent summarization.",
+    ],
+    keyFeatures: [
+      {
+        title: "Smart Search",
+        description: "Intelligent Wikipedia content search and retrieval.",
+      },
+      {
+        title: "AI Summarization",
+        description: "Advanced LLM-based content summarization.",
+      },
+      {
+        title: "Topic Analysis",
+        description: "In-depth topic analysis and key points extraction.",
+      },
+    ],
+    developmentProcess: [
+      "Developed using Python with LLM integration for content analysis.",
+      "1. Architecture: Designed Wikipedia data pipeline",
+      "2. Implementation: Built AI summarization engine",
+      "3. Integration: Connected with Wikipedia API",
+      "4. Testing: Validated summary quality and accuracy",
+    ],
+    resultsMetrics: [
+      { value: "1M+", label: "Articles Access" },
+      { value: "95%", label: "Summary Accuracy" },
+      { value: "<5s", label: "Response Time" },
+    ],
+    testimonial: {
+      text: "InsightPedia makes complex Wikipedia topics easily digestible through AI summaries.",
+      author: {
+        name: "Educational Tech Lead",
+        position: "Academic Institution",
+      },
+    },
+    relatedProjects: [
+      { name: "Content Analysis", description: "AI-powered content understanding" },
+      { name: "Knowledge Base", description: "Structured information storage" },
+    ],
+  },
+  "legal-rag": {
+    mainImage: RAGMainImage,
+    gallery: [],
+    techStack: [
+      {
+        slug: "python",
+        desktopIcon: "/techLogos/desktop/python.png",
+        mobileIcon: "/techLogos/mobile/python.png",
+      },
+      {
+        slug: "llm",
+        desktopIcon: "/techLogos/desktop/llm.jpg",
+        mobileIcon: "/techLogos/mobile/llm.jpg",
+      },
+      {
+        slug: "jira",
+        desktopIcon: "/techLogos/desktop/jira.png",
+        mobileIcon: "/techLogos/mobile/jira.png",
+      },
+      {
+        slug: "vector-db",
+        desktopIcon: "/techLogos/desktop/vectordb.png",
+        mobileIcon: "/techLogos/mobile/vectordb.png",
+      },
+    ],
+    typeSlug: "backend",
+    projectOverview: [
+      "Legal RAG System is a specialized Retrieval-Augmented Generation system for analyzing and processing legal documents.",
+      "The platform leverages advanced AI to enhance legal document analysis and information retrieval.",
+    ],
+    keyFeatures: [
+      {
+        title: "Document Analysis",
+        description: "AI-powered legal document processing and analysis.",
+      },
+      {
+        title: "Vector Search",
+        description: "Advanced vector database for efficient information retrieval.",
+      },
+      {
+        title: "Legal Context",
+        description: "Specialized processing for legal terminology and context.",
+      },
+      {
+        title: "Document Generation",
+        description: "Automated generation of legal document summaries.",
+      },
+      {
+        title: "Knowledge Base",
+        description: "Comprehensive legal document repository and search.",
+      },
+      {
+        title: "Integration Support",
+        description: "Seamless integration with existing legal systems.",
+      },
+    ],
+    developmentProcess: [
+      "Built using Python and advanced LLM technologies for legal document processing.",
+      "1. Architecture: Designed RAG system for legal domain",
+      "2. Development: Implemented vector search and document processing",
+      "3. Integration: Connected with vector database and LLM systems",
+      "4. Testing: Validated accuracy and legal compliance",
+    ],
+    resultsMetrics: [
+      { value: "98%", label: "Accuracy Rate" },
+      { value: "1M+", label: "Documents Processed" },
+      { value: "<2s", label: "Search Time" },
+      { value: "24/7", label: "Availability" },
+    ],
+    testimonial: {
+      text: "This RAG system has transformed how we analyze and process legal documents, significantly improving our efficiency.",
+      author: {
+        name: "Legal Director",
+        position: "Law Firm Partner",
+      },
+    },
+    relatedProjects: [
+      { name: "Document Processing", description: "Advanced legal document analysis" },
+      { name: "Vector Search", description: "Efficient information retrieval system" },
+      { name: "Legal AI", description: "AI-powered legal document management" },
     ],
   },
 };

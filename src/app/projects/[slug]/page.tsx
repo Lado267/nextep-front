@@ -91,10 +91,12 @@ export default async function ProjectDetails({ params }) {
         </div>
       </div> */}
 
-      <div className="section">
-        <h2 className="section-title">UI/UX Gallery</h2>
-        <Gallery images={project.gallery} />
-      </div>
+      {project.gallery && project.gallery.length > 0 && (
+        <div className="section">
+          <h2 className="section-title">UI/UX Gallery</h2>
+          <Gallery images={project.gallery} />
+        </div>
+      )}
 
      
 

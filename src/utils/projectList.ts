@@ -86,7 +86,7 @@ import RAGMainImage from "../../public/projects/RAG/mainImage.png"
       name: "Legal RAG System",
       description: "Retrieval-Augmented Generation system for legal document analysis",
       image: RAGMainImage,
-      slugs: ["python", "llm", "jira", "vectro-db"],
+      slugs: ["python", "llm", "jira", "vector-db"],
       link: "/projects/legal-rag",
       slug: "legal-rag"
     }
