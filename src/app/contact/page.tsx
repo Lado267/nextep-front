@@ -2,6 +2,9 @@
 import Image from 'next/image';
 import './page.css';
 import image from '../../../public/contact_page_photo.jpg';
+import facebook from '../../../public/social/facebook.png';
+import whatsapp from '../../../public/social/whatsapp.png';
+import linkedin from '../../../public/social/linkedin.png';
 
 export default function ContactPage() {
   return (
@@ -34,16 +37,16 @@ export default function ContactPage() {
         <div className='contact-methods'>
           <div><h2 className="email-title">Email us</h2>
             <p className="response-time">We will respond in 24 hours</p></div>
-          <h2>OR</h2>
+          <h2 className='items-center justify-center'>OR</h2>
           <div className="social-links">
             <a href="#" className="social-icon">
-              <Image src="/facebook-icon.svg" alt="Facebook" width={25} height={25} />
+              <Image src={facebook} alt="Facebook"/>
             </a>
             <a href="#" className="social-icon">
-              <Image src="/whatsapp-icon.svg" alt="WhatsApp" width={25} height={25} />
+              <Image src={whatsapp} alt="WhatsApp"/>
             </a>
             <a href="#" className="social-icon">
-              <Image src="/linkedin-icon.svg" alt="LinkedIn" width={25} height={25} />
+              <Image src={linkedin} alt="LinkedIn"/>
             </a>
           </div>
         </div>
