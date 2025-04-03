@@ -15,10 +15,10 @@ export default function Navigation({ children }: { children: any }) {
             <MenuItem href="/" title="HOME"/>
           </li>
           <li>
-            <MenuItem href="/projects" title="PROJECTS"/>
+            <MenuItem href="/services" title="SERVICES"/>
           </li>
           <li>
-            <MenuItem href="/services" title="SERVICES"/>
+            <MenuItem href="/projects" title="PROJECTS"/>
           </li>
           <li>
             <MenuItem href="/contact" title="CONTACT"/>
@@ -34,10 +34,10 @@ export default function Navigation({ children }: { children: any }) {
               <MenuItem href="/" title="HOME"/>
             </li>
             <li className="menu_item-width">
-              <MenuItem href="/projects" title="PROJECTS"/>
+              <MenuItem href="/services" title="SERVICES"/>
             </li>
             <li className="menu_item-width">
-              <MenuItem href="/services" title="SERVICES"/>
+              <MenuItem href="/projects" title="PROJECTS"/>
             </li>
             <li className="menu_item-width">
               <MenuItem href="/contact" title="CONTACT"/>

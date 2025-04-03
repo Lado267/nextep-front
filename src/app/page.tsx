@@ -17,8 +17,8 @@ export default function Home() {
               <h4 className="text-tertiaryProject">{HomePageAlt.desktop.hero.heroSubtitle1}</h4>
               <h4 className="text-tertiaryProject">{HomePageAlt.desktop.hero.heroSubtitle2}</h4>
               <div className="flex flex-row gap-[16px]">
-                <a href="/projects">
-                  <Button className="w-[160px] h-[40px] secondary-button-font" variant="projectSecondary">Projects</Button>
+                <a href="/services">
+                  <Button className="w-[160px] h-[40px] secondary-button-font" variant="projectSecondary">Services</Button>
                 </a>
                 <a href="/contact">
                   <Button className="w-[160px] h-[40px] hero-button-font" variant="projectSelected">Get in touch</Button>
