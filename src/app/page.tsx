@@ -27,6 +27,7 @@ export default function Home() {
             </div>
           </div>
       </section>
+      
       <section className="desktop-content-appearance mt-[44px]">
         <CompanyCarouselDesktop companies={HomePageAlt.desktop.carousel.companies}/>
       </section>
