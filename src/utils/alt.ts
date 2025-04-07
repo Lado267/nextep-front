@@ -114,7 +114,7 @@ export const HomePageAlt = {
     "hero": {
       "heroTitle": "Move beyond traditional methods\nEmbrace the digital evolution",
       "heroSubtitle1": "Businesses thrive through digital presence\nand cutting-edge technological solutions",
-      "heroSubtitle2": "We expertly can guide your business\ntowards the future of digital innovation",
+      "heroSubtitle2": "We can expertly guide your business\ntowards the digital innovation",
       "heroImageAlt": "Digital business transformation expert examining interactive call-to-action interface, showcasing modern tech solutions",
       "heroImageSrc": DesktopHomeHeroImage,
     },
