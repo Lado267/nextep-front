@@ -1,15 +1,14 @@
 /* contact.css */
 .contact-container {
   max-width: 1200px;
-  margin: 40px 0;
-  padding: 2rem;
+  padding: 20px;
 }
 
 /* Add these to your page.css */
 .contact-title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   color: var(--secondary-project);
 }
 
