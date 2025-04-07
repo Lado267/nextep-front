@@ -42,13 +42,13 @@ export default function ContactPage() {
           <section className="contact-methods">
 
           <div className="social-icons">
-              <a href="#" className="social-icon">
-                <Image src={whatsapp} alt="whatsapp icon"></Image>
-              </a>
-              <a href="#" className="social-icon">
-                <Image src={viber} alt="viber icon"></Image>
-              </a>
-              <a href="#" className="social-icon">
+                <a href="https://wa.me/995599738023" className="social-icon">
+                  <Image src={whatsapp} alt="whatsapp icon"></Image>
+                </a>
+                <a href="https://chats.viber.com/kakhamikeladze" className="social-icon">
+                  <Image src={linkedin} alt="viber icon"></Image>
+                </a>
+              <a href="https://www.facebook.com/profile.php?id=61573529256520" className="social-icon">
                 <Image src={facebook} alt="facebook icon"></Image>
               </a>
             </div>
@@ -81,15 +81,13 @@ export default function ContactPage() {
                 <input type="email" id="email" placeholder="you@company.com" />
               </div>
               <div className="form-group">
-                <label htmlFor="phone">Phone number</label>
-                <div className="phone-input">
-                  <select className="country-code">
-                    <option value="US">US</option>
-                    <option value="UK">UK</option>
-                    <option value="CA">CA</option>
-                  </select>
-                  <input type="tel" id="phone" placeholder="+1 (555) 000-0000" />
-                </div>
+                <label htmlFor="message">Message</label>
+                <textarea 
+                  id="message" 
+                  placeholder="Type your message here..." 
+                  rows={4}
+                  className="message-input"
+                />
               </div>
               <Button type="submit" variant="projectSelected" className="submit-button">Send Message</Button>
             </form>

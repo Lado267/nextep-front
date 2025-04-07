@@ -201,7 +201,7 @@ label {
   color: #555;
 }
 
-input, select {
+input, select, textarea {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ddd;
@@ -209,13 +209,10 @@ input, select {
   font-size: 1rem;
 }
 
-.phone-input {
-  display: flex;
-}
-
-.country-code {
-  width: 80px;
-  margin-right: 0.5rem;
+.message-input {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
 }
 
 .submit-button {
