@@ -5,6 +5,7 @@ import image from '../../../public/contact_page_photo.jpg';
 import facebook from '../../../public/social/facebook.png';
 import whatsapp from '../../../public/social/whatsapp.png';
 import linkedin from '../../../public/social/linkedin.png';
+import viber from '../../../public/social/viber.png';
 // Contact.jsx
 import React from 'react';
 import {Button} from '../../components/ui/button';
@@ -42,13 +43,13 @@ export default function ContactPage() {
 
           <div className="social-icons">
               <a href="#" className="social-icon">
-                <Image src={facebook} alt="facebook icon"></Image>
-              </a>
-              <a href="#" className="social-icon">
                 <Image src={whatsapp} alt="whatsapp icon"></Image>
               </a>
               <a href="#" className="social-icon">
-                <Image src={linkedin} alt="linkedin icon"></Image>
+                <Image src={viber} alt="viber icon"></Image>
+              </a>
+              <a href="#" className="social-icon">
+                <Image src={facebook} alt="facebook icon"></Image>
               </a>
             </div>
 
