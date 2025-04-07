@@ -1,7 +1,7 @@
 
 
 .footer-bg {
-    background-color: #89A3CF;
+    background-color: var(--tertiary-project);
     width: 100%;
     margin-top: auto; /* This pushes the footer to the bottom */
 }
