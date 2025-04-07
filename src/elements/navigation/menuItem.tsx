@@ -2,15 +2,21 @@
 
 import { Button } from "../../components/ui/button";
 import { usePathname } from 'next/navigation'
+import Link from "next/link";
 
-export default function MenuItem(props: any) {
+interface MenuItemProps {
+    href: string;
+    title: string;
+}
+
+export default function MenuItem(props: MenuItemProps) {
     const path = usePathname()
     const split = path.split("/")
     return (
-      <a href={props.href}>
+      <Link href={props.href}>
         <Button variant={`/${split[1]}` == props.href ? "projectSelected" : "projectUnselected"}>
             {props.title}
         </Button>
-      </a>
+      </Link>
     );
 }

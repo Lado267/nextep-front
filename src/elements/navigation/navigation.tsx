@@ -1,11 +1,11 @@
 import "./navigation.css";
 import "../../app/globals.css";
-import { Button } from "../../components/ui/button";
 // import { headers } from "next/headers";
 import "./menuItem.css";
 import MenuItem from "./menuItem";
+import { ReactNode } from 'react';
 
-export default function Navigation({ children }: { children: any }) {
+export default function Navigation({ children }: { children: ReactNode }) {
 
   return (
     <div className="flex flex-col min-h-screen">

@@ -1,8 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/image'
 import { Card, CardContent } from "../../../components/ui/card"
-import { Button } from "../../../components/ui/button"
 import {
   Carousel,
   CarouselContent,
@@ -49,7 +48,7 @@ export default async function ProjectDetails({ params }) {
         <div className="">
           <Card>
             <CardContent className="flex h-[84px] items-center justify-center p-6">
-            <img 
+            <Image 
           src={item.desktopIcon} 
           alt={`${item.slug} logo`} 
           className='tech-icon object-contain'

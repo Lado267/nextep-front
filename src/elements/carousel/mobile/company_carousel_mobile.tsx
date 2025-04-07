@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../../components/ui/carousel"
+import { Carousel, CarouselContent, CarouselItem } from "../../../components/ui/carousel"
 import { cn } from "@/lib/utils"
 import "./company_carousel_mobile.css"
 import { HomePageAlt } from "@/utils/alt"
@@ -19,7 +19,7 @@ interface CompanyCarouselProps {
 
 export default function CompanyCarouselMobile({ companies, className }: CompanyCarouselProps) {
 
-    let carouselItems = companies.map((company) => {
+    const carouselItems = companies.map((company) => {
         return [company]
     })
 
@@ -37,7 +37,7 @@ export default function CompanyCarouselMobile({ companies, className }: CompanyC
             className="h-[60px]"
           >
             <CarouselContent className="-ml-2">
-              {carouselItems.map((group, groupIndex) => (
+              {carouselItems.map((group) => (
                 <CarouselItem
                   key={uuidv4()}
                   className={`pl-2 basis-auto`}

@@ -1,5 +1,6 @@
 import "./page.css";
 import { serviceDetails } from "@/utils/serviceDetails";
+import Image from "next/image";
 
 export default async function ServiceDetails({ params }) {
   const { service } = params;
@@ -16,7 +17,7 @@ export default async function ServiceDetails({ params }) {
             
             <div className="service-hero">
                 <div className="service-icon">
-                    <img id="service-icon" src={serviceData.icon.src} alt={`${serviceData.title} Icon`} />
+                    <Image id="service-icon" src={serviceData.icon.src} alt={`${serviceData.title} Icon`} />
                 </div>
                 <div className="service-intro">
                     <p id="service-description">{serviceData.description}</p>
@@ -56,7 +57,7 @@ export default async function ServiceDetails({ params }) {
                 
                 <div className="cta-section">
                     <h2>Ready to take the next step?</h2>
-                    <p>Let's discuss how we can help your business grow with our {serviceData.title.toLowerCase()} services.</p>
+                    <p>Let&apos;s discuss how we can help your business grow with our {serviceData.title.toLowerCase()} services.</p>
                     <a href="/contact" className="btn primary-btn large">Contact Us</a>
                 </div>
             </div>

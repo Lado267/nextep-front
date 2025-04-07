@@ -4,7 +4,7 @@ import TradingAnalystMainImage from "../../public/projects/tradingAnalyst/mainIm
 import QuotieMainImage from "../../public/projects/quotie/mainImage.png"
 import BiMainImage from "../../public/projects/biAnalysis/mainImage.jpg"
 import IncidentManagerMainImage from "../../public/projects/incidentManager/mainImage.png"
-import InsightPediaMainImage from "../../public/projects/insightPedia/mainImage.jpeg"
+import InsightPediaMainImage from "../../public/projects/insightpedia/mainImage.jpeg"
 import RAGMainImage from "../../public/projects/RAG/mainImage.png"
 
 // These would typically come from your backend or CMS

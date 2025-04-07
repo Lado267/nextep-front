@@ -1,15 +1,19 @@
 import Image from "next/image";
+import Head from 'next/head';
 import { HomePageAlt } from "../utils/alt";
 import { Button } from "../components/ui/button";
-import Footer from "../elements/footer/footer";
 import CompanyCarouselMobile from "../elements/carousel/mobile/company_carousel_mobile";
 import CompanyCarouselDesktop from "../elements/carousel/desktop/company_carousel_desktop";
 import "./page.css"
 import "./globals.css"
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <link rel="canonical" href="https://nextep.solutions/" />
+      </Head>
       <section className="desktop-content-appearance w-full desktop-background mt-[44px]">
           <div className="flex flex-col gap-[24px] mt-[8px]">
             <h1>{HomePageAlt.desktop.hero.heroTitle}</h1>
@@ -17,12 +21,12 @@ export default function Home() {
               <h4 className="text-tertiaryProject">{HomePageAlt.desktop.hero.heroSubtitle1}</h4>
               <h4 className="text-tertiaryProject">{HomePageAlt.desktop.hero.heroSubtitle2}</h4>
               <div className="flex flex-row gap-[16px]">
-                <a href="/projects">
+                <Link href="/projects">
                   <Button className="w-[160px] h-[40px] secondary-button-font" variant="projectSecondary">Projects</Button>
-                </a>
-                <a href="/contact">
+                </Link>
+                <Link href="/contact">
                   <Button className="w-[160px] h-[40px] hero-button-font" variant="projectSelected">Get in touch</Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

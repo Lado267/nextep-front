@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../../components/ui/carousel"
+import { Carousel, CarouselContent, CarouselItem } from "../../../components/ui/carousel"
 import { cn } from "@/lib/utils"
 import "./company_carousel_desktop.css"
 import { HomePageAlt } from "@/utils/alt"
@@ -30,7 +30,7 @@ export default function CompanyCarouselDesktop({ companies, className }: Company
         className="w-full h-[244px]"
       >
         <CarouselContent className="">
-          {companies.map((group, groupIndex) => (
+          {companies.map((group) => (
             <CarouselItem
               key={uuidv4()}
               className={`pl-4`}

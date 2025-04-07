@@ -19,7 +19,7 @@ import Quotie3 from "../../public/projects/quotie/image2.png";
 import Quotie4 from "../../public/projects/quotie/image3.png";
 
 import IncidentManagerMainImage from "../../public/projects/incidentManager/mainImage.png";
-import InsightPediaMainImage from "../../public/projects/insightPedia/mainImage.jpeg";
+import InsightPediaMainImage from "../../public/projects/insightpedia/mainImage.jpeg";
 
 import RAGMainImage from "../../public/projects/RAG/mainImage.png";
 

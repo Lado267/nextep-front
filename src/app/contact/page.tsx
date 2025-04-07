@@ -1,4 +1,5 @@
 // page.tsx
+import Head from 'next/head';
 import Image from 'next/image';
 import './page.css';
 import image from '../../../public/contact_page_photo.jpg';
@@ -10,7 +11,11 @@ export default function ContactPage() {
   const subtitle = "Ready to help your company scale? Let's chat about how we can help"
 
   return (
-    <div className="vertical-container">
+    <>
+      <Head>
+        <link rel="canonical" href="https://nextep.solutions/contact" />
+      </Head>
+      <div className="vertical-container">
       {/* Header Section */}
       <div className="header-section">
         <h1 className='page-title'>Get in touch</h1>
@@ -116,5 +121,6 @@ export default function ContactPage() {
         </div>
       </div>
     </div>
+  </>
   );
 }
