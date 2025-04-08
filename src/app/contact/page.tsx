@@ -21,18 +21,18 @@ export default function ContactPage() {
       <div className="contact-header-container flex justify-between">
         <div className="contact-text flex flex-col gap-4">
           <h1 className="contact-title">Get in touch</h1>
-          <p className="contact-subtitle">Ready to help your company scale? Let's chat about how we can help</p>
+          <p className="contact-subtitle">You can contact us on Whatsapp, Viber, Facebook or shoot us a direct mail from this page</p>
         </div>
 
         {/* Contact Info Component */}
-        <div className="contact-info">
-          <div className="contact-row flex items-center">
+        <div className="contact-info pt-[36px]">
+          <div className="contact-row flex items-center justify-between">
         <div className="contact-label mr-2">Email:</div>
         <div className="contact-value">
           <a href="mailto:kaxamigeladze@gmail.com">kaxamigeladze@gmail.com</a>
         </div>
           </div>
-          <div className="contact-row flex items-center">
+          <div className="contact-row flex items-center justify-between">
         <div className="contact-label mr-2">Phone:</div>
         <div className="contact-value">
           <a href="tel:+995599738023">+995 599738023</a>
