@@ -234,6 +234,18 @@ input, select, textarea {
   background-color: #132548; /* Updated hover color */
 }
 
+.contact-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--tertiary-project);
+}
+
+.contact-value {
+  font-size: 12px;
+  font-weight: medium;
+  color: var(--secondary-project);
+}
+
 /* Responsive styles */
 @media (min-width: 640px) {
   .contact-container {
@@ -268,6 +280,18 @@ input, select, textarea {
   
   .email-section {
     text-align: left;
+  }
+
+  .contact-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--tertiary-project);
+  }
+
+  .contact-value {
+    font-size: 16px;
+    font-weight: medium;
+    color: var(--secondary-project);
   }
 }
 
