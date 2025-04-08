@@ -17,7 +17,7 @@ export default async function ServiceDetails({ params }) {
             
             <div className="service-hero">
                 <div className="service-icon">
-                    <Image id="service-icon" src={serviceData.icon.src} alt={`${serviceData.title} Icon`} />
+                    <img id="service-icon" src={serviceData.icon.src} alt={`${serviceData.title} Icon`} />
                 </div>
                 <div className="service-intro">
                     <p id="service-description">{serviceData.description}</p>
