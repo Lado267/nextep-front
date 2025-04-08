@@ -14,7 +14,6 @@ import {Button} from '../../components/ui/button';
 export default function ContactPage() {
   return (
     <main className="contact-container">
-
       <Head>
         <link rel="canonical" href="https://nextep.solutions/contact" />
       </Head>
