@@ -6,121 +6,105 @@ import image from '../../../public/contact_page_photo.jpg';
 import facebook from '../../../public/social/facebook.png';
 import whatsapp from '../../../public/social/whatsapp.png';
 import linkedin from '../../../public/social/linkedin.png';
+import viber from '../../../public/social/viber.png';
+// Contact.jsx
+import React from 'react';
+import {Button} from '../../components/ui/button';
 
 export default function ContactPage() {
-  const subtitle = "Ready to help your company scale? Let's chat about how we can help"
-
   return (
-    <>
+    <main className="contact-container">
+
       <Head>
         <link rel="canonical" href="https://nextep.solutions/contact" />
       </Head>
-      <div className="vertical-container">
-      {/* Header Section */}
-      <div className="header-section">
-        <h1 className='page-title'>Get in touch</h1>
-        <h4 className="text-tertiaryProject">{subtitle}</h4>
-      </div>
+      <h1 className="contact-title">Get in touch</h1>
+      <p className="contact-subtitle">You can contact us on Whatsapp, Viber, Facebook or shoot us a direct mail from this page</p>
 
-      <div className="divider-light"></div>
-
-      {/* Horizontal Container */}
-      <div className="horizontal-container">
-        {/* Content Section */}
-        <div className="content-section">
+      <div className="contact-divider"></div>
+      
+      <div className="main-content">
+        <div className="left-column">
+          <section className="pricing-section">
+            <h2 className="pricing-title">Pricing</h2>
+            <div className="pricing-table">
+              <div className="pricing-row">
+                <div className="pricing-label">Base rate (per developer):</div>
+                <div className="pricing-value">$25/hr</div>
+              </div>
+              <div className="pricing-row">
+                <div className="pricing-label">Complexity range:</div>
+                <div className="pricing-value">1 - 2</div>
+              </div>
+              <div className="pricing-divider"></div>
+              <div className="pricing-row">
+                <div className="pricing-label">Project price:</div>
+                <div className="pricing-formula">Base rate x Complexity x Time</div>
+              </div>
+            </div>
+          </section>
           
-          <h2>Pricing</h2>
-          <div className="pricing-card">
-            <div className="pricing-row">
-              <span>Base rate:</span>
-              <span className="price">$25/hr</span>
+          <section className="contact-methods">
+
+          <div className="social-icons">
+                <a href="https://wa.me/995599738023" className="social-icon">
+                  <Image src={whatsapp} alt="whatsapp icon"></Image>
+                </a>
+                <a href="tel:+995599738023" className="social-icon">
+                  <Image src={viber} alt="viber icon"></Image>
+                </a>
+              <a href="https://www.facebook.com/profile.php?id=61573529256520" className="social-icon">
+                <Image src={facebook} alt="facebook icon"></Image>
+              </a>
             </div>
-            <div className="pricing-row">
-              <span>Complexity range:</span>
-              <span>1 - 2</span>
+
+            <div className="divider">
+              <span>OR</span>
             </div>
-            <div className="divider-light"></div>
-            <div className="pricing-row">
-              <span className="center-text">Project price:</span>
-            </div>
-            <div className="pricing-formula">
-              Base rate x Complexity x Time
-            </div>
-          </div>
-        
-          <div className='contact-methods'>
-            <div>
+
+            <div className="email-section">
               <h2 className="email-title">Email us</h2>
-              <p className="response-time">We will respond in 24 hours</p>
+              <p className="email-response">We will respond in 24 hours</p>
             </div>
-            <h2 className='items-center justify-center'>OR</h2>
-            <div className="social-links">
-              <a href="#" className="social-icon">
-                <Image src={facebook} alt="Facebook"/>
-              </a>
-              <a href="#" className="social-icon">
-                <Image src={whatsapp} alt="WhatsApp"/>
-              </a>
-              <a href="#" className="social-icon">
-                <Image src={linkedin} alt="LinkedIn"/>
-              </a>
-            </div>
-          </div>
-
-          <form action="/api/contact" method="POST" className="contact-form">
-            <div className="form-row">
-              <div className="form-group">
-                <label htmlFor="firstName">First name</label>
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  placeholder="First name"
-                  required
-                />
+            
+          </section>
+          
+          <section className="contact-form">
+            <form>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="firstName">First name</label>
+                  <input type="text" id="firstName" placeholder="First name" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="lastName">Last name</label>
+                  <input type="text" id="lastName" placeholder="Last name" />
+                </div>
               </div>
               <div className="form-group">
-                <label htmlFor="lastName">Last name</label>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  placeholder="Last name"
-                  required
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" placeholder="you@company.com" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea 
+                  id="message" 
+                  placeholder="Type your message here..." 
+                  rows={4}
+                  className="message-input"
                 />
               </div>
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="you@company.com"
-                required
-              />
-            </div>
-            <button type="submit" className="submit-button">Send</button>
-          </form>
+              <Button type="submit" variant="projectSelected" className="submit-button">Send Message</Button>
+            </form>
+          </section>
         </div>
-
-        {/* Image Section */}
-        <div className="image-section">
-          <Image 
-            src={image} 
-            alt="Contact" 
-            width={464} 
-            className='contact-image'
-            priority 
-            style={{ 
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.15)',
-              borderRadius: '4px'
-            }}
-          />
+        
+        <div className="right-column">
+          <div className="contact-image">
+            <Image src={image} alt="Developer" />
+          </div>
         </div>
       </div>
-    </div>
-  </>
+    </main>
   );
 }

@@ -97,30 +97,30 @@ const desktopCarouselData = prepareCompaniesForCarousel(desktopCompanyData, fals
 
 
 export const HomePageAlt = {
-  "mobile": {
-    "hero": {
-      "heroTitle": "Move beyond traditional methods\nEmbrace the digital evolution",
-      "heroSubtitle1": "Businesses thrive through digital presence\nor cutting-edge technological solutions",
-      "heroSubtitle2": "We can guide your business twards\nthe future of digital innovation",
-      "heroImageAlt": "Digital business transformation expert examining interactive call-to-action interface, showcasing modern tech solutions",
-      "heroImageSrc": MobileHomeHeroImage,
+    "mobile": {
+        "hero": {
+            "heroTitle": `Take a step from legacy\nmethods to digital business\nexcellence`,
+            "heroSubtitle1": "Every modern business needs digital\nrepresentation or an innovative technological\nsolution.",
+            "heroSubtitle2": "We will level up your business to the Nextep of\ntechnological evolution",
+            "heroImageAlt": "Digital business transformation expert examining interactive call-to-action interface, showcasing modern tech solutions",
+            "heroImageSrc": MobileHomeHeroImage,
+        },
+        "carousel": {
+            "title": "We have worked with",
+            "companies": mobileCarouselData
+        }
     },
-    "carousel": {
-      "title": "We have worked with",
-      "companies": mobileCarouselData
+    "desktop": {
+        "hero": {
+            "heroTitle": "Move beyond traditional methods\nEmbrace the digital evolution",
+            "heroSubtitle1": "Businesses thrive through digital presence\nor cutting-edge technological solutions",
+            "heroSubtitle2": "We can guide your business twards\nthe future of digital innovation",
+            "heroImageAlt": "Digital business transformation expert examining interactive call-to-action interface, showcasing modern tech solutions",
+            "heroImageSrc": DesktopHomeHeroImage,
+        },
+        "carousel": {
+            "title": "We have worked with",
+            "companies": desktopCarouselData
+        }
     }
-  },
-  "desktop": {
-    "hero": {
-      "heroTitle": "Move beyond traditional methods\nEmbrace the digital evolution",
-      "heroSubtitle1": "Businesses thrive through digital presence\nand cutting-edge technological solutions",
-      "heroSubtitle2": "We can expertly guide your business\ntowards the digital innovation",
-      "heroImageAlt": "Digital business transformation expert examining interactive call-to-action interface, showcasing modern tech solutions",
-      "heroImageSrc": DesktopHomeHeroImage,
-    },
-    "carousel": {
-      "title": "We have worked with",
-      "companies": desktopCarouselData
-    }
-  }
 }

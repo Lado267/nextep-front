@@ -1,11 +1,11 @@
 .menu_item-width {
-    min-width: 52px;
+    min-width: 40px;
 }
 
 .menu_item-font {
     font-size: 12px;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 @media(min-width: 640px) {
