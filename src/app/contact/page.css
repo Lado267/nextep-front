@@ -44,7 +44,7 @@
 }
 
 .pricing-section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .pricing-title {
@@ -134,7 +134,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .divider::before,
@@ -161,8 +161,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background-color: #eee;
   transition: background-color 0.2s;
@@ -173,8 +173,8 @@
 }
 
 .social-icon svg {
-  width: 22px;
-  height: 22px;
+  width: 32px;
+  height: 32px;
   fill: #333;
 }
 

@@ -1,9 +1,10 @@
 import Image from "next/image";
-import Logo from "../../../public/logo.png";
+import Logo from "../../../public/logo.svg";
 import { Button } from "../../components/ui/button";
 import "./header.css";
 import "../../app/globals.css";
 import Link from "next/link";
+
 
 export default function Header() {
     return (

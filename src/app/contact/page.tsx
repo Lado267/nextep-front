@@ -46,15 +46,15 @@ export default function ContactPage() {
           <section className="contact-methods">
 
           <div className="social-icons">
-                <a href="https://wa.me/995599738023" className="social-icon">
+                <a href="https://wa.me/995599738023" className="social-icon" target="_blank" rel="noopener noreferrer">
                   <Image src={whatsapp} alt="whatsapp icon"></Image>
                 </a>
-                <a href="tel:+995599738023" className="social-icon">
+                <a href="tel:+995599738023" className="social-icon" target="_blank" rel="noopener noreferrer">
                   <Image src={viber} alt="viber icon"></Image>
                 </a>
-              <a href="https://www.facebook.com/profile.php?id=61573529256520" className="social-icon">
-                <Image src={facebook} alt="facebook icon"></Image>
-              </a>
+                <a href="https://www.facebook.com/profile.php?id=61573529256520" className="social-icon" target="_blank" rel="noopener noreferrer">
+                  <Image src={facebook} alt="facebook icon"></Image>
+                </a>
             </div>
 
             <div className="divider">
@@ -62,39 +62,11 @@ export default function ContactPage() {
             </div>
 
             <div className="email-section">
-              <h2 className="email-title">Email us</h2>
-              <p className="email-response">We will respond in 24 hours</p>
+              <a href="mailto:kaxamiqeladze@gmail.com" target="_blank" rel="noopener noreferrer">
+                <h2 className="email-title">Email us</h2>
+                <p className="email-response">We will respond in 24 hours</p>
+              </a>
             </div>
-            
-          </section>
-          
-          <section className="contact-form">
-            <form>
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="firstName">First name</label>
-                  <input type="text" id="firstName" placeholder="First name" />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="lastName">Last name</label>
-                  <input type="text" id="lastName" placeholder="Last name" />
-                </div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" placeholder="you@company.com" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea 
-                  id="message" 
-                  placeholder="Type your message here..." 
-                  rows={4}
-                  className="message-input"
-                />
-              </div>
-              <Button type="submit" variant="projectSelected" className="submit-button">Send Message</Button>
-            </form>
           </section>
         </div>
         
