@@ -45,8 +45,8 @@ export default function ContactPage() {
                 <a href="https://wa.me/995599738023" className="social-icon">
                   <Image src={whatsapp} alt="whatsapp icon"></Image>
                 </a>
-                <a href="https://chats.viber.com/kakhamikeladze" className="social-icon">
-                  <Image src={linkedin} alt="viber icon"></Image>
+                <a href="tel:+995599738023" className="social-icon">
+                  <Image src={viber} alt="viber icon"></Image>
                 </a>
               <a href="https://www.facebook.com/profile.php?id=61573529256520" className="social-icon">
                 <Image src={facebook} alt="facebook icon"></Image>
