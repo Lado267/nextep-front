@@ -9,7 +9,7 @@ import linkedin from '../../../public/social/linkedin.png';
 import viber from '../../../public/social/viber.png';
 // Contact.jsx
 import React from 'react';
-import {Button} from '../../components/ui/button';
+import { Button } from '../../components/ui/button';
 
 export default function ContactPage() {
   return (
@@ -21,7 +21,7 @@ export default function ContactPage() {
       <p className="contact-subtitle">You can contact us on Whatsapp, Viber, Facebook or shoot us a direct mail from this page</p>
 
       <div className="contact-divider"></div>
-      
+
       <div className="main-content">
         <div className="left-column">
           <section className="pricing-section">
@@ -42,19 +42,19 @@ export default function ContactPage() {
               </div>
             </div>
           </section>
-          
+
           <section className="contact-methods">
 
-          <div className="social-icons">
-                <a href="https://wa.me/995599738023" className="social-icon" target="_blank" rel="noopener noreferrer">
-                  <Image src={whatsapp} alt="whatsapp icon"></Image>
-                </a>
-                <a href="tel:+995599738023" className="social-icon" target="_blank" rel="noopener noreferrer">
-                  <Image src={viber} alt="viber icon"></Image>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61573529256520" className="social-icon" target="_blank" rel="noopener noreferrer">
-                  <Image src={facebook} alt="facebook icon"></Image>
-                </a>
+            <div className="social-icons">
+              <a href="https://wa.me/995599738023" className="social-icon" target="_blank" rel="noopener noreferrer">
+                <Image src={whatsapp} alt="whatsapp icon"></Image>
+              </a>
+              <a href="tel:+995599738023" className="social-icon" target="_blank" rel="noopener noreferrer">
+                <Image src={viber} alt="viber icon"></Image>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61573529256520" className="social-icon" target="_blank" rel="noopener noreferrer">
+                <Image src={facebook} alt="facebook icon"></Image>
+              </a>
             </div>
 
             <div className="divider">
@@ -62,14 +62,14 @@ export default function ContactPage() {
             </div>
 
             <div className="email-section">
-              <a href="mailto:kaxamiqeladze@gmail.com" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:kaxamiqeladze@gmail.com">
                 <h2 className="email-title">Email us</h2>
                 <p className="email-response">We will respond in 24 hours</p>
               </a>
             </div>
           </section>
         </div>
-        
+
         <div className="right-column">
           <div className="contact-image">
             <Image src={image} alt="Developer" />

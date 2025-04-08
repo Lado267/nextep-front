@@ -97,20 +97,20 @@
 
 .contact-image {
   width: 100%;
-  border-radius: 8px;
-  overflow: hidden;
   position: relative;
   aspect-ratio: 3/4;
+  margin-top: 3.2rem;
 }
 
 .contact-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: cover; 
+  border-radius: 8px;
+
 }
 
 .contact-methods {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .email-section {
@@ -124,6 +124,7 @@
   margin-bottom: 0.25rem;
   color: #1a3165; /* Updated color */
 }
+  
 
 .email-response {
   font-size: 0.875rem;
@@ -134,7 +135,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin: 2rem 0;
+  margin: 3.7rem 0;
 }
 
 .divider::before,
@@ -154,17 +155,17 @@
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .social-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: #eee;
+  height: 100%;
+  width: 48px;
+  border-radius: 20%;
+  background-color: none;
   transition: background-color 0.2s;
 }
 
@@ -251,6 +252,10 @@ input, select, textarea {
   .contact-title {
     font-size: 32px;
     margin-bottom: 20px;
+  }
+
+  .email-title:hover{
+    color: var(--quaternary-project);
   }
   
   .left-column {
