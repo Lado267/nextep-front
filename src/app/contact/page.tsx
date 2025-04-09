@@ -11,7 +11,7 @@ import React from 'react';
 
 export const metadata = {
   alternates: {
-    title: "NextEp | Contact Us - Digital Services, Projects & Web Solutions",
+    title: "NextEp | Contact Us - Digital Services, AI & Web Solutions",
     canonical: "https://nextep.solutions/contact",
   },
 };

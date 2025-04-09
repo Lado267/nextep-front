@@ -7,7 +7,7 @@ import "./page.css"
 import "./globals.css"
 
 export const metadata = {
-  title: "NextEp | Home - Digital Services, Projects & Web Solutions",
+  title: "Nextep | Home - Digital Services, AI & Web Solutions",
   description: "Explore NextEp's digital services—websites, apps, AI tools, SEO & APIs. View our projects and get in touch to grow your online presence today.",
   alternates: {
     canonical: "https://nextep.solutions/",

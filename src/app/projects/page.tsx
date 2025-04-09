@@ -5,7 +5,7 @@ import { allProjects } from '../../utils/projectList';
 import { Button } from '../../components/ui/button';
 
 export const metadata = {
-  title: "NextEp | Projects - Digital Services, Projects & Web Solutions",
+  title: "NextEp | Projects - Digital Services, AI & Web Solutions",
   alternates: {
   canonical: "https://nextep.solutions/projects",
   },

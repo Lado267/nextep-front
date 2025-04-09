@@ -4,7 +4,7 @@ import Link from "next/link";
 import "./page.css";
 
 export const metadata = {
-  title: "NextEp | Services - Digital Services, Projects & Web Solutions",
+  title: "NextEp | Services - Digital Services, AI & Web Solutions",
   alternates: {
   canonical: "https://nextep.solutions/services",
   },
