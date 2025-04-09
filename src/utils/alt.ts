@@ -17,42 +17,50 @@ import extraDesktop from "../../public/companyLogos/desktop/extraDesktop.png";
 import crocoDesktop from "../../public/companyLogos/desktop/crocoDesktop.png";
 import sweeftDesktop from "../../public/companyLogos/desktop/sweeftDesktop.png";
 import philipDesktop from "../../public/companyLogos/desktop/philipDesktop.png";
+import { url } from "inspector";
 
 const mobileCarouselData = [
     {
       id: "1",
       name: "Bank of Georgia",
       logoUrl: bog, // Replace with actual URL
+      url: "https://www.bog.ge/en/",
     },
     {
       id: "2",
       name: "Arcton",
       logoUrl: arcton, // Replace with actual URL
+      url: "https://arcton.com/",
     },
     {
       id: "3",
       name: "Making Science",
       logoUrl: sweeft, // Replace with actual URL
+      url: "https://www.makingscience.com/en/",
     },
     {
       id: "4",
       name: "Philip Morris International",
       logoUrl: philip, // Replace with actual URL
+      url: "https://www.pmi.com/",
     },
     {
       id: "5",
       name: "Crocobet",
       logoUrl: croco, // Replace with actual URL
+      url: "https://www.crocobet.com/",
     },
     {
       id: "6",
       name: "AccessBank",
       logoUrl: access, // Replace with actual URL
+      url: "https://www.accessbank.com/",
     },
     {
       id: "7",
       name: "Extra",
       logoUrl: extra, // Replace with actual URL
+      url: "https://extra.ge/",
     },
 ]
 const desktopCompanyData = [
@@ -60,36 +68,43 @@ const desktopCompanyData = [
     id: "1",
     name: "Bank of Georgia",
     logoUrl: bogDesktop,
+    url: "https://www.bog.ge/en/",
   },
   {
     id: "2",
     name: "Arcton",
     logoUrl: arctonDesktop,
+    url: "https://arcton.com/",
   },
   {
     id: "3",
     name: "Making Science",
     logoUrl: sweeftDesktop,
+    url: "https://www.makingscience.com/en/",
   },
   {
     id: "4",
     name: "Philip Morris International",
     logoUrl: philipDesktop,
+    url: "https://www.pmi.com/",
   },
   {
     id: "5",
     name: "Crocobet",
     logoUrl: crocoDesktop,
+    url: "https://www.crocobet.com/",
   },
   {
     id: "6",
     name: "AccessBank",
     logoUrl: accessDesktop,
+    url: "https://www.accessbank.com/",
   },
   {
     id: "7",
     name: "Extra",
     logoUrl: extraDesktop,
+    url: "https://extra.ge/",
   },
 ]
 

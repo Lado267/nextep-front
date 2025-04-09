@@ -44,7 +44,8 @@ export default function CompanyCarouselMobile({ companies, className }: CompanyC
                 >
                   <div className={cn("grid gap-4 rounded-lg", "carousel-grid-mobile")}>
                     {group.map((company) => (
-                      <div
+                      <a href={company.url} target="_blank" rel="noopener noreferrer" key={uuidv4()}>
+                        <div
                         key={company.id}
                         className={`carousel-grid-mobile carousel-item-size-mobile rounded-lg p-3 flex flex-col items-center justify-center shadow-sm border border-gray-100`}
                       >
@@ -59,6 +60,7 @@ export default function CompanyCarouselMobile({ companies, className }: CompanyC
                           />
                         </div>
                       </div>
+                      </a>
                     ))}
                   </div>
                 </CarouselItem>

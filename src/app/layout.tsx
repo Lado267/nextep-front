@@ -6,9 +6,8 @@ import Footer from "../elements/footer/footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "NextEp | Digital Services, Projects & Web Solutions",
   description: "Explore NextEp's digital services—websites, apps, AI tools, SEO & APIs. View our projects and get in touch to grow your online presence today.",
-};
+}
 
 export default function RootLayout({
   children

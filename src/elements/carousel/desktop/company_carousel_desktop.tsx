@@ -37,7 +37,8 @@ export default function CompanyCarouselDesktop({ companies, className }: Company
             >
               <div className={cn("grid gap-4 rounded-lg", "")}>
                 {group.map((company) => (
-                  <div
+                  <a href={company.url} target="_blank" rel="noopener noreferrer" key={uuidv4()}>
+                    <div
                     key={uuidv4()}
                     className={`carousel-grid-desktop carousel-item-size-desktop rounded-lg p-3 flex flex-col items-center justify-center shadow-sm border border-gray-100`}
                   >
@@ -52,6 +53,7 @@ export default function CompanyCarouselDesktop({ companies, className }: Company
                       />
                     </div>
                   </div>
+                  </a>
                 ))}
               </div>
             </CarouselItem>
