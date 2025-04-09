@@ -1,5 +1,4 @@
 // page.tsx
-import Head from 'next/head';
 import Image from 'next/image';
 import './page.css';
 import image from '../../../public/contact_page_photo.jpg';
@@ -9,14 +8,16 @@ import linkedin from '../../../public/social/linkedin.png';
 import viber from '../../../public/social/viber.png';
 // Contact.jsx
 import React from 'react';
-import { Button } from '../../components/ui/button';
+
+export const metadata = {
+  alternates: {
+    canonical: "https://nextep.solutions/contact",
+  },
+};
 
 export default function ContactPage() {
   return (
     <main className="contact-container">
-      <Head>
-        <link rel="canonical" href="https://nextep.solutions/contact" />
-      </Head>
       
       <div className="contact-header-container flex justify-between">
         <div className="contact-text flex flex-col gap-4">

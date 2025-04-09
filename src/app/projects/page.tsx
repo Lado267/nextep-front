@@ -4,6 +4,12 @@ import './page.css';
 import { allProjects } from '../../utils/projectList';
 import { Button } from '../../components/ui/button';
 
+export const metadata = {
+  alternates: {
+  canonical: "https://nextep.solutions/projects",
+  },
+};
+
 export default function ProjectsPage() {
 
   return (

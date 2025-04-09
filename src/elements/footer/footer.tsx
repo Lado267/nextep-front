@@ -13,14 +13,14 @@ export default function Footer() {
             </Link>
             <div className="flex flex-row horizental-gap footer-text-color">
                 <div className="flex flex-col vertical-gap">
-                    <Link href="/projects"><h5>Projects</h5></Link>
-                    <Link href="/services"><h5>Services</h5></Link>
-                    <Link href="/contact"><h5>Contact</h5></Link>
+                    <Link href="/projects"><p className="footer-link">Projects</p></Link>
+                    <Link href="/services"><p className="footer-link">Services</p></Link>
+                    <Link href="/contact"><p className="footer-link">Contact</p></Link>
                 </div>
                 <div className="flex flex-col vertical-gap footer-text-color">
-                    <Link href="#"><h5>Privacy Policy</h5></Link>
-                    <Link href="#"><h5>Terms of Service</h5></Link>
-                    <Link href="#"><h5>Cookie Policy</h5></Link>
+                    <Link href="#"><p className="footer-link">Privacy Policy</p></Link>
+                    <Link href="#"><p className="footer-link">Terms of Service</p></Link>
+                    <Link href="#"><p className="footer-link">Cookie Policy</p></Link>
                 </div>
             </div>
         </div>

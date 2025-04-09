@@ -1,20 +1,20 @@
 import Image from "next/image";
-import Head from 'next/head';
 import { HomePageAlt } from "../utils/alt";
 import { Button } from "../components/ui/button";
 import CompanyCarouselMobile from "../elements/carousel/mobile/company_carousel_mobile";
 import CompanyCarouselDesktop from "../elements/carousel/desktop/company_carousel_desktop";
 import "./page.css"
 import "./globals.css"
-import Link from "next/link";
 
+
+export const metadata = {
+  alternates: {
+    canonical: "https://nextep.solutions/",
+  },
+};
 export default function Home() {
   return (
     <>
-      <Head>
-        <link rel="canonical" href="https://nextep.solutions/" />
-      </Head>
-
       <section className="desktop-content-appearance w-full desktop-background mt-[44px]">
           <div className="flex flex-col gap-[24px] mt-[8px]">
             <h1>{HomePageAlt.desktop.hero.heroTitle}</h1>

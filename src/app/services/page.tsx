@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import "./page.css";
 
+export const metadata = {
+  alternates: {
+  canonical: "https://nextep.solutions/services",
+  },
+};
+
 export default function Services() {
   return (
     <div className="services-container">
