@@ -5,6 +5,7 @@ import CompanyCarouselMobile from "../elements/carousel/mobile/company_carousel_
 import CompanyCarouselDesktop from "../elements/carousel/desktop/company_carousel_desktop";
 import "./page.css"
 import "./globals.css"
+import ServiceGrid from "./serviceGrid";
 
 export const metadata = {
   title: "Nextep | Home - Digital Services, AI & Web Solutions",
@@ -33,13 +34,19 @@ export default function Home() {
             </div>
           </div>
       </section>
-      
-      <section className="desktop-content-appearance mt-[44px]">
-        <CompanyCarouselDesktop companies={HomePageAlt.desktop.carousel.companies}/>
-      </section>
 
-      <section className="desktop-content-appearance mt-[44px]">
-        <h3>We are a software development company that specializes in building custom software solutions for businesses of all sizes. Our services include web development, mobile app development, and AI-powered tools.</h3>
+      <section className="home-additional-info mt-[80px] flex flex-col gap-[24px] w-[50vw]">
+          <p className="word-wrap text-tertiaryProject text-[24px]">
+            Explore our comprehensive range of services, including website design, application development, and custom software solutions.
+          </p>
+          <ServiceGrid/>
+          <p className="word-wrap text-tertiaryProject bg-whiteProject rounded-[8px] mt-[8px] p-[24px] flex flex-col gap-[16px] text-[16px] font-medium">
+            Whether you're looking to enhance your online presence, streamline your operations, or develop cutting-edge applications, NextEp is your trusted partner for all your digital needs.
+          </p>
+      </section>
+      
+      <section className="desktop-content-appearance mt-[60px]">
+        <CompanyCarouselDesktop companies={HomePageAlt.desktop.carousel.companies}/>
       </section>
 
       <section className="flex flex-col mobile-content-appearance gap-[12px] items-center justify-center w-[90vw]">
@@ -60,12 +67,6 @@ export default function Home() {
 
       <section className="mobile-content-appearance mt-[24px] w-[90vw]">
         <p className="text-center">We are a software development company that specializes in building custom software solutions for businesses of all sizes. Our services include web development, mobile app development, and AI-powered tools.</p>
-      </section>
-      <section className="home-additional-info">
-        <h3>NextEp - Digital Services, Projects & Web Solutions</h3>
-        <p className="word-wrap">
-          Welcome to NextEp, your premier provider of digital services, projects, and web solutions. We specialize in crafting innovative and effective solutions tailored to meet your unique business needs. Explore our comprehensive range of services, including website design, application development, and custom software solutions. Our team of experienced professionals is dedicated to delivering exceptional results that drive growth and success. Whether you're looking to enhance your online presence, streamline your operations, or develop cutting-edge applications, NextEp is your trusted partner for all your digital needs.
-        </p>
       </section>
     </div>
   );

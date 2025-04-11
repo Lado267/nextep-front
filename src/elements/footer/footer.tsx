@@ -12,11 +12,6 @@ export default function Footer() {
              <Image src={Logo} alt="NextEp Logo" width={119} height={37} />
             </Link>
             <div className="flex flex-row horizental-gap footer-text-color">
-                <div className="flex flex-col vertical-gap">
-                    <Link href="/projects"><p className="footer-link">Projects</p></Link>
-                    <Link href="/services"><p className="footer-link">Services</p></Link>
-                    <Link href="/contact"><p className="footer-link">Contact</p></Link>
-                </div>
                 <div className="flex flex-col vertical-gap footer-text-color">
                     <Link href="#"><p className="footer-link">Privacy Policy</p></Link>
                     <Link href="#"><p className="footer-link">Terms of Service</p></Link>
