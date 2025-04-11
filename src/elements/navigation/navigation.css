@@ -29,7 +29,7 @@
     .menu_appearance {
         display: flex;
         background-color: var(--quaternary-project);
-        top: 127.44px; /* Adjust this value based on your header height for desktop */
+        top: 126.44px; /* Adjust this value based on your header height for desktop */
         height: 60px;
     }
 }
