@@ -1,4 +1,4 @@
-import { services } from "../../utils/serviceList";
+import { desktopServices } from "../../utils/serviceList";
 import Image from "next/image";
 import Link from "next/link";
 import "./page.css";
@@ -17,7 +17,7 @@ export default function Services() {
         <h1 className="services-title">Our Services</h1>
         
         <div className="services-grid">
-          {services.map((service) => (
+          {desktopServices.map((service) => (
             <Link
               key={service.slug}
               href={`/services/${service.slug}`}

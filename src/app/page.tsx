@@ -6,6 +6,7 @@ import CompanyCarouselDesktop from "../elements/carousel/desktop/company_carouse
 import "./page.css"
 import "./globals.css"
 import ServiceGrid from "./serviceGrid";
+import { mobileServices, desktopServices } from "../utils/serviceList";
 
 export const metadata = {
   title: "Nextep | Home - Digital Services, AI & Web Solutions",
@@ -35,11 +36,11 @@ export default function Home() {
           </div>
       </section>
 
-      <section className="home-additional-info mt-[80px] flex flex-col gap-[24px] w-[50vw]">
+      <section className="desktop-content-appearance home-additional-info mt-[80px] flex flex-col gap-[24px] w-[50vw]">
           <p className="word-wrap text-tertiaryProject text-[24px]">
             Explore our comprehensive range of services, including website design, application development, and custom software solutions.
           </p>
-          <ServiceGrid/>
+          <ServiceGrid services={desktopServices}/>
           <p className="word-wrap text-tertiaryProject bg-whiteProject rounded-[8px] mt-[8px] p-[24px] flex flex-col gap-[16px] text-[16px] font-medium">
             Whether you're looking to enhance your online presence, streamline your operations, or develop cutting-edge applications, NextEp is your trusted partner for all your digital needs.
           </p>
@@ -49,7 +50,7 @@ export default function Home() {
         <CompanyCarouselDesktop companies={HomePageAlt.desktop.carousel.companies}/>
       </section>
 
-      <section className="flex flex-col mobile-content-appearance gap-[12px] items-center justify-center w-[90vw]">
+      <section className="flex flex-col mobile-content-appearance gap-[12px] items-center justify-center pl-[5vw] pr-[5wv]">
           <h2 className="text-center">{HomePageAlt.mobile.hero.heroTitle}</h2>
           <h4 className="text-center text-tertiaryProject">{HomePageAlt.mobile.hero.heroSubtitle1}</h4>
           <h4 className="text-center text-tertiaryProject">{HomePageAlt.mobile.hero.heroSubtitle2}</h4>
@@ -61,12 +62,18 @@ export default function Home() {
                  className="mt-[24px] w-full"/>
       </section>
 
-      <section className="mobile-content-appearance">
-        <CompanyCarouselMobile companies={HomePageAlt.mobile.carousel.companies}/>
+      <section className="mobile-content-appearance home-additional-info mt-[80px] flex flex-col gap-[24px] pl-[5vw] pr-[5wv]">
+          <p className="word-wrap text-tertiaryProject text-[12px]">
+            Explore our comprehensive range of services, including website design, application development, and custom software solutions.
+          </p>
+          <ServiceGrid services={mobileServices}/>
+          <p className="word-wrap text-tertiaryProject bg-whiteProject rounded-[8px] mt-[8px] p-[24px] flex flex-col gap-[16px] text-[16px] font-medium">
+            Whether you're looking to enhance your online presence, streamline your operations, or develop cutting-edge applications, NextEp is your trusted partner for all your digital needs.
+          </p>
       </section>
 
-      <section className="mobile-content-appearance mt-[24px] w-[90vw]">
-        <p className="text-center">We are a software development company that specializes in building custom software solutions for businesses of all sizes. Our services include web development, mobile app development, and AI-powered tools.</p>
+      <section className="mobile-content-appearance">
+        <CompanyCarouselMobile companies={HomePageAlt.mobile.carousel.companies}/>
       </section>
     </div>
   );

@@ -1,13 +1,12 @@
 "use client";
 import Image from "next/image";
-import { services } from "../utils/serviceList";
 import Link from "next/link";
 import "./serviceGrid.css";
 
-export default function ServiceGrid() {
+export default function ServiceGrid(props) {
     return (
         <div className="services-grid">
-            {services.map((service) => (
+            {props.services.map((service) => (
             <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}

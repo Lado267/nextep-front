@@ -1,7 +1,37 @@
 /* contact.css */
 .contact-container {
-  max-width: 1200px;
-  padding: 20px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.contact-inner-container {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.desktop-content-appearance {
+  display: none; /* Hide desktop content by default */
+}
+
+.mobile-content-appearance {
+  display: flex; /* Show mobile content by default */
+}
+
+.contact-text {
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 /* Add these to your page.css */
@@ -10,6 +40,7 @@
   font-weight: bold;
   margin-bottom: 12px;
   color: var(--secondary-project);
+  text-wrap: balance; /* Ensures text wraps nicely */
 }
 
 .contact-subtitle {
@@ -18,6 +49,7 @@
   margin-bottom: 2.5rem; /* Increased spacing */
   font-weight: 400; /* Regular weight */
   max-width: 60ch; /* Optimal reading width */
+  text-wrap: balance; /* Ensures text wraps nicely */
 }
 
 .main-content {
@@ -255,6 +287,22 @@ input, select, textarea {
     width: 100%;
   }
 
+  .contact-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mobile-content-appearance {
+    display: none; /* Hide mobile content on larger screens */
+  }
+
+  .desktop-content-appearance {
+    display: flex; /* Show desktop content on larger screens */
+  }
+
   .main-content {
     flex-direction: row;
     gap: 2rem;
@@ -264,6 +312,16 @@ input, select, textarea {
   .contact-title {
     font-size: 32px;
     margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .contact-subtitle {
+    text-align: left;
+    padding: 0px;
+  }
+
+  .contact-inner-container {
+    padding: 0px;
   }
 
   .email-title:hover{

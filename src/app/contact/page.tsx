@@ -21,28 +21,28 @@ export default function ContactPage() {
     <div>
       <main className="contact-container">
         
-        <div className="contact-header-container flex justify-between">
-          <div className="contact-text flex flex-col gap-4">
+        <div className="contact-header-container">
+          <div className="flex flex-col gap-4 contact-inner-container">
             <h1 className="contact-title">Get in touch</h1>
-            <p className="contact-subtitle">You can contact us on Whatsapp, Viber, Facebook or shoot us a direct mail from this page</p>
+            <p className="contact-subtitle pl-[5vw] pr-[5vw]">You can contact us on Whatsapp, Viber, Facebook or shoot us a direct mail from this page</p>
           </div>
 
           {/* Contact Info Component */}
           <div className="contact-info pt-[36px]">
             <div className="contact-row flex items-center justify-between">
-          <div className="contact-label mr-2">Email:</div>
-          <div className="contact-value">
-            <a href="mailto:kaxamigeladze@gmail.com">kaxamigeladze@gmail.com</a>
-          </div>
+              <div className="contact-label mr-2">Email:</div>
+                <div className="contact-value">
+                  <a href="mailto:kaxamiqeladze@gmail.com">kaxamiqeladze@gmail.com</a>
+                </div>
+              </div>
+              <div className="contact-row flex items-center justify-between">
+                <div className="contact-label mr-2">Phone:</div>
+                  <div className="contact-value">
+                    <a href="tel:+995599738023">+995 599738023</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="contact-row flex items-center justify-between">
-          <div className="contact-label mr-2">Phone:</div>
-          <div className="contact-value">
-            <a href="tel:+995599738023">+995 599738023</a>
-          </div>
-            </div>
-          </div>
-        </div>
 
         <div className="contact-divider"></div>
 
