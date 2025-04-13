@@ -55,7 +55,7 @@ export default function ProjectsPage() {
                       <p className="project-description">{project.description}</p>
                       <div className="project-tags">
                         {project.slugs.map((slug, index) => (
-                          <span key={index} className="project-tag">{slug}</span>
+                          <span key={index} className="project-tag"><a href={(project.resourceLinks as Record<string, string>)[slug]}>{slug}</a></span>
                         ))}
                       </div>
                     </div>
