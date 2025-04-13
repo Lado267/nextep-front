@@ -16,7 +16,15 @@ export default function ProjectsPage() {
   return (
     <div>
       <div className="projects-container">
-        <h1 className="projects-title">Our Projects</h1>
+        <div className='flex flex-col gap-[24px] mt-[8px] mb-[24px]'>
+          <h1 className="projects-title">Our Projects - Digital Services, AI & Web Solutions</h1>
+          <p className="word-wrap">
+            Explore our diverse range of projects showcasing our expertise in digital services and web solutions. At NextEp, we take pride in delivering high-quality projects that meet our clients' unique needs. From website development to custom software applications, our projects demonstrate our commitment to innovation and excellence.
+          </p>
+          <p className='word-wrap'>
+            View project details to learn more about our approach, technologies used, and the results we've achieved. We are dedicated to providing exceptional digital services and web solutions that drive business growth and success.
+          </p>
+        </div>
 
         {allProjects.map((section) => (
           <div key={section.section} className="section-container">
@@ -47,12 +55,6 @@ export default function ProjectsPage() {
           </div>
         ))}
       </div>
-      <section className="projects-additional-info">
-        <h3>Our Projects - Digital Services and Web Solutions</h3>
-        <p className="word-wrap">
-          Explore our diverse range of projects showcasing our expertise in digital services and web solutions. At NextEp, we take pride in delivering high-quality projects that meet our clients' unique needs. From website development to custom software applications, our projects demonstrate our commitment to innovation and excellence. View project details to learn more about our approach, technologies used, and the results we've achieved. We are dedicated to providing exceptional digital services and web solutions that drive business growth and success.
-        </p>
-      </section>
     </div>
   );
 }

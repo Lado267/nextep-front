@@ -14,8 +14,13 @@ export default function Services() {
   return (
     <div>
       <div className="services-container">
-        <h1 className="services-title">Our Services</h1>
-        
+        <h1 className="services-title">Our Services - Digital Services, AI & Web Solutions</h1>
+        <p className="word-wrap">
+            Explore our comprehensive range of services designed to meet your digital needs. At NextEp, we specialize in providing top-notch digital services, including website development, mobile app creation, and custom web solutions. Our team of experts is dedicated to delivering innovative and effective solutions that drive business growth.
+        </p>
+        <p className="word-wrap">
+          Whether you need a new website, a mobile app, or a custom software application, we have the skills and experience to bring your vision to life. Contact us today to learn more about our services and how we can help you achieve your business goals.
+        </p>
         <div className="services-grid">
           {desktopServices.map((service) => (
             <Link
@@ -41,12 +46,6 @@ export default function Services() {
             </Link>
           ))}
         </div>
-        <section className="services-additional-info">
-          <h3>Our Services - Digital Services and Web Solutions</h3>
-          <p className="word-wrap">
-            Explore our comprehensive range of services designed to meet your digital needs. At NextEp, we specialize in providing top-notch digital services, including website development, mobile app creation, and custom web solutions. Our team of experts is dedicated to delivering innovative and effective solutions that drive business growth. Whether you need a new website, a mobile app, or a custom software application, we have the skills and experience to bring your vision to life. Contact us today to learn more about our services and how we can help you achieve your business goals.
-          </p>
-        </section>
       </div>
     </div>
   );
