@@ -1,4 +1,23 @@
 /* contact.css */
+
+.mobile-title-appearance {
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-title-appearance {
+  display: none;
+}
+
+.desktop-content-appearance {
+  display: none;
+}
+
+.mobile-content-appearance {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-container {
   width: 100%;
   padding-top: 10px;
@@ -280,6 +299,24 @@ input, select, textarea {
 
 /* Responsive styles */
 @media (min-width: 640px) {
+
+  .mobile-title-appearance {
+    display: none;
+  }
+
+  .mobile-content-appearance {
+    display: none;
+  }
+
+  .desktop-title-appearance {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .desktop-content-appearance {
+    display: block;
+  }
+
   .contact-container {
     padding: 40px 0;
     max-width: 1200px;

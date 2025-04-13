@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.dynamic-width {
+    width: 100vw;
+}
+
 .mobile-content-appearance-carousel {
     display: block;
 }
@@ -33,6 +37,10 @@
         font-weight: 400;
     }
 
+    .dynamic-width {
+        width: 100%;
+    }
+
     .secondary-button-font {
         font-size: 20px;
         letter-spacing: -1px;
@@ -54,11 +62,11 @@
     .desktop-background {
         background-image: url("../../public/desktopHero.png");
         background-repeat: no-repeat;
-        background-position: 50%;
+        background-position: 100%;
     }
 }
 
-@media(max-width: 1450px) {
+@media(max-width: 1550px) {
     .desktop-background  {
         background-image: none;
     }

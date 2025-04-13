@@ -22,10 +22,40 @@ export default function ContactPage() {
       <main className="contact-container">
         
         <div className="contact-header-container">
-          <div className="flex flex-col gap-4 contact-inner-container">
-            <h1 className="contact-title">Get in touch</h1>
+          {/* <div className="flex flex-col gap-4 contact-inner-container">
+            <h1 className="contact-title">Contact Us - Get in Touch for Digital Services and Web Solutions</h1>
             <p className="contact-subtitle pl-[5vw] pr-[5vw]">You can contact us on Whatsapp, Viber, Facebook or shoot us a direct mail from this page</p>
+          </div> */}
+
+          <div className="mobile-content-appearance">
+            <div className="mobile-title-appearance mb-[24px]">
+              <h1 className="projects-title">Contact Us</h1>
+              <h2 className="projects-subtitle">Get in Touch for Digital Services and Web Solutions</h2>
+            </div>
+            <div className='flex flex-col gap-[12px]'>
+              <p className="word-wrap text-center">
+                Looking to contact us for digital services, projects, or web solutions? At NextEp, we make it easy to get in touch.
+              </p>
+              <p className="word-wrap text-center">
+                Whether you prefer to reach out via email, phone, or social media, our contact information is readily available. We offer transparent pricing and are committed to providing excellent customer service.
+              </p>
+            </div>
           </div>
+          <div className="desktop-content-appearance">
+            <div className="desktop-title-appearance">
+              <h1 className="projects-title">Contact Us - for Digital Services and Web Solutions</h1>
+            </div>
+            <div className='flex flex-col gap-[12px]'>
+              <p className="word-wrap text-left">
+                Looking to contact us for digital services, projects, or web solutions? At NextEp, we make it easy to get in touch. Whether you prefer to reach out via email, phone, or social media, our contact information is readily available. We offer transparent pricing and are committed to providing excellent customer service.
+              </p>
+              <p className="word-wrap">
+              Contact us today to discuss your project requirements and discover how we can help you achieve your business goals. Our team is ready to assist you with any questions you may have about our services, pricing, or project process.
+              </p>
+            </div>
+          </div>
+
+
 
           {/* Contact Info Component */}
           <div className="contact-info pt-[36px]">
@@ -100,12 +130,6 @@ export default function ContactPage() {
           </div>
         </div>
       </main>
-      <section className="contact-additional-info">
-        <h3>Contact Us - Get in Touch for Digital Services and Web Solutions</h3>
-        <p className="word-wrap">
-          Looking to contact us for digital services, projects, or web solutions? At NextEp, we make it easy to get in touch. Whether you prefer to reach out via email, phone, or social media, our contact information is readily available. We offer transparent pricing and are committed to providing excellent customer service. Contact us today to discuss your project requirements and discover how we can help you achieve your business goals. Our team is ready to assist you with any questions you may have about our services, pricing, or project process.
-        </p>
-      </section>
     </div>
   );
 }

@@ -143,10 +143,12 @@
 
   .service-card {
     padding: 30px;
+    align-items: start;
   }
 
   .service-title {
     font-size: 20px;
+    text-align: left;
   }
 
   .service-description {

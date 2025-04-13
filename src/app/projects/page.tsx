@@ -21,7 +21,7 @@ export default function ProjectsPage() {
               <h1 className="projects-title">Our Projects</h1>
               <h2 className="projects-subtitle">Digital Services, AI & Web Solutions</h2>
             </div>
-            <p className="word-wrap text-center">
+            <p className="word-wrap text-center text-tertiaryProject">
               Explore our diverse range of projects showcasing our expertise in digital services and web solutions.
             </p>
           </div>
@@ -30,10 +30,10 @@ export default function ProjectsPage() {
               <h1 className="projects-title">Our Projects - Digital Services, AI & Web Solutions</h1>
             </div>
             <div className='flex flex-col gap-[12px]'>
-              <p className="word-wrap text-left">
+              <p className="word-wrap text-left text-tertiaryProject">
                 Explore our diverse range of projects showcasing our expertise in digital services and web solutions.
               </p>
-              <p className="word-wrap">
+              <p className="word-wrap text-tertiaryProject">
                 View project details to learn more about our approach, technologies used, and the results we've achieved. We are dedicated to providing exceptional digital services and web solutions that drive business growth and success.
               </p>
             </div>
