@@ -53,8 +53,14 @@ export default function ProjectsPage() {
                         ))}
                       </div>
                     </div>
-                    <Link href={`${project.link}`} className="project-link">
-                      <Button variant="projectSelected">View Details</Button>
+                    <Link 
+                      href={`${project.link}`} 
+                      className="project-link"
+                      aria-label={`View details about ${project.name} project`}
+                    >
+                      <Button variant="projectSelected">
+                        View {project.name} Project Details
+                      </Button>
                     </Link>
                   </div>
                 </div>

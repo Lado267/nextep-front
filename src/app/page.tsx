@@ -38,7 +38,8 @@ export default function Home() {
 
       <section className="desktop-content-appearance home-additional-info mt-[80px] flex flex-col gap-[24px] w-[50vw]">
         <p className="word-wrap text-tertiaryProject text-[24px]">
-          Move beyond traditional methods and embrace the digital evolution with our partnership. We transform outdated processes into dynamic digital experiences, combining innovative technologies with proven expertise to elevate your online presence. Our portfolio demonstrates how businesses thrive when they evolve their digital approach.
+          Move beyond traditional methods and embrace digital evolution with us. We can help you transform outdated processes into dynamic experiences!
+          Allow us to elevate your online presence through innovative approaches.
         </p>
         <p className="word-wrap text-tertiaryProject text-[24px]">
           Explore our comprehensive range of <a href="/services">services</a>, including website design, application development, and custom software solutions.
