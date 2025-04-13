@@ -54,7 +54,7 @@
     .desktop-background {
         background-image: url("../../public/desktopHero.png");
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: 50%;
     }
 }
 

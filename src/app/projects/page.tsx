@@ -14,16 +14,24 @@ export const metadata = {
 export default function ProjectsPage() {
 
   return (
-    <div>
       <div className="projects-container">
-        <div className='flex flex-col gap-[24px] mt-[8px] mb-[24px]'>
-          <h1 className="projects-title">Our Projects - Digital Services, AI & Web Solutions</h1>
-          <p className="word-wrap">
-            Explore our diverse range of projects showcasing our expertise in digital services and web solutions. At NextEp, we take pride in delivering high-quality projects that meet our clients' unique needs. From website development to custom software applications, our projects demonstrate our commitment to innovation and excellence.
-          </p>
-          <p className='word-wrap'>
-            View project details to learn more about our approach, technologies used, and the results we've achieved. We are dedicated to providing exceptional digital services and web solutions that drive business growth and success.
-          </p>
+        <div className='flex flex-col gap-[12px] mt-[8px] mb-[48px]'>
+          <div className="mobile-title-appearance">
+              <h1 className="projects-title">Our Projects</h1>
+              <h2 className="projects-subtitle">Digital Services, AI & Web Solutions</h2>
+            </div>
+            <p className="word-wrap text-center">
+              Explore our diverse range of projects showcasing our expertise in digital services and web solutions.
+            </p>
+
+          <div className="desktop-content-appearance">
+            <div className="desktop-title-appearance">
+              <h1 className="projects-title">Our Projects - Digital Services, AI & Web Solutions</h1>
+            </div>
+            <p className="word-wrap">
+              View project details to learn more about our approach, technologies used, and the results we've achieved. We are dedicated to providing exceptional digital services and web solutions that drive business growth and success.
+            </p>
+          </div>
         </div>
 
         {allProjects.map((section) => (
@@ -55,6 +63,5 @@ export default function ProjectsPage() {
           </div>
         ))}
       </div>
-    </div>
   );
 }

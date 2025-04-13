@@ -42,7 +42,7 @@ height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
 
         <Header />
         <Navigation>
-          <main className="bg-primaryProject flex flex-col items-stretch h-full w-[100vw]">
+          <main className="bg-primaryProject flex flex-col items-stretch h-full w-[100vw] pt-[8px]">
             <div className="align-content flex flex-col gap-[24px] flex-grow mb-[24px]">
               {children}
             </div>
