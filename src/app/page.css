@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.mobile-content-appearance-carousel {
+    display: block;
+}
+
 .desktop-content-appearance {
     display: none;
 }
@@ -36,6 +40,10 @@
     }
 
     .mobile-content-appearance {
+        display: none;
+    }
+
+    .mobile-content-appearance-carousel {
         display: none;
     }
 

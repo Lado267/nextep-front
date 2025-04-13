@@ -28,7 +28,7 @@ export default function Navigation({ children }: { children: ReactNode }) {
       <div className="flex-grow flex flex-col">
         {children}
       </div>
-      <nav className="bg-quaternaryProject tabbar_appearance">
+      <nav className="bg-quaternaryProject tabbar_appearance w-[100vw]">
           <ol className="flex flex-row menu-gap h-full content-margin items-center justify-center p-[8px]">
             <li className="menu_item-width">
               <MenuItem href="/" title="HOME"/>
