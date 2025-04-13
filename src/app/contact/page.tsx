@@ -29,8 +29,8 @@ export default function ContactPage() {
 
           <div className="mobile-content-appearance">
             <div className="mobile-title-appearance mb-[24px]">
-              <h1 className="projects-title">Contact Us</h1>
-              <h2 className="projects-subtitle">Get in Touch for Digital Services and Web Solutions</h2>
+              <h1 className="contact-title">Contact Us</h1>
+              <h2 className="contact-subtitle">Get in Touch for Digital Services and Web Solutions</h2>
             </div>
             <div className='flex flex-col gap-[12px]'>
               <p className="word-wrap text-center">
