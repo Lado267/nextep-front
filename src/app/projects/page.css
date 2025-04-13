@@ -1,3 +1,4 @@
+
 .mobile-title-appearance {
   display: flex;
   flex-direction: column;
@@ -7,14 +8,14 @@
   display: none;
 }
 
-.mobile-content-appearance-carousel {
-  display: block;
-}
-
 .desktop-content-appearance {
   display: none;
 }
 
+.mobile-content-appearance {
+  display: flex;
+  flex-direction: column;
+}
 
 .projects-container {
   padding: 20px;
@@ -195,9 +196,17 @@
     display: none;
   }
 
+  .mobile-content-appearance {
+    display: none;
+  }
+
   .desktop-title-appearance {
     display: flex;
     flex-direction: row;
+  }
+
+  .desktop-content-appearance {
+    display: block;
   }
 
   .project-scroll {
@@ -223,6 +232,7 @@
 
   .projects-title {
     font-size: 32px;
+    margin-bottom: 20px;
   }
 
   .section-title {

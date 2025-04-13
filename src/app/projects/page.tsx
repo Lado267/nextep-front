@@ -15,22 +15,28 @@ export default function ProjectsPage() {
 
   return (
       <div className="projects-container">
-        <div className='flex flex-col gap-[12px] mt-[8px] mb-[48px]'>
-          <div className="mobile-title-appearance">
+        <div className='flex flex-col gap-[12px] mb-[48px]'>
+          <div className="mobile-content-appearance">
+            <div className="mobile-title-appearance">
               <h1 className="projects-title">Our Projects</h1>
               <h2 className="projects-subtitle">Digital Services, AI & Web Solutions</h2>
             </div>
             <p className="word-wrap text-center">
               Explore our diverse range of projects showcasing our expertise in digital services and web solutions.
             </p>
-
+          </div>
           <div className="desktop-content-appearance">
             <div className="desktop-title-appearance">
               <h1 className="projects-title">Our Projects - Digital Services, AI & Web Solutions</h1>
             </div>
-            <p className="word-wrap">
-              View project details to learn more about our approach, technologies used, and the results we've achieved. We are dedicated to providing exceptional digital services and web solutions that drive business growth and success.
-            </p>
+            <div className='flex flex-col gap-[12px]'>
+              <p className="word-wrap text-left">
+                Explore our diverse range of projects showcasing our expertise in digital services and web solutions.
+              </p>
+              <p className="word-wrap">
+                View project details to learn more about our approach, technologies used, and the results we've achieved. We are dedicated to providing exceptional digital services and web solutions that drive business growth and success.
+              </p>
+            </div>
           </div>
         </div>
 

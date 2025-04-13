@@ -13,6 +13,7 @@
 
 .mobile-content-appearance {
   display: flex;
+  flex-direction: column;
 }
 
 .desktop-background {
