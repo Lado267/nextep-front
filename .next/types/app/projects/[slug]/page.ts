@@ -1,4 +1,4 @@
-// File: /Users/workingkakha/Documents/nextep-front/nextep-front/src/app/projects/[slug]/page.tsx
+// File: D:\projects\nextep-front\src\app\projects\[slug]\page.tsx
 import * as entry from '../../../../../src/app/projects/[slug]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

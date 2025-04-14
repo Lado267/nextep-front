@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/public/logo.css"],"sourcesContent":[".header-logo-width {\r\n    width: 100px;\r\n}\r\n\r\n@media(min-width: 640px) {\r\n    .header-logo-width {\r\n        width: 120px;\r\n    }\r\n}"],"names":[],"mappings":"AAAA;;;;AAIA;EACI"}}]
-}
