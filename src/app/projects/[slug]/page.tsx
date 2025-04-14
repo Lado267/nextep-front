@@ -17,49 +17,48 @@ export default async function ProjectDetails({ params }) {
       <div className="hero-section">
         <HeroImage 
           src={project.mainImage} 
-          alt="main cover image of project" 
+          alt={`${project.title} project cover`} 
         />
       </div>
 
       <div className="section">
-        <p className="section-title">Project Overview</p>
-        <p className="project-description">
-          {project.projectOverview[0]}
-        </p>
-        <p className="project-description">
-          {project.projectOverview[1]}
-        </p>
+        <h2 className="section-title">About the Project</h2>
+        <div className="project-description">
+          {project.projectOverview.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
       </div>
 
       <div className="section">
-        <h2 className="section-title">Technology Stack</h2>
+        <h2 className="section-title">Built With</h2>
         <TechStackCarousel techStack={project.techStack} />
       </div>
 
       <div className="section">
-        <h2 className="section-title">Development Process</h2>
+        <h2 className="section-title">Development Journey</h2>
         {project.developmentProcess.map((process, index) => (
           <p key={index} className="project-description">
-        {process}
+            {process}
           </p>
         ))}
       </div>
 
       {project.gallery && project.gallery.length > 0 && (
         <div className="section">
-          <h2 className="section-title">UI/UX Gallery</h2>
+          <h2 className="section-title">Project Gallery</h2>
           <Gallery images={project.gallery} />
         </div>
       )}
 
       <div className='h-[1px] w-full bg-red'></div>
       <div className="cta-section">
-        <h2 className="cta-title">Ready to take the Next Step?</h2>
+        <h2 className="cta-title">Ready to Start Your Project?</h2>
         <p className="cta-description">
-          Let us discuss how we can help you build a modern digital solution tailored to your unique business needs.
+          Let&apos;s discuss how we can create a custom digital solution for your business needs.
         </p>
-        <Link href="/contact" className="">
-            <button className='cta-button'>Get in touch</button>
+        <Link href="/contact" className="contact-link">
+            <button className='cta-button'>Start the Conversation</button>
         </Link>
       </div>
     </main>
