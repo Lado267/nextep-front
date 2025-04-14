@@ -28,7 +28,7 @@ export default function ContactPage() {
 
           <div className="mobile-content-appearance">
             <div className="mobile-title-appearance mb-[24px]">
-              <h1 className="contact-title">Contact Us</h1>
+              <p className="contact-title">Contact Us</p>
               <h2 className="contact-subtitle">Get in Touch for Digital Services and Web Solutions</h2>
             </div>
             <div className='flex flex-col gap-[12px]'>
@@ -42,7 +42,7 @@ export default function ContactPage() {
           </div>
           <div className="desktop-content-appearance">
             <div className="desktop-title-appearance">
-              <h1 className="projects-title">Contact Us - for Digital Services and Web Solutions</h1>
+              <h1 className="contact-title">Contact Us - for Digital Services and Web Solutions</h1>
             </div>
             <div className='flex flex-col gap-[12px]'>
               {/* <p className="word-wrap text-left">

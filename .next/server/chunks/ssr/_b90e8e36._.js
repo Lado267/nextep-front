@@ -185,30 +185,6 @@ const __TURBOPACK__default__export__ = {
     blurHeight: 8
 };
 }}),
-"[project]/public/serviceIcons/consultingIcon.png (static in ecmascript)": ((__turbopack_context__) => {
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-__turbopack_context__.v("/_next/static/media/consultingIcon.2682f9c0.png");}}),
-"[project]/public/serviceIcons/consultingIcon.png.mjs { IMAGE => \"[project]/public/serviceIcons/consultingIcon.png (static in ecmascript)\" } [app-rsc] (structured image object, ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$consultingIcon$2e$png__$28$static__in__ecmascript$29$__ = __turbopack_context__.i("[project]/public/serviceIcons/consultingIcon.png (static in ecmascript)");
-;
-const __TURBOPACK__default__export__ = {
-    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$consultingIcon$2e$png__$28$static__in__ecmascript$29$__["default"],
-    width: 512,
-    height: 512,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA50lEQVR42k2PTWvCQBCGN8majdlkk83H1pqokZaWFmkbrYKg4BfoxZMn9aB3RUXBg5706p92IiIOvDMwM+8zDEL3ULDm2Nl45YTVvZOr7Qn1SugpJKzSV8qjPhNfE50XeinCco+prKgMml3dzreAZEPtgNqSJCu3BawaWR6UV+Aey5hYTHxP4dxCknEaJcn0P0aG+z6EpSUPK2sexAs3Xz8SQ/yilGZFXtQ4u4X6wSs2z+KtfbEypTlophkvMQKkTZ3igFD/RzMzZdP/HIHhlJAUVRcozYIGoAFb2d0U/m+hbpJ3wfR3Bex2HpZOkOGkAAAAAElFTkSuQmCC",
-    blurWidth: 8,
-    blurHeight: 8
-};
-}}),
 "[project]/src/utils/serviceList.ts [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -225,7 +201,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$de
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$aiIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$aiIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/serviceIcons/aiIcon.png.mjs { IMAGE => "[project]/public/serviceIcons/aiIcon.png (static in ecmascript)" } [app-rsc] (structured image object, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$marketingIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$marketingIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/serviceIcons/marketingIcon.png.mjs { IMAGE => "[project]/public/serviceIcons/marketingIcon.png (static in ecmascript)" } [app-rsc] (structured image object, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$seoIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$seoIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/serviceIcons/seoIcon.png.mjs { IMAGE => "[project]/public/serviceIcons/seoIcon.png (static in ecmascript)" } [app-rsc] (structured image object, ecmascript)');
-var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$consultingIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$consultingIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/serviceIcons/consultingIcon.png.mjs { IMAGE => "[project]/public/serviceIcons/consultingIcon.png (static in ecmascript)" } [app-rsc] (structured image object, ecmascript)');
+(()=>{
+    const e = new Error("Cannot find module '../../public/serviceIcons/consultingIcon.png'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 ;
 ;
 ;
@@ -280,7 +260,7 @@ const desktopServices = [
     {
         title: "Technical Consulting",
         subtitle: "Expert guidance on technology strategy and implementation, helping you make informed decisions for sustainable growth",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$consultingIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$consultingIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+        icon: consultingIcon,
         slug: "consulting-service"
     }
 ];
@@ -330,7 +310,7 @@ const mobileServices = [
     {
         title: "Consulting",
         subtitle: "Expert guidance on technology strategy and implementation",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$consultingIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$consultingIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+        icon: consultingIcon,
         slug: "consulting-service"
     }
 ];
@@ -827,4 +807,4 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 
 };
 
-//# sourceMappingURL=_112705e8._.js.map
+//# sourceMappingURL=_b90e8e36._.js.map

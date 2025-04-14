@@ -18,7 +18,7 @@ export default function ProjectsPage() {
       <div className='flex flex-col gap-[12px] mb-[48px]'>
         <div className="mobile-content-appearance">
           <div className="mobile-title-appearance">
-            <h1 className="projects-title">Our Projects</h1>
+            <p className="projects-title">Our Projects</p>
             <h2 className="projects-subtitle">Digital Services, AI & Web Solutions</h2>
           </div>
 

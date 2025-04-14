@@ -322,10 +322,11 @@ input, select, textarea {
 
   .contact-header-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding-left: 0px;
     padding-right: 0px;
+    align-items: flex-start;
   }
 
   .mobile-content-appearance {
