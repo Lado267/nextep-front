@@ -147,6 +147,7 @@
   width: 100%;
   position: relative;
   aspect-ratio: 3/4;
+  margin-top: 44px;
 }
 
 .contact-image img {
