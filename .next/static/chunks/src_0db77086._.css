@@ -905,10 +905,6 @@ body {
   width: 1px;
 }
 
-.w-\[50vw\] {
-  width: 50vw;
-}
-
 .w-auto {
   width: auto;
 }
@@ -1423,6 +1419,10 @@ body {
   background-color: hsl(var(--sidebar-border));
 }
 
+.bg-tertiaryProject {
+  background-color: var(--tertiary-project);
+}
+
 .bg-transparent {
   background-color: #0000;
 }
@@ -1471,20 +1471,20 @@ body {
   padding: 1.5rem;
 }
 
-.p-\[1px\] {
-  padding: 1px;
-}
-
-.p-\[24px\] {
-  padding: 24px;
-}
-
 .p-\[12px\] {
   padding: 12px;
 }
 
 .p-\[16px\] {
   padding: 16px;
+}
+
+.p-\[1px\] {
+  padding: 1px;
+}
+
+.p-\[24px\] {
+  padding: 24px;
 }
 
 .px-1 {
@@ -1581,6 +1581,10 @@ body {
   padding-left: 2rem;
 }
 
+.pl-\[12px\] {
+  padding-left: 12px;
+}
+
 .pl-\[5vw\] {
   padding-left: 5vw;
 }
@@ -1629,18 +1633,6 @@ body {
   padding-top: 8px;
 }
 
-.pb-\[16px\] {
-  padding-bottom: 16px;
-}
-
-.pl-\[16px\] {
-  padding-left: 16px;
-}
-
-.pt-\[16px\] {
-  padding-top: 16px;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1665,8 +1657,8 @@ body {
   font-size: 16px;
 }
 
-.text-\[24px\] {
-  font-size: 24px;
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .text-base {
@@ -1718,6 +1710,31 @@ body {
   letter-spacing: .1em;
 }
 
+.text-\[\#0077B5\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 119 181 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#1DA1F2\] {
+  --tw-text-opacity: 1;
+  color: rgb(29 161 242 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#25D366\] {
+  --tw-text-opacity: 1;
+  color: rgb(37 211 102 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#4267B2\] {
+  --tw-text-opacity: 1;
+  color: rgb(66 103 178 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#FF4500\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 69 0 / var(--tw-text-opacity, 1));
+}
+
 .text-accent-foreground {
   color: hsl(var(--accent-foreground));
 }
@@ -1756,6 +1773,14 @@ body {
 
 .text-primary-foreground {
   color: hsl(var(--primary-foreground));
+}
+
+.text-primaryProject {
+  color: var(--primary-project);
+}
+
+.text-quaternaryProject {
+  color: var(--quaternary-project);
 }
 
 .text-secondary-foreground {
@@ -1877,6 +1902,16 @@ body {
 
 .ring-offset-background {
   --tw-ring-offset-color: hsl(var(--background));
+}
+
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.sepia {
+  --tw-sepia: sepia(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .filter {
@@ -2284,6 +2319,10 @@ h5 {
 
 .hover\:opacity-100:hover {
   opacity: 1;
+}
+
+.hover\:opacity-80:hover {
+  opacity: .8;
 }
 
 .hover\:shadow-\[0_0_0_1px_hsl\(var\(--sidebar-accent\)\)\]:hover {
