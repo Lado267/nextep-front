@@ -1,0 +1,150 @@
+/* [project]/src/app/serviceGrid.css [app-client] (css) */
+.services-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  box-shadow: 0 2px 4px #0000000d;
+  transition: box-shadow .2s ease-in-out;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+.service-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-project);
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.service-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--tertiary-project);
+  text-align: center;
+}
+
+.service-description {
+  font-size: 14px;
+  color: var(--text-project);
+  opacity: .8;
+}
+
+.service-card-link {
+  text-decoration: none;
+  display: block;
+  transition: transform .2s ease-in-out;
+}
+
+.service-card-link:hover {
+  transform: translateY(-5px);
+}
+
+.service-card-link:hover .service-card {
+  box-shadow: 0 8px 16px #0000001a;
+}
+
+@media (width >= 640px) {
+  .services-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .service-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    box-shadow: 0 2px 4px #0000000d;
+    transition: box-shadow .2s ease-in-out;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 160px;
+  }
+
+  .service-icon {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-project);
+  }
+
+  .service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .service-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--tertiary-project);
+    text-align: center;
+  }
+
+  .service-description {
+    font-size: 14px;
+    color: var(--text-project);
+    opacity: .8;
+  }
+
+  .service-card-link {
+    text-decoration: none;
+    display: block;
+    transition: transform .2s ease-in-out;
+  }
+
+  .service-card-link:hover {
+    transform: translateY(-5px);
+  }
+
+  .service-card-link:hover .service-card {
+    box-shadow: 0 8px 16px #0000001a;
+  }
+}
+
+/*# sourceMappingURL=src_app_serviceGrid_b52d8e88.css.map*/

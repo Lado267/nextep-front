@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/elements/footer/footer.css"],"sourcesContent":["\r\n\r\n.footer-bg {\r\n    background-color: var(--quaternary-project);\r\n}\r\n\r\n.main-vertical-gap {\r\n    gap: 20px;\r\n}\r\n\r\n.vertical-gap {\r\n    gap: 8px;\r\n}\r\n\r\n.main-padding {\r\n    padding: 20px 0;\r\n}\r\n\r\n.horizental-gap {\r\n    gap: 100px;\r\n}\r\n\r\n.footer-text-color {\r\n    color: var(--white-project);\r\n}\r\n\r\n@media(min-width: 640px) {\r\n    .main-vertical-gap {\r\n        gap: 32px;\r\n    }\r\n\r\n    .vertical-gap {\r\n        gap: 8px;\r\n    }\r\n\r\n    .main-padding {\r\n        padding: 32px 0;\r\n    }\r\n\r\n    .horizental-gap {\r\n        gap: 100px;\r\n    }\r\n\r\n    .footer-text-color {\r\n        color: var(--white-project);\r\n    }\r\n}"],"names":[],"mappings":"AAEA;;;;AAIA;;;;AAIA;;;;AAIA;;;;AAIA;;;;AAIA;;;;AAIA;EACI;;;;EAIA;;;;EAIA;;;;EAIA;;;;EAIA"}},
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

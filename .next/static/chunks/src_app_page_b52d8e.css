@@ -1,0 +1,59 @@
+/* [project]/src/app/page.css [app-client] (css) */
+.mobile-content-appearance {
+  display: flex;
+}
+
+.desktop-content-appearance {
+  display: none;
+}
+
+.hero-button-font {
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  white-space: pre;
+}
+
+.secondary-button-font {
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: pre;
+}
+
+@media (width >= 640px) {
+  .hero-button-font {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .secondary-button-font {
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: 500;
+  }
+
+  .mobile-content-appearance {
+    display: none;
+  }
+
+  .desktop-content-appearance {
+    display: flex;
+  }
+
+  .desktop-background {
+    background-image: url("../media/desktopHero.3eb2df88.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+  }
+}
+
+@media (width <= 1650px) {
+  .desktop-background {
+    background-image: none;
+  }
+}
+
+/*# sourceMappingURL=src_app_page_b52d8e.css.map*/

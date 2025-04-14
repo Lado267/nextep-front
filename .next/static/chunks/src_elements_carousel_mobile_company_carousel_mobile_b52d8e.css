@@ -1,0 +1,13 @@
+/* [project]/src/elements/carousel/mobile/company_carousel_mobile.css [app-client] (css) */
+.carousel-grid-mobile {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--white-project);
+}
+
+.carousel-item-size-mobile {
+  width: 100px;
+  height: 42px;
+}
+
+/*# sourceMappingURL=src_elements_carousel_mobile_company_carousel_mobile_b52d8e.css.map*/

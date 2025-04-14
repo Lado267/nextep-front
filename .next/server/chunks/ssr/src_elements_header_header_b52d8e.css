@@ -1,0 +1,52 @@
+/* [project]/src/elements/header/header.css [app-client] (css) */
+.header_background_color {
+  background-color: var(--primary-project);
+  box-shadow: 0 1px 8px #0000001a;
+}
+
+.header_position {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  margin: 0;
+}
+
+.header_justify_content {
+  justify-content: center;
+}
+
+.header_button_visible {
+  display: none;
+}
+
+.header-logo-width {
+  width: 100px;
+}
+
+.header-padding {
+  padding: 12px;
+}
+
+@media (width >= 640px) {
+  .header_background_color {
+    background-color: #fff;
+  }
+
+  .header_justify_content {
+    justify-content: space-between;
+  }
+
+  .header_button_visible {
+    display: inline-flex;
+  }
+
+  .header-logo-width {
+    width: 204px;
+  }
+
+  .header-padding {
+    padding: 32px 0;
+  }
+}
+
+/*# sourceMappingURL=src_elements_header_header_b52d8e.css.map*/
