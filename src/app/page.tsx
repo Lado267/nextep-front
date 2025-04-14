@@ -25,11 +25,11 @@ export default function Home() {
             <h4 className="text-tertiaryProject">{HomePageAlt.desktop.hero.heroSubtitle2}</h4>
             <div className="flex flex-row gap-[16px]">
               <Link href="/services">
-                <Button className="w-[160px] h-[40px] secondary-button-font" variant="projectSecondary">Services</Button>
+                <Button className="w-[160px] h-[40px] secondary-button-font" variant="projectSecondary">View Services</Button>
               </Link>
-              <a href="/contact">
-                <Button className="w-[160px] h-[40px] hero-button-font" variant="projectSelected">Get in touch</Button>
-              </a>
+              <Link href="/contact">
+                <Button className="w-[160px] h-[40px] hero-button-font" variant="projectSelected">Contact Us</Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -47,10 +47,10 @@ export default function Home() {
         </p>
 
         <p className="text-tertiaryProject text-[20px] pl-[12px]">
-          Explore our <Link href="/services" className="text-quaternaryProject hover:underline">services</Link>, including website creation, custom software development, marketing, AI and  consulting.
+          Explore our <Link href="/services" className="text-quaternaryProject hover:underline">digital solutions</Link>, including website creation, custom software development, marketing, AI and consulting.
         </p>
         <p className="word-wrap text-tertiaryProject bg-whiteProject rounded-[8px] p-[16px] text-[20px] font-medium">
-          Whether you&apos;re looking to enhance your online presence, streamline your operations, or develop cutting-edge applications, NextEp is your trusted partner for all your digital needs. <Link href="/contact" className="text-quaternaryProject hover:underline">Contact us</Link> directly to discuss your project needs via your preferred method.
+          Whether you&apos;re looking to enhance your online presence, streamline your operations, or develop cutting-edge applications, NextEp is your trusted partner for all your digital needs. <Link href="/contact" className="text-quaternaryProject hover:underline">Start a project</Link> directly to discuss your requirements.
         </p>
       </section>
 
@@ -59,9 +59,9 @@ export default function Home() {
         <h2 className="text-center">{HomePageAlt.mobile.hero.heroTitle}</h2>
         <h4 className="text-center text-tertiaryProject">{HomePageAlt.mobile.hero.heroSubtitle1}</h4>
         <h4 className="text-center text-tertiaryProject">{HomePageAlt.mobile.hero.heroSubtitle2}</h4>
-        <a href="/contact">
-          <Button variant="projectSelected">Get in touch</Button>
-        </a>
+        <Link href="/contact">
+          <Button variant="projectSelected">Schedule Consultation</Button>
+        </Link>
         <Image alt={HomePageAlt.mobile.hero.heroImageAlt}
           src={HomePageAlt.mobile.hero.heroImageSrc}
           className="mt-[24px]" />

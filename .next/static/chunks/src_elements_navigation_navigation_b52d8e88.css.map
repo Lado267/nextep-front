@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/elements/navigation/navigation.css"],"sourcesContent":["\n.tabbar_appearance {\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    z-index: 50;\n    background-color: var(--quaternary-project);\n    height: 40px;\n    box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.1);\n}\n\n.menu_appearance {\n    display: none;\n    position: sticky;\n    top: 52px; /* Adjust this value based on your header height for mobile */\n    z-index: 30;\n}\n\n.menu-gap {\n    gap: 16px;\n}\n\n@media(min-width: 640px) {\n    .tabbar_appearance {\n        display: none;\n    }\n    \n    .menu_appearance {\n        display: flex;\n        background-color: var(--quaternary-project);\n        top: 126.44px; /* Adjust this value based on your header height for desktop */\n        height: 60px;\n    }\n}\n\n\n"],"names":[],"mappings":"AACA;;;;;;;;;;;AAWA;;;;;;;AAOA;;;;AAIA;EACI;;;;EAIA"}}]
-}
