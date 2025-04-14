@@ -1,12 +1,12 @@
 {
   "/robots.txt/route": "/robots.txt",
-  "/favicon.ico/route": "/favicon.ico",
-  "/sitemap.xml/route": "/sitemap.xml",
   "/_not-found/page": "/_not-found",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/favicon.ico/route": "/favicon.ico",
   "/projects/[slug]/page": "/projects/[slug]",
   "/services/[service]/page": "/services/[service]",
-  "/services/page": "/services",
   "/page": "/",
-  "/contact/page": "/contact",
-  "/projects/page": "/projects"
+  "/services/page": "/services",
+  "/projects/page": "/projects",
+  "/contact/page": "/contact"
 }
