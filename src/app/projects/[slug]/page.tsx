@@ -1,4 +1,5 @@
 import React from 'react';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { projectDetails } from '../../../utils/projectDetails';
 import { Gallery } from '../../../elements/gallery/gallery';
@@ -7,6 +8,28 @@ import { HeroImage } from './hero_image';
 
 // Move Carousel to a separate client component
 import { TechStackCarousel } from './techstack_carousel';
+
+export async function generateMetadata({ params }): Promise<Metadata> {
+  const { slug } = params;
+  const project = projectDetails[slug];
+
+  if (!project) {
+    return {
+      title: 'Project Not Found - NextEp Solutions',
+      alternates: {
+        canonical: 'https://nextep.solutions/projects',
+      },
+    };
+  }
+
+  return {
+    title: `NextEp | ${project.title} - Project Case Study`,
+    description: project.projectOverview[0], // Using first paragraph as description
+    alternates: {
+      canonical: `https://nextep.solutions/projects/${slug}`,
+    },
+  };
+}
 
 export default async function ProjectDetails({ params }) {
   const { slug } = params;

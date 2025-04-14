@@ -4,10 +4,10 @@
   "/sitemap.xml/route": "/sitemap.xml",
   "/favicon.ico/route": "/favicon.ico",
   "/projects/[slug]/page": "/projects/[slug]",
-  "/services/[service]/page": "/services/[service]",
   "/privacy-policy/page": "/privacy-policy",
+  "/services/[service]/page": "/services/[service]",
+  "/contact/page": "/contact",
   "/services/page": "/services",
   "/page": "/",
-  "/contact/page": "/contact",
   "/projects/page": "/projects"
 }

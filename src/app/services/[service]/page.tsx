@@ -2,6 +2,28 @@ import Link from "next/link";
 import "./page.css";
 import { serviceDetails } from "@/utils/serviceDetails";
 
+export async function generateMetadata({ params }): Promise<Metadata> {
+    const { service } = params;
+    const serviceData = serviceDetails[service];
+  
+    if (!serviceData) {
+      return {
+        title: 'Service Not Found - NextEp Solutions',
+        alternates: {
+          canonical: 'https://nextep.solutions/services',
+        },
+      };
+    }
+  
+    return {
+      title: `NextEp | ${serviceData.title} - Digital Presence, AI & Web Solutions`,
+      description: serviceData.description,
+      alternates: {
+        canonical: `https://nextep.solutions/services/${service}`,
+      },
+    };
+  }
+
 export default async function ServiceDetails({ params }) {
   const { service } = params;
   const serviceData = serviceDetails[service];

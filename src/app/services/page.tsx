@@ -15,7 +15,7 @@ export default function Services() {
       <div className="services-container">
         <div className="mobile-content-appearance">
           <div className="mobile-title-appearance">
-            <h1 className="services-title">Our Services</h1>
+            <p className="services-title">Our Services</p>
             <h2 className="services-subtitle">Digital Solutions</h2>
           </div>
           <p className="word-wrap text-center text-tertiaryProject">

@@ -1,0 +1,13 @@
+/* [project]/src/elements/carousel/desktop/company_carousel_desktop.css [app-client] (css) */
+.carousel-grid-desktop {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--white-project);
+}
+
+.carousel-item-size-desktop {
+  width: 240px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=src_elements_carousel_desktop_company_carousel_desktop_b52d8e88.css.map*/
