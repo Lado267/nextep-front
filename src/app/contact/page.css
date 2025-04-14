@@ -99,6 +99,7 @@
   font-weight: 600;
   margin-bottom: 1rem;
   color: #1a3165; /* Updated color */
+  text-align: left;
 }
 
 .pricing-table {
@@ -146,7 +147,6 @@
   width: 100%;
   position: relative;
   aspect-ratio: 3/4;
-  margin-top: 3.2rem;
 }
 
 .contact-image img {
@@ -170,9 +170,9 @@
   font-weight: 600;
   margin-bottom: 0.25rem;
   color: #1a3165; /* Updated color */
+  text-align: left;
 }
   
-
 .email-response {
   font-size: 0.875rem;
   color: #666;

@@ -30,6 +30,20 @@
   color: var(--white-project);
 }
 
+.facebook-follow-btn {
+  background-color: #1877f2;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color .2s;
+}
+
+.facebook-follow-btn:hover {
+  background-color: #1664d9;
+}
+
 @media (width >= 640px) {
   .main-vertical-gap {
     gap: 32px;

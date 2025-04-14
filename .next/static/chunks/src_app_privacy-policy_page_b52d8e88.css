@@ -1,0 +1,84 @@
+/* [project]/src/app/privacy-policy/page.css [app-client] (css) */
+.privacy-policy-container {
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px #0000001a;
+}
+
+.page-title {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.policy-section {
+  margin-bottom: 30px;
+}
+
+.policy-section h2 {
+  font-size: 20px;
+  color: #243a69;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.policy-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.policy-section ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.policy-section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.policy-section a {
+  color: #243a69;
+  text-decoration: none;
+}
+
+.policy-section a:hover {
+  text-decoration: underline;
+}
+
+@media (width >= 640px) {
+  .privacy-policy-container {
+    padding: 40px;
+  }
+
+  .content-wrapper {
+    padding: 40px;
+  }
+
+  .page-title {
+    font-size: 32px;
+  }
+
+  .policy-section h2 {
+    font-size: 24px;
+  }
+
+  .policy-section p, .policy-section li {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=src_app_privacy-policy_page_b52d8e88.css.map*/
