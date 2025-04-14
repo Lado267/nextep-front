@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/elements/header/header.css"],"sourcesContent":["\n.header_background_color {\n    background-color: var(--primary-project);\n    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);\n}\n\n.header_position {\n    position: sticky;\n    top: 0;\n    z-index: 40;\n    margin: 0px 0px;\n}\n\n.header_justify_content {\n    justify-content: center;\n}\n\n.header_button_visible {\n    display: none;\n}\n\n.header-logo-width {\n    width: 100px;\n}\n\n.header-padding {\n    padding: 12px;\n}\n\n@media(min-width: 640px) {\n    .header_background_color {\n        background-color: white;\n    }\n\n    .header_justify_content {\n        justify-content: space-between;\n    }\n\n    .header_button_visible {\n        display: inline-flex;\n    }\n\n    .header-logo-width {\n        width: 204px;\n    }\n\n    .header-padding {\n        padding: 32px 0px;\n    }\n}\n\n\n\n"],"names":[],"mappings":"AACA;;;;;AAKA;;;;;;;AAOA;;;;AAIA;;;;AAIA;;;;AAIA;;;;AAIA;EACI;;;;EAIA;;;;EAIA;;;;EAIA;;;;EAIA"}}]
+}

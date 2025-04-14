@@ -52,8 +52,6 @@ export default function Home() {
         <p className="word-wrap text-tertiaryProject bg-whiteProject rounded-[8px] p-[16px] text-[20px] font-medium">
           Whether you&apos;re looking to enhance your online presence, streamline your operations, or develop cutting-edge applications, NextEp is your trusted partner for all your digital needs. <Link href="/contact" className="text-quaternaryProject hover:underline">Contact us</Link> directly to discuss your project needs via your preferred method.
         </p>
-
-
       </section>
 
 
