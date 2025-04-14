@@ -1069,7 +1069,7 @@ function Home() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "word-wrap text-primaryProject bg-secondaryProject rounded-[8px] p-[16px] flex flex-col text-[16px] font-medium",
+                        className: "word-wrap text-primaryProject bg-tertiaryProject rounded-[8px] p-[16px] flex flex-col text-[16px] font-medium",
                         children: "Discover our comprehensive digital services spanning web development, AI solutions, SEO, Marketing and custom software engineering. We deliver innovative websites, mobile apps, and enterprise solutions that drive measurable results. Our experienced team specializes in modern technologies and agile development practices to ensure your business stays ahead in the digital landscape. From strategic digital marketing campaigns to advanced search engine optimization, we help boost your online visibility and market reach. Our data-driven approach combines technical expertise with marketing insights to create solutions that not only look great but also perform exceptionally well in today's competitive digital environment."
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",

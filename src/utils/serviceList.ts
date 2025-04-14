@@ -11,49 +11,49 @@ import consultingIcon from "../../public/serviceIcons/consultingIcon.png"
 export const desktopServices = [
     {   
         title: "Web Development", 
-        subtitle: "Modern web apps with responsive design and fast load times",
+        subtitle: "Modern web applications with responsive design, fast load times, and seamless user experience across all devices",
         icon: desktopServiceIcon, 
         slug: "web-service"
     },
     { 
         title: "Backend Development", 
-        subtitle: "Robust APIs and scalable server infrastructure solutions",
+        subtitle: "Robust APIs and scalable server infrastructure solutions designed for high performance and security",
         icon: backendIcon,
         slug: "backend-service" 
     },
     { 
         title: "Mobile Development", 
-        subtitle: "Native and cross-platform apps for iOS and Android",
+        subtitle: "Native and cross-platform applications for iOS and Android, delivering smooth performance and engaging user experience",
         icon: mobileIcon,
         slug: "mobile-service" 
     },
     { 
         title: "User Interface Design", 
-        subtitle: "Intuitive and engaging user interfaces with UX focus",
+        subtitle: "Intuitive and engaging user interfaces with UX focus, creating memorable digital experiences that convert",
         icon: designIcon,
         slug: "ui-service" 
     },
     {
         title: "AI Solutions",
-        subtitle: "Custom LLMs and generative AI integration for your business",
+        subtitle: "Custom LLMs and generative AI integration for your business, leveraging cutting-edge machine learning technologies",
         icon: aiIcon,
         slug: "ai-service"
     },
     {
         title: "Marketing Solutions",
-        subtitle: "Digital marketing strategies to grow your online presence",
+        subtitle: "Comprehensive digital marketing strategies to grow your online presence and drive measurable business results",
         icon: marketingIcon,
         slug: "marketing-service"
     },
     {
         title: "SEO Optimization",
-        subtitle: "Search engine optimization to increase your visibility",
+        subtitle: "Search engine optimization to increase your visibility, improve rankings, and drive organic traffic to your website",
         icon: seoIcon,
         slug: "seo-service"
     },
     {
         title: "Technical Consulting",
-        subtitle: "Expert guidance on technology strategy and implementation",
+        subtitle: "Expert guidance on technology strategy and implementation, helping you make informed decisions for sustainable growth",
         icon: consultingIcon,
         slug: "consulting-service"
     }

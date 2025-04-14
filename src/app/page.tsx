@@ -42,7 +42,7 @@ export default function Home() {
           Move beyond traditional methods and embrace digital evolution with us. We can help you transform outdated processes into dynamic experiences!
           Allow us to elevate your online presence through innovative approaches.
         </p>
-        <p className="word-wrap text-primaryProject bg-secondaryProject rounded-[8px] p-[16px] flex flex-col text-[16px] font-medium">
+        <p className="word-wrap text-primaryProject bg-tertiaryProject rounded-[8px] p-[16px] flex flex-col text-[16px] font-medium">
           Discover our comprehensive digital services spanning web development, AI solutions, SEO, Marketing and custom software engineering. We deliver innovative websites, mobile apps, and enterprise solutions that drive measurable results. Our experienced team specializes in modern technologies and agile development practices to ensure your business stays ahead in the digital landscape. From strategic digital marketing campaigns to advanced search engine optimization, we help boost your online visibility and market reach. Our data-driven approach combines technical expertise with marketing insights to create solutions that not only look great but also perform exceptionally well in today&apos;s competitive digital environment.
         </p>
         <p className="text-tertiaryProject text-[24px]">

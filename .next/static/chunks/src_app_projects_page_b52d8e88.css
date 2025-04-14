@@ -241,6 +241,14 @@
     text-align: left;
   }
 
+  .section-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    color: var(--secondary-project);
+  }
+
   .project-image {
     height: 180px;
   }

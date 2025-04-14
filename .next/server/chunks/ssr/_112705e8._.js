@@ -237,49 +237,49 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$co
 const desktopServices = [
     {
         title: "Web Development",
-        subtitle: "Modern web apps with responsive design and fast load times",
+        subtitle: "Modern web applications with responsive design, fast load times, and seamless user experience across all devices",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$desktopIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$desktopIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
         slug: "web-service"
     },
     {
         title: "Backend Development",
-        subtitle: "Robust APIs and scalable server infrastructure solutions",
+        subtitle: "Robust APIs and scalable server infrastructure solutions designed for high performance and security",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$backendIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$backendIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
         slug: "backend-service"
     },
     {
         title: "Mobile Development",
-        subtitle: "Native and cross-platform apps for iOS and Android",
+        subtitle: "Native and cross-platform applications for iOS and Android, delivering smooth performance and engaging user experience",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$mobileIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$mobileIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
         slug: "mobile-service"
     },
     {
         title: "User Interface Design",
-        subtitle: "Intuitive and engaging user interfaces with UX focus",
+        subtitle: "Intuitive and engaging user interfaces with UX focus, creating memorable digital experiences that convert",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$designIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$designIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
         slug: "ui-service"
     },
     {
         title: "AI Solutions",
-        subtitle: "Custom LLMs and generative AI integration for your business",
+        subtitle: "Custom LLMs and generative AI integration for your business, leveraging cutting-edge machine learning technologies",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$aiIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$aiIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
         slug: "ai-service"
     },
     {
         title: "Marketing Solutions",
-        subtitle: "Digital marketing strategies to grow your online presence",
+        subtitle: "Comprehensive digital marketing strategies to grow your online presence and drive measurable business results",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$marketingIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$marketingIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
         slug: "marketing-service"
     },
     {
         title: "SEO Optimization",
-        subtitle: "Search engine optimization to increase your visibility",
+        subtitle: "Search engine optimization to increase your visibility, improve rankings, and drive organic traffic to your website",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$seoIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$seoIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
         slug: "seo-service"
     },
     {
         title: "Technical Consulting",
-        subtitle: "Expert guidance on technology strategy and implementation",
+        subtitle: "Expert guidance on technology strategy and implementation, helping you make informed decisions for sustainable growth",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$serviceIcons$2f$consultingIcon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$serviceIcons$2f$consultingIcon$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
         slug: "consulting-service"
     }
@@ -424,12 +424,12 @@ function Services() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "word-wrap text-primaryProject bg-secondaryProject rounded-[8px] pt-[16px] pl-[16px] pb-[16px] flex flex-col text-[16px] font-medium",
-                        children: "Transform your business with our expertise in web development, mobile applications, and AI-powered solutions. Our team delivers innovative technology that drives growth."
+                        className: "word-wrap text-primaryProject bg-tertiaryProject rounded-[8px] p-[16px] flex flex-col text-[16px] font-medium",
+                        children: "Transform your business with our expertise in web development, mobile applications, and AI-powered solutions. Our team delivers innovative technology that drives growth and enhances your digital presence. We combine cutting-edge technologies with strategic thinking to create seamless, user-centric experiences that set your business apart. From responsive websites and intuitive mobile apps to custom AI integrations, we provide comprehensive digital solutions tailored to your specific needs. Our commitment to excellence and attention to detail ensures that every project we undertake contributes meaningfully to your business success and market position."
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/page.tsx",
                         lineNumber: 29,
-                        columnNumber: 11
+                        columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
@@ -438,9 +438,21 @@ function Services() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "word-wrap desktop-content-appearance text-tertiaryProject",
-                children: "Let's bring your digital vision to life. Contact us to discuss how our services can help achieve your business goals."
-            }, void 0, false, {
+                className: "word-wrap desktop-content-appearance text-tertiaryProject text-[20px] p-[12px]",
+                children: [
+                    "Let's bring your digital vision to life. ",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/contact",
+                        className: "text-quaternaryProject hover:underline",
+                        children: "Contact us"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/services/page.tsx",
+                        lineNumber: 34,
+                        columnNumber: 57
+                    }, this),
+                    " to discuss how our services can help achieve your business goals."
+                ]
+            }, void 0, true, {
                 fileName: "[project]/src/app/services/page.tsx",
                 lineNumber: 33,
                 columnNumber: 9

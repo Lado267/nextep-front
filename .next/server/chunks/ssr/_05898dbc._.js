@@ -391,18 +391,22 @@ const backendProjects = [
 const allProjects = [
     {
         section: "Backend Development",
+        sectionDescription: "A collection of advanced backend systems leveraging AI technologies, database architectures, and API integrations. Each project demonstrates sophisticated server-side implementations and data processing solutions.",
         projects: backendProjects
     },
     {
         section: "Web Development",
+        sectionDescription: "A portfolio of modern web applications built with industry-standard frameworks. These solutions feature responsive interfaces, efficient state management, and seamless integration with various services.",
         projects: webProjects
     },
     {
         section: "macOS Development",
+        sectionDescription: "A selection of native macOS applications developed with Swift and Apple's latest technologies. These desktop solutions deliver specialized functionality through clean, platform-optimized interfaces.",
         projects: macosProjects
     },
     {
         section: "Mobile Development",
+        sectionDescription: "A showcase of iOS applications highlighting native development expertise. These mobile solutions implement efficient architectures and platform-specific design patterns for optimal performance.",
         projects: mobileProjects
     }
 ];
@@ -469,7 +473,7 @@ function ProjectsPage() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "word-wrap text-center text-tertiaryProject",
+                                className: "word-wrap text-primaryProject bg-tertiaryProject rounded-[8px] p-[16px] flex flex-col text-[16px] font-medium",
                                 children: "Explore our diverse range of projects showcasing our expertise in digital services and web solutions."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/projects/page.tsx",
@@ -504,7 +508,7 @@ function ProjectsPage() {
                                 className: "flex flex-col gap-[12px]",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "word-wrap text-left text-tertiaryProject",
+                                        className: "word-wrap text-left text-tertiaryProject p-[4px]",
                                         children: "Explore our diverse range of projects showcasing our expertise in digital services and web solutions."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/projects/page.tsx",
@@ -512,7 +516,7 @@ function ProjectsPage() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "word-wrap text-tertiaryProject",
+                                        className: "word-wrap text-primaryProject bg-tertiaryProject rounded-[8px] p-[12px] flex flex-col text-[16px] font-medium",
                                         children: "View project details to learn more about our approach, technologies used, and the results we've achieved. We are dedicated to providing exceptional digital services and web solutions that drive business growth and success."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/projects/page.tsx",
@@ -545,7 +549,15 @@ function ProjectsPage() {
                             children: section.section
                         }, void 0, false, {
                             fileName: "[project]/src/app/projects/page.tsx",
-                            lineNumber: 45,
+                            lineNumber: 46,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "section-description",
+                            children: section.sectionDescription
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/projects/page.tsx",
+                            lineNumber: 47,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -565,12 +577,12 @@ function ProjectsPage() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/projects/page.tsx",
-                                                lineNumber: 50,
+                                                lineNumber: 52,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/projects/page.tsx",
-                                            lineNumber: 49,
+                                            lineNumber: 51,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -584,7 +596,7 @@ function ProjectsPage() {
                                                             children: project.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/projects/page.tsx",
-                                                            lineNumber: 54,
+                                                            lineNumber: 56,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -592,7 +604,7 @@ function ProjectsPage() {
                                                             children: project.description
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/projects/page.tsx",
-                                                            lineNumber: 55,
+                                                            lineNumber: 57,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -604,23 +616,23 @@ function ProjectsPage() {
                                                                         children: slug
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/projects/page.tsx",
-                                                                        lineNumber: 58,
+                                                                        lineNumber: 60,
                                                                         columnNumber: 69
                                                                     }, this)
                                                                 }, index, false, {
                                                                     fileName: "[project]/src/app/projects/page.tsx",
-                                                                    lineNumber: 58,
+                                                                    lineNumber: 60,
                                                                     columnNumber: 27
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/projects/page.tsx",
-                                                            lineNumber: 56,
+                                                            lineNumber: 58,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/projects/page.tsx",
-                                                    lineNumber: 53,
+                                                    lineNumber: 55,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -629,36 +641,32 @@ function ProjectsPage() {
                                                     "aria-label": `View details about ${project.name} project`,
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
                                                         variant: "projectSelected",
-                                                        children: [
-                                                            "View ",
-                                                            project.name,
-                                                            " Project Details"
-                                                        ]
-                                                    }, void 0, true, {
+                                                        children: "View this Project"
+                                                    }, void 0, false, {
                                                         fileName: "[project]/src/app/projects/page.tsx",
-                                                        lineNumber: 67,
+                                                        lineNumber: 69,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/projects/page.tsx",
-                                                    lineNumber: 62,
+                                                    lineNumber: 64,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/projects/page.tsx",
-                                            lineNumber: 52,
+                                            lineNumber: 54,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, project.id, true, {
                                     fileName: "[project]/src/app/projects/page.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 50,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/projects/page.tsx",
-                            lineNumber: 46,
+                            lineNumber: 48,
                             columnNumber: 13
                         }, this)
                     ]

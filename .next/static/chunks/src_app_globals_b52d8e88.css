@@ -1425,6 +1425,10 @@ body {
   background-color: var(--white-project);
 }
 
+.bg-tertiaryProject {
+  background-color: var(--tertiary-project);
+}
+
 .bg-opacity-0 {
   --tw-bg-opacity: 0;
 }

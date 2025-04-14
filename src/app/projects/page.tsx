@@ -21,7 +21,7 @@ export default function ProjectsPage() {
               <h1 className="projects-title">Our Projects</h1>
               <h2 className="projects-subtitle">Digital Services, AI & Web Solutions</h2>
             </div>
-            <p className="word-wrap text-center text-tertiaryProject">
+            <p className="word-wrap text-primaryProject bg-tertiaryProject rounded-[8px] p-[16px] flex flex-col text-[16px] font-medium">
               Explore our diverse range of projects showcasing our expertise in digital services and web solutions.
             </p>
           </div>
@@ -30,11 +30,11 @@ export default function ProjectsPage() {
               <h1 className="projects-title">Our Projects - Digital Services, AI & Web Solutions</h1>
             </div>
             <div className='flex flex-col gap-[12px]'>
-              <p className="word-wrap text-left text-tertiaryProject">
+              <p className="word-wrap text-left text-tertiaryProject p-[4px]">
                 Explore our diverse range of projects showcasing our expertise in digital services and web solutions.
               </p>
-              <p className="word-wrap text-tertiaryProject">
-                View project details to learn more about our approach, technologies used, and the results we've achieved. We are dedicated to providing exceptional digital services and web solutions that drive business growth and success.
+              <p className="word-wrap text-primaryProject bg-tertiaryProject rounded-[8px] p-[12px] flex flex-col text-[16px] font-medium">
+                View project details to learn more about our approach, technologies used, and the results we&apos;ve achieved. We are dedicated to providing exceptional digital services and web solutions that drive business growth and success.
               </p>
             </div>
           </div>
@@ -42,7 +42,9 @@ export default function ProjectsPage() {
 
         {allProjects.map((section) => (
           <div key={section.section} className="section-container">
+
             <h2 className="section-title">{section.section}</h2>
+            <p className="section-description">{section.sectionDescription}</p>
             <div className="project-scroll">
               {section.projects.map((project) => (
                 <div key={project.id} className="project-card">
@@ -65,7 +67,7 @@ export default function ProjectsPage() {
                       aria-label={`View details about ${project.name} project`}
                     >
                       <Button variant="projectSelected">
-                        View {project.name} Project Details
+                        View this Project
                       </Button>
                     </Link>
                   </div>
