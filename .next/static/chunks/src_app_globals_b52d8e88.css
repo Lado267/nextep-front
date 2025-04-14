@@ -1493,6 +1493,18 @@ body {
   padding: 4px;
 }
 
+.p-\[125px\] {
+  padding: 125px;
+}
+
+.p-\[28px\] {
+  padding: 28px;
+}
+
+.p-\[32px\] {
+  padding: 32px;
+}
+
 .px-1 {
   padding-left: .25rem;
   padding-right: .25rem;

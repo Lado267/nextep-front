@@ -1,7 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
-import { Card, CardContent } from "../../../components/ui/card"
 import { projectDetails } from '../../../utils/projectDetails';
 import { Gallery } from '../../../elements/gallery/gallery';
 import './page.css';

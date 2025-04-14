@@ -279,14 +279,38 @@ const serviceDetails = {
             }
         ],
         technologies: [
-            "HTML5",
-            "CSS3",
-            "JavaScript",
-            "React",
-            "Angular",
-            "Vue.js",
-            "Node.js",
-            "WordPress"
+            {
+                name: "HTML5",
+                link: "https://html.spec.whatwg.org/"
+            },
+            {
+                name: "CSS3",
+                link: "https://www.w3.org/Style/CSS/"
+            },
+            {
+                name: "JavaScript",
+                link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            },
+            {
+                name: "React",
+                link: "https://react.dev/"
+            },
+            {
+                name: "Angular",
+                link: "https://angular.io/"
+            },
+            {
+                name: "Vue.js",
+                link: "https://vuejs.org/"
+            },
+            {
+                name: "Node.js",
+                link: "https://nodejs.org/"
+            },
+            {
+                name: "WordPress",
+                link: "https://wordpress.org/"
+            }
         ]
     },
     "backend-service": {
@@ -334,14 +358,38 @@ const serviceDetails = {
             }
         ],
         technologies: [
-            "Node.js",
-            "Python",
-            "Java",
-            "PostgreSQL",
-            "MongoDB",
-            "Docker",
-            "Kubernetes",
-            "Redis"
+            {
+                name: "Node.js",
+                link: "https://nodejs.org/"
+            },
+            {
+                name: "Python",
+                link: "https://www.python.org/"
+            },
+            {
+                name: "Java",
+                link: "https://www.java.com/"
+            },
+            {
+                name: "PostgreSQL",
+                link: "https://www.postgresql.org/"
+            },
+            {
+                name: "MongoDB",
+                link: "https://www.mongodb.com/"
+            },
+            {
+                name: "Docker",
+                link: "https://www.docker.com/"
+            },
+            {
+                name: "Kubernetes",
+                link: "https://kubernetes.io/"
+            },
+            {
+                name: "Redis",
+                link: "https://redis.io/"
+            }
         ]
     },
     "mobile-service": {
@@ -389,14 +437,38 @@ const serviceDetails = {
             }
         ],
         technologies: [
-            "Swift",
-            "Kotlin",
-            "React Native",
-            "Flutter",
-            "Firebase",
-            "iOS",
-            "Android",
-            "TypeScript"
+            {
+                name: "Swift",
+                link: "https://developer.apple.com/swift/"
+            },
+            {
+                name: "Kotlin",
+                link: "https://kotlinlang.org/"
+            },
+            {
+                name: "React Native",
+                link: "https://reactnative.dev/"
+            },
+            {
+                name: "Flutter",
+                link: "https://flutter.dev/"
+            },
+            {
+                name: "Firebase",
+                link: "https://firebase.google.com/"
+            },
+            {
+                name: "iOS",
+                link: "https://developer.apple.com/ios/"
+            },
+            {
+                name: "Android",
+                link: "https://developer.android.com/"
+            },
+            {
+                name: "TypeScript",
+                link: "https://www.typescriptlang.org/"
+            }
         ]
     },
     "ui-service": {
@@ -444,14 +516,14 @@ const serviceDetails = {
             }
         ],
         technologies: [
-            "Figma",
-            "Adobe XD",
-            "Sketch",
-            "InVision",
-            "Principle",
-            "Framer",
-            "Zeplin",
-            "Abstract"
+            {
+                name: "Figma",
+                link: "https://www.figma.com/"
+            },
+            {
+                name: "ComfyUI",
+                link: "https://github.com/comfyanonymous/ComfyUI"
+            }
         ]
     },
     "ai-service": {
@@ -499,14 +571,34 @@ const serviceDetails = {
             }
         ],
         technologies: [
-            "TensorFlow",
-            "PyTorch",
-            "scikit-learn",
-            "OpenAI",
-            "Python",
-            "CUDA",
-            "Keras",
-            "NumPy"
+            {
+                name: "PyTorch",
+                link: "https://pytorch.org/"
+            },
+            {
+                name: "LLM",
+                link: "https://openai.com/research/language-models"
+            },
+            {
+                name: "GEN-AI",
+                link: "https://openai.com/research/generative-models"
+            },
+            {
+                name: "OpenAI",
+                link: "https://openai.com/"
+            },
+            {
+                name: "Python",
+                link: "https://www.python.org/"
+            },
+            {
+                name: "CUDA",
+                link: "https://developer.nvidia.com/cuda-toolkit"
+            },
+            {
+                name: "NumPy",
+                link: "https://numpy.org/"
+            }
         ]
     },
     "seo-service": {
@@ -554,14 +646,26 @@ const serviceDetails = {
             }
         ],
         technologies: [
-            "Google Analytics",
-            "SEMrush",
-            "Ahrefs",
-            "Moz",
-            "Screaming Frog",
-            "Google Search Console",
-            "Yoast SEO",
-            "Schema Markup"
+            {
+                name: "Google Analytics",
+                link: "https://analytics.google.com/"
+            },
+            {
+                name: "SEOPTIMER",
+                link: "https://www.seoptimer.com/"
+            },
+            {
+                name: "Seobility",
+                link: "https://www.seobility.net/"
+            },
+            {
+                name: "Google Search Console",
+                link: "https://search.google.com/search-console/"
+            },
+            {
+                name: "LLMs",
+                link: "https://openai.com/research/language-models"
+            }
         ]
     },
     "marketing-service": {
@@ -609,14 +713,30 @@ const serviceDetails = {
             }
         ],
         technologies: [
-            "HubSpot",
-            "Mailchimp",
-            "Google Ads",
-            "Facebook Ads",
-            "Buffer",
-            "Hootsuite",
-            "Google Analytics",
-            "Salesforce"
+            {
+                name: "HubSpot",
+                link: "https://www.hubspot.com/"
+            },
+            {
+                name: "Mailchimp",
+                link: "https://mailchimp.com/"
+            },
+            {
+                name: "Google Ads",
+                link: "https://ads.google.com/"
+            },
+            {
+                name: "Facebook Ads",
+                link: "https://www.facebook.com/business/ads"
+            },
+            {
+                name: "Buffer",
+                link: "https://buffer.com/"
+            },
+            {
+                name: "Google Analytics",
+                link: "https://analytics.google.com/"
+            }
         ]
     },
     "consulting-service": {
@@ -664,14 +784,30 @@ const serviceDetails = {
             }
         ],
         technologies: [
-            "ITIL",
-            "Agile",
-            "DevOps",
-            "Cloud Architecture",
-            "Enterprise Architecture",
-            "Risk Management",
-            "Business Analysis",
-            "Project Management"
+            {
+                name: "Agile",
+                link: "https://agilemanifesto.org/"
+            },
+            {
+                name: "DevOps",
+                link: "https://aws.amazon.com/devops/"
+            },
+            {
+                name: "Cloud Architecture",
+                link: "https://aws.amazon.com/architecture/"
+            },
+            {
+                name: "Risk Management",
+                link: "https://www.iso.org/standard/65694.html"
+            },
+            {
+                name: "Business Analysis",
+                link: "https://www.iiba.org/"
+            },
+            {
+                name: "Project Management",
+                link: "https://www.pmi.org/"
+            }
         ]
     }
 };
@@ -685,7 +821,9 @@ __turbopack_context__.s({
     "default": (()=>ServiceDetails)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$serviceDetails$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/serviceDetails.ts [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -851,9 +989,16 @@ async function ServiceDetails({ params }) {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "tech-list",
-                            children: serviceData.technologies.map((tech, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "tech-tag",
-                                    children: tech
+                            children: serviceData.technologies.map((tech, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                    href: tech.link,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "tech-tag",
+                                        children: tech.name
+                                    }, index, false, {
+                                        fileName: "[project]/src/app/services/[service]/page.tsx",
+                                        lineNumber: 54,
+                                        columnNumber: 63
+                                    }, this)
                                 }, index, false, {
                                     fileName: "[project]/src/app/services/[service]/page.tsx",
                                     lineNumber: 54,

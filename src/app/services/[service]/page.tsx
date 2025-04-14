@@ -1,6 +1,6 @@
+import Link from "next/link";
 import "./page.css";
 import { serviceDetails } from "@/utils/serviceDetails";
-import Image from "next/image";
 
 export default async function ServiceDetails({ params }) {
   const { service } = params;
@@ -51,7 +51,7 @@ export default async function ServiceDetails({ params }) {
                 <h2>Technologies We Use</h2>
                 <div className="tech-list">
                     {serviceData.technologies.map((tech, index) => (
-                        <span key={index} className="tech-tag">{tech}</span>
+                        <Link key = {index} href={tech.link} ><span key={index} className="tech-tag">{tech.name}</span></Link>
                     ))}
                 </div>
                 

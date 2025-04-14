@@ -62,14 +62,38 @@ export const serviceDetails = {
       },
     ],
     technologies: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "React",
-      "Angular",
-      "Vue.js",
-      "Node.js",
-      "WordPress",
+      {
+        name: "HTML5",
+        link: "https://html.spec.whatwg.org/",
+      },
+      {
+        name: "CSS3",
+        link: "https://www.w3.org/Style/CSS/",
+      },
+      {
+        name: "JavaScript",
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      },
+      {
+        name: "React",
+        link: "https://react.dev/",
+      },
+      {
+        name: "Angular",
+        link: "https://angular.io/",
+      },
+      {
+        name: "Vue.js",
+        link: "https://vuejs.org/",
+      },
+      {
+        name: "Node.js",
+        link: "https://nodejs.org/",
+      },
+      {
+        name: "WordPress",
+        link: "https://wordpress.org/",
+      },
     ],
   },
   "backend-service": {
@@ -118,14 +142,38 @@ export const serviceDetails = {
       },
     ],
     technologies: [
-      "Node.js",
-      "Python",
-      "Java",
-      "PostgreSQL",
-      "MongoDB",
-      "Docker",
-      "Kubernetes",
-      "Redis",
+      {
+        name: "Node.js",
+        link: "https://nodejs.org/",
+      },
+      {
+        name: "Python",
+        link: "https://www.python.org/",
+      },
+      {
+        name: "Java",
+        link: "https://www.java.com/",
+      },
+      {
+        name: "PostgreSQL",
+        link: "https://www.postgresql.org/",
+      },
+      {
+        name: "MongoDB",
+        link: "https://www.mongodb.com/",
+      },
+      {
+        name: "Docker",
+        link: "https://www.docker.com/",
+      },
+      {
+        name: "Kubernetes",
+        link: "https://kubernetes.io/",
+      },
+      {
+        name: "Redis",
+        link: "https://redis.io/",
+      },
     ],
   },
   "mobile-service": {
@@ -174,14 +222,38 @@ export const serviceDetails = {
       },
     ],
     technologies: [
-      "Swift",
-      "Kotlin",
-      "React Native",
-      "Flutter",
-      "Firebase",
-      "iOS",
-      "Android",
-      "TypeScript",
+      {
+        name: "Swift",
+        link: "https://developer.apple.com/swift/",
+      },
+      {
+        name: "Kotlin",
+        link: "https://kotlinlang.org/",
+      },
+      {
+        name: "React Native",
+        link: "https://reactnative.dev/",
+      },
+      {
+        name: "Flutter",
+        link: "https://flutter.dev/",
+      },
+      {
+        name: "Firebase",
+        link: "https://firebase.google.com/",
+      },
+      {
+        name: "iOS",
+        link: "https://developer.apple.com/ios/",
+      },
+      {
+        name: "Android",
+        link: "https://developer.android.com/",
+      },
+      {
+        name: "TypeScript",
+        link: "https://www.typescriptlang.org/",
+      },
     ],
   },
   "ui-service": {
@@ -230,14 +302,14 @@ export const serviceDetails = {
       },
     ],
     technologies: [
-      "Figma",
-      "Adobe XD",
-      "Sketch",
-      "InVision",
-      "Principle",
-      "Framer",
-      "Zeplin",
-      "Abstract",
+      {
+        name: "Figma",
+        link: "https://www.figma.com/",
+      },
+      {
+        name: "ComfyUI",
+        link: "https://github.com/comfyanonymous/ComfyUI",
+      },
     ],
   },
   "ai-service": {
@@ -286,14 +358,34 @@ export const serviceDetails = {
       },
     ],
     technologies: [
-      "TensorFlow",
-      "PyTorch",
-      "scikit-learn",
-      "OpenAI",
-      "Python",
-      "CUDA",
-      "Keras",
-      "NumPy",
+      {
+        name: "PyTorch",
+        link: "https://pytorch.org/",
+      },
+      {
+        name: "LLM",
+        link: "https://openai.com/research/language-models",
+      },
+      {
+        name: "GEN-AI",
+        link: "https://openai.com/research/generative-models",
+      },
+      {
+        name: "OpenAI",
+        link: "https://openai.com/",
+      },
+      {
+        name: "Python",
+        link: "https://www.python.org/",
+      },
+      {
+        name: "CUDA",
+        link: "https://developer.nvidia.com/cuda-toolkit",
+      },
+      {
+        name: "NumPy",
+        link: "https://numpy.org/",
+      },
     ],
   },
   "seo-service": {
@@ -342,14 +434,26 @@ export const serviceDetails = {
       },
     ],
     technologies: [
-      "Google Analytics",
-      "SEMrush",
-      "Ahrefs",
-      "Moz",
-      "Screaming Frog",
-      "Google Search Console",
-      "Yoast SEO",
-      "Schema Markup",
+      {
+        name: "Google Analytics",
+        link: "https://analytics.google.com/",
+      },
+      {
+        name: "SEOPTIMER",
+        link: "https://www.seoptimer.com/",
+      },
+      {
+        name: "Seobility",
+        link: "https://www.seobility.net/",
+      },
+      {
+        name: "Google Search Console",
+        link: "https://search.google.com/search-console/",
+      },
+      {
+        name: "LLMs",
+        link: "https://openai.com/research/language-models",
+      },
     ],
   },
   "marketing-service": {
@@ -398,14 +502,30 @@ export const serviceDetails = {
       },
     ],
     technologies: [
-      "HubSpot",
-      "Mailchimp",
-      "Google Ads",
-      "Facebook Ads",
-      "Buffer",
-      "Hootsuite",
-      "Google Analytics",
-      "Salesforce",
+      {
+        name: "HubSpot",
+        link: "https://www.hubspot.com/",
+      },
+      {
+        name: "Mailchimp",
+        link: "https://mailchimp.com/",
+      },
+      {
+        name: "Google Ads",
+        link: "https://ads.google.com/",
+      },
+      {
+        name: "Facebook Ads",
+        link: "https://www.facebook.com/business/ads",
+      },
+      {
+        name: "Buffer",
+        link: "https://buffer.com/",
+      },
+      {
+        name: "Google Analytics",
+        link: "https://analytics.google.com/",
+      },
     ],
   },
   "consulting-service": {
@@ -454,14 +574,30 @@ export const serviceDetails = {
       },
     ],
     technologies: [
-      "ITIL",
-      "Agile",
-      "DevOps",
-      "Cloud Architecture",
-      "Enterprise Architecture",
-      "Risk Management",
-      "Business Analysis",
-      "Project Management",
+      {
+        name: "Agile",
+        link: "https://agilemanifesto.org/",
+      },
+      {
+        name: "DevOps",
+        link: "https://aws.amazon.com/devops/",
+      },
+      {
+        name: "Cloud Architecture",
+        link: "https://aws.amazon.com/architecture/",
+      },
+      {
+        name: "Risk Management",
+        link: "https://www.iso.org/standard/65694.html",
+      },
+      {
+        name: "Business Analysis",
+        link: "https://www.iiba.org/",
+      },
+      {
+        name: "Project Management",
+        link: "https://www.pmi.org/",
+      },
     ],
   },
 };
