@@ -2,9 +2,13 @@ import desktopServiceIcon from "../../public/serviceIcons/desktopIcon.png"
 import backendIcon from "../../public/serviceIcons/backendIcon.png"
 import mobileIcon from "../../public/serviceIcons/mobileIcon.png"
 import designIcon from "../../public/serviceIcons/designIcon.png"
+import aiIcon from "../../public/serviceIcons/aiIcon.png"
+import marketingIcon from "../../public/serviceIcons/marketingIcon.png"
+import seoIcon from "../../public/serviceIcons/seoIcon.png"
+import consultingIcon from "../../public/serviceIcons/consultingIcon.png"
 
 // Combine all projects into one array with sections
-  export const desktopServices = [
+export const desktopServices = [
     {   
         title: "Web Development", 
         subtitle: "Modern web apps with responsive design and fast load times",
@@ -29,9 +33,33 @@ import designIcon from "../../public/serviceIcons/designIcon.png"
         icon: designIcon,
         slug: "ui-service" 
     },
-  ];
+    {
+        title: "AI Solutions",
+        subtitle: "Custom LLMs and generative AI integration for your business",
+        icon: aiIcon,
+        slug: "ai-service"
+    },
+    {
+        title: "Marketing Solutions",
+        subtitle: "Digital marketing strategies to grow your online presence",
+        icon: marketingIcon,
+        slug: "marketing-service"
+    },
+    {
+        title: "SEO Optimization",
+        subtitle: "Search engine optimization to increase your visibility",
+        icon: seoIcon,
+        slug: "seo-service"
+    },
+    {
+        title: "Technical Consulting",
+        subtitle: "Expert guidance on technology strategy and implementation",
+        icon: consultingIcon,
+        slug: "consulting-service"
+    }
+];
 
-  export const mobileServices = [
+export const mobileServices = [
     {
         title: "Web", 
         subtitle: "Modern web apps with responsive design and fast load times",
@@ -55,6 +83,30 @@ import designIcon from "../../public/serviceIcons/designIcon.png"
         subtitle: "Intuitive and engaging user interfaces with UX focus",
         icon: designIcon,
         slug: "ui-service" 
+    },
+    {
+        title: "AI",
+        subtitle: "Custom LLMs and generative AI integration for your business",
+        icon: aiIcon,
+        slug: "ai-service"
+    },
+    {
+        title: "Marketing",
+        subtitle: "Digital marketing strategies to grow your online presence",
+        icon: marketingIcon,
+        slug: "marketing-service"
+    },
+    {
+        title: "SEO",
+        subtitle: "Search engine optimization to increase your visibility",
+        icon: seoIcon,
+        slug: "seo-service"
+    },
+    {
+        title: "Consulting",
+        subtitle: "Expert guidance on technology strategy and implementation",
+        icon: consultingIcon,
+        slug: "consulting-service"
     }
 ];
 

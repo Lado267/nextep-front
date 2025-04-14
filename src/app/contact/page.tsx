@@ -4,7 +4,6 @@ import './page.css';
 import image from '../../../public/contact_page_photo.jpg';
 import facebook from '../../../public/social/facebook.png';
 import whatsapp from '../../../public/social/whatsapp.png';
-import linkedin from '../../../public/social/linkedin.png';
 import viber from '../../../public/social/viber.png';
 // Contact.jsx
 import React from 'react';
@@ -46,12 +45,12 @@ export default function ContactPage() {
               <h1 className="projects-title">Contact Us - for Digital Services and Web Solutions</h1>
             </div>
             <div className='flex flex-col gap-[12px]'>
-              <p className="word-wrap text-left">
+              {/* <p className="word-wrap text-left">
                 Looking to contact us for digital services, projects, or web solutions? At NextEp, we make it easy to get in touch. Whether you prefer to reach out via email, phone, or social media, our contact information is readily available. We offer transparent pricing and are committed to providing excellent customer service.
               </p>
               <p className="word-wrap">
               Contact us today to discuss your project requirements and discover how we can help you achieve your business goals. Our team is ready to assist you with any questions you may have about our services, pricing, or project process.
-              </p>
+              </p> */}
             </div>
           </div>
 

@@ -1,0 +1,37 @@
+/* [project]/src/elements/navigation/navigation.css [app-client] (css) */
+.tabbar_appearance {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: var(--quaternary-project);
+  height: 40px;
+  box-shadow: 0 -1px 8px #0000001a;
+}
+
+.menu_appearance {
+  display: none;
+  position: sticky;
+  top: 52px;
+  z-index: 30;
+}
+
+.menu-gap {
+  gap: 16px;
+}
+
+@media (width >= 640px) {
+  .tabbar_appearance {
+    display: none;
+  }
+
+  .menu_appearance {
+    display: flex;
+    background-color: var(--quaternary-project);
+    top: 126.44px;
+    height: 60px;
+  }
+}
+
+/*# sourceMappingURL=src_elements_navigation_navigation_b52d8e88.css.map*/
