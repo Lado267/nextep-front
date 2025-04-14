@@ -135,8 +135,24 @@ const backendProjects = [
 
 // Combine all projects into one array with sections
 export const allProjects = [
-  { section: "Backend Development", projects: backendProjects },
-  { section: "Web Development", projects: webProjects },
-  { section: "macOS Development", projects: macosProjects},
-  { section: "Mobile Development", projects: mobileProjects }
+  { 
+    section: "Backend Development", 
+    sectionDescription: "A collection of advanced backend systems leveraging AI technologies, database architectures, and API integrations. Each project demonstrates sophisticated server-side implementations and data processing solutions.",
+    projects: backendProjects 
+  },
+  { 
+    section: "Web Development", 
+    sectionDescription: "A portfolio of modern web applications built with industry-standard frameworks. These solutions feature responsive interfaces, efficient state management, and seamless integration with various services.",
+    projects: webProjects 
+  },
+  { 
+    section: "macOS Development",
+    sectionDescription: "A selection of native macOS applications developed with Swift and Apple's latest technologies. These desktop solutions deliver specialized functionality through clean, platform-optimized interfaces.",
+    projects: macosProjects
+  },
+  { 
+    section: "Mobile Development",
+    sectionDescription: "A showcase of iOS applications highlighting native development expertise. These mobile solutions implement efficient architectures and platform-specific design patterns for optimal performance.",
+    projects: mobileProjects 
+  }
 ];

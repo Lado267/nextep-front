@@ -4,7 +4,7 @@ import Link from "next/link";
 import "./page.css";
 
 export const metadata = {
-  title: "NextEp | Services - Digital Services, AI & Web Solutions",
+  title: "NextEp | Services - Digital Presence, AI & Web Solutions",
   alternates: {
   canonical: "https://nextep.solutions/services",
   },
@@ -16,22 +16,22 @@ export default function Services() {
         <div className="mobile-content-appearance">
           <div className="mobile-title-appearance">
             <h1 className="services-title">Our Services</h1>
-            <h2 className="services-subtitle">Digital Presence, AI & Web Solutions</h2>
+            <h2 className="services-subtitle">Digital Solutions</h2>
           </div>
           <p className="word-wrap text-center text-tertiaryProject">
-              Explore our comprehensive range of services designed to meet your digital needs.At NextEp, we specialize in providing top-notch digital services, including website development, mobile app creation, and custom web solutions.
+              We specialize in website development, mobile apps, and custom web solutions powered by AI.
           </p>
         </div>
         <div className="desktop-content-appearance">
           <div className="desktop-title-appearance">
-            <h1 className="services-title">Our Services - Digital Presence, AI & Web Solutions</h1>
+            <h1 className="services-title">Our Digital Services</h1>
           </div>
-          <p className="word-wrap text-tertiaryProject">
-              Explore our comprehensive range of services designed to meet your digital needs. At NextEp, we specialize in providing top-notch digital services, including website development, mobile app creation, and custom web solutions. Our team of experts is dedicated to delivering innovative and effective solutions that drive business growth.
-          </p>
+            <p className="word-wrap text-primaryProject bg-tertiaryProject rounded-[8px] p-[16px] flex flex-col text-[16px] font-medium">
+              Transform your business with our expertise in web development, mobile applications, and AI-powered solutions. Our team delivers innovative technology that drives growth and enhances your digital presence. We combine cutting-edge technologies with strategic thinking to create seamless, user-centric experiences that set your business apart. From responsive websites and intuitive mobile apps to custom AI integrations, we provide comprehensive digital solutions tailored to your specific needs. Our commitment to excellence and attention to detail ensures that every project we undertake contributes meaningfully to your business success and market position.
+            </p>
         </div>
-        <p className="word-wrap desktop-content-appearance text-tertiaryProject">
-          Whether you need a new website, a mobile app, or a custom software application, we have the skills and experience to bring your vision to life. Contact us today to learn more about our services and how we can help you achieve your business goals.
+        <p className="word-wrap desktop-content-appearance text-tertiaryProject text-[20px] p-[12px]">
+          Let&apos;s bring your digital vision to life. <Link href='/contact' className="text-quaternaryProject hover:underline">Contact us</Link> to discuss how our services can help achieve your business goals.
         </p>
         <div className="services-grid">
           {desktopServices.map((service) => (

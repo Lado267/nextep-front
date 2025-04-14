@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/robots.txt/route": "/robots.txt",
+  "/favicon.ico/route": "/favicon.ico",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/projects/[slug]/page": "/projects/[slug]",
+  "/services/[service]/page": "/services/[service]",
+  "/services/page": "/services",
+  "/page": "/",
+  "/contact/page": "/contact",
+  "/projects/page": "/projects"
+}
