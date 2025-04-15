@@ -3574,7 +3574,7 @@ h5 {
 }
 
 .menu-gap {
-  gap: 16px;
+  gap: 12px;
 }
 
 @media (width >= 640px) {
@@ -3593,11 +3593,13 @@ h5 {
 
 /* [project]/src/elements/navigation/menuItem.css [app-client] (css) */
 .menu_item-width {
-  min-width: 40px;
+  min-width: 28px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .menu_item-font {
-  font-size: 12px;
+  font-size: 10px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
@@ -3631,16 +3633,16 @@ h5 {
 }
 
 .main-padding {
-  padding: 20px 0;
+  padding: 5vw 0;
 }
 
 .horizental-gap {
-  gap: 100px;
+  gap: 8px;
 }
 
 .footer-link {
   color: var(--quartenary-project);
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .footer-text-color {
@@ -3650,9 +3652,9 @@ h5 {
 .facebook-follow-btn {
   background-color: #1877f2;
   color: #fff;
-  padding: 8px 16px;
+  padding: 4px 8px;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   transition: background-color .2s;
 }
@@ -3680,6 +3682,21 @@ h5 {
 
   .footer-text-color {
     color: var(--white-project);
+  }
+
+  .footer-link {
+    color: var(--white-project);
+    font-size: 16px;
+  }
+
+  .facebook-follow-btn {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color .2s;
   }
 }
 

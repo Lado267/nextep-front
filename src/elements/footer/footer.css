@@ -13,16 +13,16 @@
 }
 
 .main-padding {
-    padding: 20px 0;
+    padding: 5vw 0;
 }
 
 .horizental-gap {
-    gap: 100px;
+    gap: 8px;
 }
 
 .footer-link{
     color: var(--quartenary-project);
-    font-size: 16px;
+    font-size: 12px;
 }
 .footer-text-color {
     color: var(--white-project);
@@ -31,9 +31,9 @@
 .facebook-follow-btn {
     background-color: #1877f2;
     color: white;
-    padding: 8px 16px;
+    padding: 4px 8px;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     transition: background-color 0.2s;
 }
@@ -61,5 +61,20 @@
 
     .footer-text-color {
         color: var(--white-project);
+    }
+
+    .footer-link{
+        color: var(--white-project);
+        font-size: 16px;
+    }
+
+    .facebook-follow-btn {
+        background-color: #1877f2;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 16px;
+        text-align: center;
+        transition: background-color 0.2s;
     }
 }

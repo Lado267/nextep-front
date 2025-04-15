@@ -1,5 +1,4 @@
-/* contact.css */
-
+/* [project]/src/app/contact/page.css [app-client] (css) */
 .mobile-title-appearance {
   display: flex;
   flex-direction: column;
@@ -43,11 +42,11 @@
 }
 
 .desktop-content-appearance {
-  display: none; /* Hide desktop content by default */
+  display: none;
 }
 
 .mobile-content-appearance {
-  display: flex; /* Show mobile content by default */
+  display: flex;
 }
 
 .contact-text {
@@ -55,7 +54,6 @@
   padding-right: 10vw;
 }
 
-/* Add these to your page.css */
 .contact-title {
   font-weight: bold;
   margin-bottom: 8px;
@@ -63,7 +61,7 @@
 }
 
 .contact-subtitle {
-  font-size: 16;
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 20px;
   color: var(--secondary-project);
@@ -77,9 +75,9 @@
 }
 
 .text-content {
-  background-color: white;
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px #00000014;
   padding: 2rem;
 }
 
@@ -90,7 +88,7 @@
 }
 
 .right-column {
-  display: none; /* Hide image by default */
+  display: none;
   width: 100%;
 }
 
@@ -102,21 +100,21 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #1a3165; /* Updated color */
+  color: #1a3165;
   text-align: left;
 }
 
 .pricing-table {
-  background-color: #f9f9f9; /* Updated background color */
+  background-color: #f9f9f9;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px #0000000d;
 }
 
 .pricing-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.75rem;
+  margin-bottom: .75rem;
 }
 
 .pricing-label {
@@ -154,15 +152,14 @@
 .contact-image {
   width: 100%;
   position: relative;
-  aspect-ratio: 3/4;
+  aspect-ratio: 3 / 4;
   margin-top: 44px;
 }
 
 .contact-image img {
   width: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 8px;
-
 }
 
 .contact-methods {
@@ -177,13 +174,13 @@
 .email-title {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 0.25rem;
-  color: #1a3165; /* Updated color */
+  margin-bottom: .25rem;
+  color: #1a3165;
   text-align: center;
 }
-  
+
 .email-response {
-  font-size: 0.875rem;
+  font-size: .875rem;
   color: #666;
 }
 
@@ -194,9 +191,8 @@
   margin: 3.7rem 0;
 }
 
-.divider::before,
-.divider::after {
-  content: '';
+.divider:before, .divider:after {
+  content: "";
   flex: 1;
   height: 1px;
   background-color: #ddd;
@@ -222,7 +218,7 @@
   width: 48px;
   border-radius: 20%;
   background-color: none;
-  transition: background-color 0.2s;
+  transition: background-color .2s;
 }
 
 .social-icon:hover {
@@ -253,14 +249,14 @@
 
 label {
   display: block;
-  font-size: 0.875rem;
-  margin-bottom: 0.25rem;
+  font-size: .875rem;
+  margin-bottom: .25rem;
   color: #555;
 }
 
 input, select, textarea {
   width: 100%;
-  padding: 0.75rem;
+  padding: .75rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1rem;
@@ -273,21 +269,21 @@ input, select, textarea {
 }
 
 .submit-button {
-  background-color: #1a3165; /* Updated background color */
-  color: white;
+  background-color: #1a3165;
+  color: #fff;
   border: none;
   border-radius: 4px;
-  padding: 0.75rem 1.5rem;
+  padding: .75rem 1.5rem;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color .2s;
   width: 100%;
   margin-top: 1rem;
 }
 
 .submit-button:hover {
-  background-color: #132548; /* Updated hover color */
+  background-color: #132548;
 }
 
 .contact-label {
@@ -302,9 +298,7 @@ input, select, textarea {
   color: var(--secondary-project);
 }
 
-/* Responsive styles */
-@media (min-width: 640px) {
-
+@media (width >= 640px) {
   .mobile-title-appearance {
     display: none;
   }
@@ -333,25 +327,25 @@ input, select, textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     align-items: flex-start;
   }
 
   .mobile-content-appearance {
-    display: none; /* Hide mobile content on larger screens */
+    display: none;
   }
 
   .desktop-content-appearance {
-    display: flex; /* Show desktop content on larger screens */
+    display: flex;
   }
 
   .main-content {
     flex-direction: row;
     gap: 2rem;
     align-items: flex-start;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .contact-title {
@@ -362,11 +356,11 @@ input, select, textarea {
 
   .contact-subtitle {
     text-align: left;
-    padding: 0px;
+    padding: 0;
   }
 
   .contact-inner-container {
-    padding: 0px;
+    padding: 0;
   }
 
   .email-title {
@@ -374,7 +368,7 @@ input, select, textarea {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1a3165; /* Updated color */
+    color: #1a3165;
   }
 
   .email-response {
@@ -382,18 +376,18 @@ input, select, textarea {
     color: #444;
   }
 
-  .email-title:hover{
+  .email-title:hover {
     color: var(--quaternary-project);
   }
-  
+
   .left-column {
-    width: 100%; /* Use full width when image is hidden */
+    width: 100%;
   }
-  
+
   .form-row {
     flex-direction: row;
   }
-  
+
   .email-section {
     text-align: left;
   }
@@ -411,19 +405,21 @@ input, select, textarea {
   }
 }
 
-/* Show image only when screen is wider than 1260px */
-@media (min-width: 1260px) {
+@media (width >= 1260px) {
   .main-content {
     flex-direction: row;
     gap: 2rem;
   }
-  
+
   .left-column {
-    width: 50%; /* Use half width when image is visible */
+    width: 50%;
   }
-  
+
   .right-column {
-    display: block; /* Show image on screens wider than 1260px */
+    display: block;
     width: 50%;
   }
 }
+
+
+/*# sourceMappingURL=src_app_contact_page_00c5bea7.css.map*/
