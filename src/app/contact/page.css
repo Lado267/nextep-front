@@ -103,7 +103,7 @@
   font-weight: 600;
   margin-bottom: 1rem;
   color: #1a3165; /* Updated color */
-  text-align: left;
+  text-align: center;
 }
 
 .pricing-table {
@@ -352,6 +352,10 @@ input, select, textarea {
     align-items: flex-start;
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .pricing-title {
+    text-align: left;
   }
 
   .contact-title {

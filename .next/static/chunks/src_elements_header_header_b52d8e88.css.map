@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/elements/header/header.css"],"sourcesContent":["\r\n.header_background_color {\r\n    background-color: var(--primary-project);\r\n    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.header_position {\r\n    position: sticky;\r\n    top: 0;\r\n    z-index: 40;\r\n    margin: 0px 0px;\r\n}\r\n\r\n.header_justify_content {\r\n    justify-content: center;\r\n}\r\n\r\n.header_button_visible {\r\n    display: none;\r\n}\r\n\r\n.header-logo-width {\r\n    width: 100px;\r\n}\r\n\r\n.header-padding {\r\n    padding: 12px;\r\n}\r\n\r\n@media(min-width: 640px) {\r\n    .header_background_color {\r\n        background-color: white;\r\n    }\r\n\r\n    .header_justify_content {\r\n        justify-content: space-between;\r\n    }\r\n\r\n    .header_button_visible {\r\n        display: inline-flex;\r\n    }\r\n\r\n    .header-logo-width {\r\n        width: 204px;\r\n    }\r\n\r\n    .header-padding {\r\n        padding: 32px 0px;\r\n    }\r\n}\r\n\r\n\r\n\r\n"],"names":[],"mappings":"AACA;;;;;AAKA;;;;;;;AAOA;;;;AAIA;;;;AAIA;;;;AAIA;;;;AAIA;EACI;;;;EAIA;;;;EAIA;;;;EAIA;;;;EAIA"}}]
-}
