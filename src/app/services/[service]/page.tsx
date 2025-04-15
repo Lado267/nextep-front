@@ -6,9 +6,9 @@ export async function generateMetadata({ params }): Promise<Metadata> {
     const { service } = params;
     const serviceData = serviceDetails[service];
 
-    let title = serviceData?.title || 'Service Not Found - NextEp Solutions';
-    if (title.length > 60) { 
-      title = `NextEp | ${serviceData.title} - Digital Presence & Web Solutions`;
+    let finalTitle = `NextEp | ${serviceData.title} - Digital Presence, AI & Web Solutions`
+    if (finalTitle.length > 60) { 
+      finalTitle = `NextEp | ${serviceData.title} - Digital Presence & Web Solutions`;
     }
   
     if (!serviceData) {
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }): Promise<Metadata> {
     }
   
     return {
-      title: `NextEp | ${serviceData.title} - Digital Presence, AI & Web Solutions`,
+      title: finalTitle,
       description: serviceData.description,
       alternates: {
         canonical: `https://nextep.solutions/services/${service}`,
