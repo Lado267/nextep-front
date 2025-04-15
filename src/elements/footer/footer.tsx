@@ -17,7 +17,7 @@ export default function Footer() {
                     <div className="flex flex-col vertical-gap footer-text-color justify-center">
                         <Link href="privacy-policy"><p className="footer-link">Privacy Policy</p></Link>
                         <Link href="terms-of-service"><p className="footer-link">Terms of Service</p></Link>
-                        <Link href="#"><p className="footer-link">Cookie Policy</p></Link>
+                        <Link href="cookie-policy"><p className="footer-link">Cookie Policy</p></Link>
                     </div>
                     <div className="ml-auto mt-auto flex flex-col gap-4">
                         <SocialShare
@@ -25,7 +25,7 @@ export default function Footer() {
                             title="NextEp Solutions - Digital Services & Web Development"
                             description="Discover our comprehensive digital services spanning web development, AI solutions, SEO, Marketing and custom software engineering."
                         />
-                        <Link href="https://facebook.com/nextepsolutions" target="_blank" className="facebook-follow-btn flex items-center gap-2">
+                        <Link href="https://facebook.com/nextepsolutions" target="_blank" rel="noopener noreferrer" className="facebook-follow-btn flex items-center gap-2">
                             <FaFacebook size={20} />
                             Follow us on Facebook
                         </Link>

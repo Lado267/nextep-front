@@ -1,9 +1,11 @@
 import "./page.css"
+import Link from "next/link";
 
 import React from 'react';
 
 export const metadata = {
-  title: "NextEp | Privacy Policy",
+  title: "NextEp | Privacy Policy - Digital Presence & Web Solutions",
+  description: "Learn about how NEXTEP handles and protects your data while providing software development services. View our comprehensive privacy policy and data protection measures.",
   alternates: {
     canonical: "https://nextep.solutions/privacy-policy",
   },
@@ -73,7 +75,7 @@ const PrivacyPolicy = () => {
         <div className="policy-section">
           <h2>Contact Our Development Team</h2>
           <p>For questions about our data handling practices or to discuss a software development project:</p>
-          <p>Email: <a href="mailto:jack@dmin.com">jack@dmin.com</a><br />
+          <p>Email: <Link href="mailto:jack@dmin.com">jack@dmin.com</Link><br />
           Phone: +995 555 48 78 95</p>
         </div>
       </div>

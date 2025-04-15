@@ -4,6 +4,13 @@
     width: 100%;
 }
 
+.section-title-h2 {
+    font-size: 20px;
+    color: var(--secondary-project);
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
 .container {
     margin-bottom: 40px;
 }

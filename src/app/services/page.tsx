@@ -5,8 +5,9 @@ import "./page.css";
 
 export const metadata = {
   title: "NextEp | Services - Digital Presence, AI & Web Solutions",
+  description: "Transform your business with NextEp's web development, mobile apps, and AI solutions. Expert digital services tailored to enhance your market presence and drive growth.",
   alternates: {
-  canonical: "https://nextep.solutions/services",
+    canonical: "https://nextep.solutions/services",
   },
 };
 

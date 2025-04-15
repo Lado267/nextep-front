@@ -6,6 +6,11 @@
     width: 100vw;
 }
 
+.flex-col-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .mobile-content-appearance-carousel {
     display: block;
 }

@@ -1,7 +1,8 @@
 import "./page.css"
 
 export const metadata = {
-    title: "NextEp | Terms of Service",
+    title: "NextEp | Terms of Service - Digital Presence & Web Solutions",
+    description: "Read our Terms of Service to understand the guidelines, rights, and responsibilities when using NextEp's digital transformation and web development services.",
     alternates: {
       canonical: "https://nextep.solutions/terms-of-service",
     },

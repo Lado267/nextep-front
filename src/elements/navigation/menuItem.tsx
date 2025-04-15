@@ -14,10 +14,10 @@ export default function MenuItem(props: MenuItemProps) {
     const path = usePathname()
     const split = path.split("/")
     return (
-      <a href={props.href}>
+      <Link href={props.href}>
         <Button className="menu_item-font menu_item-width" variant={`/${split[1]}` == props.href ? "projectSelected" : "projectUnselected"}>
             {props.title}
         </Button>
-      </a>
+      </Link>
     );
 }

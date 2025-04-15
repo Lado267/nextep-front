@@ -81,7 +81,7 @@ export default async function ProjectDetails({ params }) {
       </div>
 
       <div className="section">
-        <h2 className="section-title">Development Journey</h2>
+        <p className="section-title">Development Journey</p>
         {project.developmentProcess.map((process, index) => (
           <p key={index} className="project-description">
             {process}
@@ -91,14 +91,14 @@ export default async function ProjectDetails({ params }) {
 
       {project.gallery && project.gallery.length > 0 && (
         <div className="section">
-          <h2 className="section-title">Project Gallery</h2>
+          <p className="section-title">Project Gallery</p>
           <Gallery images={project.gallery} />
         </div>
       )}
 
       <div className='h-[1px] w-full bg-red'></div>
       <div className="cta-section">
-        <h2 className="cta-title">Ready to Start Your Project?</h2>
+        <p className="cta-title">Ready to Start Your Project?</p>
         <p className="cta-description">
           Let&apos;s discuss how we can create a custom digital solution for your business needs.
         </p>

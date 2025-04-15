@@ -1,8 +1,10 @@
 import React from 'react';
 import "./page.css";
+import Link from "next/link";
 
 export const metadata = {
-    title: "NextEp | Cookie Policy",
+    title: "NextEp | Cookie Policy - Digital Presence & Web Solutions",
+    description: "Learn about how NextEp uses cookies to enhance your browsing experience. Our cookie policy explains the types of cookies we use and how you can manage your preferences.",
     alternates: {
       canonical: "https://nextep.solutions/cookie-policy",
     },
@@ -104,7 +106,7 @@ const CookiePolicy = () => {
           If you have any questions about our use of cookies or this Cookie Policy, please contact us at:
         </p>
         <p className="contact-info">
-          Email: <a href="mailto:jack@dmin.com">jack@dmin.com</a><br />
+          Email: <Link href="mailto:jack@dmin.com">jack@dmin.com</Link><br />
           Phone: +995 555 48 78 95
         </p>
       </div>

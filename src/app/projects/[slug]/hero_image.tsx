@@ -20,6 +20,7 @@ export function HeroImage({ src, alt }: HeroImageProps) {
           alt={alt} 
           className='rounded-lg shadow-sm'
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
           style={{ 
             objectFit: 'cover',
             objectPosition: 'top' // This ensures the top is always visible
@@ -50,6 +51,7 @@ export function HeroImage({ src, alt }: HeroImageProps) {
               src={src}
               alt={alt}
               fill
+              sizes="100vw"
               style={{ objectFit: 'contain' }}
               className="expanded-image"
             />

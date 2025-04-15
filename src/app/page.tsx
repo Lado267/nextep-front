@@ -37,7 +37,7 @@ export default function Home() {
       <section className="desktop-content-appearance mt-[60px]">
         <CompanyCarouselDesktop companies={HomePageAlt.desktop.carousel.companies} />
       </section>
-      <section className="desktop-content-appearance home-additional-info mt-[80px] flex flex-col gap-[24px]">
+      <section className="desktop-content-appearance mt-[80px] flex-col-container gap-[24px]">
         <p className="word-wrap text-primaryProject bg-tertiaryProject rounded-[8px] p-[16px] flex flex-col text-[16px] font-medium">
           Discover our comprehensive digital services spanning web development, AI solutions, SEO, Marketing and custom software engineering. We deliver innovative websites, mobile apps, and enterprise solutions that drive measurable results. Our experienced team specializes in modern technologies and agile development practices to ensure your business stays ahead in the digital landscape. From strategic digital marketing campaigns to advanced search engine optimization, we help boost your online visibility and market reach. Our data-driven approach combines technical expertise with marketing insights to create solutions that not only look great but also perform exceptionally well in today&apos;s competitive digital environment.
         </p>
@@ -53,7 +53,6 @@ export default function Home() {
           Whether you&apos;re looking to enhance your online presence, streamline your operations, or develop cutting-edge applications, NextEp is your trusted partner for all your digital needs. <Link href="/contact" className="text-quaternaryProject hover:underline">Start a project</Link> directly to discuss your requirements.
         </p>
       </section>
-
 
       <section className="flex flex-col mobile-content-appearance gap-[12px] items-center justify-center pl-[5vw] pr-[5wv]">
         <h2 className="text-center">{HomePageAlt.mobile.hero.heroTitle}</h2>

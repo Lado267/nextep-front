@@ -117,7 +117,7 @@ export const HomePageAlt = {
             "heroTitle": `Take a step from legacy\nmethods to digital business\nexcellence`,
             "heroSubtitle1": "Every modern business needs digital\nrepresentation or an innovative technological\nsolution.",
             "heroSubtitle2": "We will level up your business to the Nextep of\ntechnological evolution",
-            "heroImageAlt": "Digital business transformation expert examining interactive call-to-action interface, showcasing modern tech solutions",
+            "heroImageAlt": "Digital business transformation expert examining interactive call-to-action interface",
             "heroImageSrc": MobileHomeHeroImage,
         },
         "carousel": {
@@ -130,7 +130,7 @@ export const HomePageAlt = {
             "heroTitle": "Move beyond traditional methods\nEmbrace the digital evolution",
             "heroSubtitle1": "Businesses thrive through digital presence\nor cutting-edge technological solutions",
             "heroSubtitle2": "We can guide your business twards\nthe future of digital innovation",
-            "heroImageAlt": "Digital business transformation expert examining interactive call-to-action interface, showcasing modern tech solutions",
+            "heroImageAlt": "Digital transformation expert examining interactive interface for modern tech solutions",
             "heroImageSrc": DesktopHomeHeroImage,
         },
         "carousel": {

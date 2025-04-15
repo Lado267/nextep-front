@@ -7,9 +7,11 @@ import whatsapp from '../../../public/social/whatsapp.png';
 import viber from '../../../public/social/viber.png';
 // Contact.jsx
 import React from 'react';
+import Link from 'next/link';
 
 export const metadata = {
   title: "NextEp | Contact Us - Digital Services, AI & Web Solutions",
+  description: "Get in touch with NextEp for professional digital services, web solutions, and AI integration. Contact us via email, phone, or social media for transparent pricing and excellent service.",
   alternates: {
     canonical: "https://nextep.solutions/contact",
   },
@@ -96,15 +98,15 @@ export default function ContactPage() {
 
             <section className="contact-methods">
               <div className="social-icons">
-                <a href="https://wa.me/995599738023" className="social-icon" target="_blank" rel="noopener noreferrer">
+                <Link href="https://wa.me/995599738023" className="social-icon" target="_blank" rel="noopener noreferrer">
                   <Image src={whatsapp} alt="whatsapp icon"></Image>
-                </a>
-                <a href="tel:+995599738023" className="social-icon" target="_blank" rel="noopener noreferrer">
+                </Link>
+                <Link href="tel:+995599738023" className="social-icon" target="_blank" rel="noopener noreferrer">
                   <Image src={viber} alt="viber icon"></Image>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61573529256520" className="social-icon" target="_blank" rel="noopener noreferrer">
+                </Link>
+                <Link href="https://www.facebook.com/profile.php?id=61573529256520" className="social-icon" target="_blank" rel="noopener noreferrer">
                   <Image src={facebook} alt="facebook icon"></Image>
-                </a>
+                </Link>
               </div>
 
               <div className="divider">
@@ -112,10 +114,10 @@ export default function ContactPage() {
               </div>
 
               <div className="email-section">
-                <a href="mailto:kaxamiqeladze@gmail.com">
+                <Link href="mailto:kaxamiqeladze@gmail.com">
                   <h2 className="email-title">Email us</h2>
                   <p className="email-response">We will respond in 24 hours</p>
-                </a>
+                </Link>
               </div>
             </section>
           </div>

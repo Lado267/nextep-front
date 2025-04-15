@@ -257,7 +257,7 @@ export const serviceDetails = {
     ],
   },
   "ui-service": {
-    title: "User Interface Design",
+    title: "Interface Design",
     icon: designIcon,
     description:
       "Create beautiful and functional user interfaces that enhance user experience and drive engagement. We focus on user-centered design principles.",

@@ -6,6 +6,7 @@ import { Button } from '../../components/ui/button';
 
 export const metadata = {
   title: "NextEp | Projects - Digital Services, AI & Web Solutions",
+  description: "Explore our portfolio of innovative digital services, AI solutions, and web development projects. See how we help businesses transform through technology.",
   alternates: {
     canonical: "https://nextep.solutions/projects",
   },
@@ -47,7 +48,13 @@ export default function ProjectsPage() {
             {section.projects.map((project) => (
               <div key={project.id} className="project-card">
                 <div className="project-image">
-                  <Image src={project.image} alt={project.name} fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+                  <Image 
+                    src={project.image} 
+                    alt={project.name} 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover', objectPosition: 'top' }} 
+                  />
                 </div>
                 <div className="project-content">
                   <div className="project-info">
@@ -55,7 +62,7 @@ export default function ProjectsPage() {
                     <p className="project-description">{project.description}</p>
                     <div className="project-tags">
                       {project.slugs.map((slug, index) => (
-                        <span key={index} className="project-tag"><a href={(project.resourceLinks as Record<string, string>)[slug]}>{slug}</a></span>
+                        <span key={index} className="project-tag"><Link href={(project.resourceLinks as Record<string, string>)[slug]}>{slug}</Link></span>
                       ))}
                     </div>
                   </div>

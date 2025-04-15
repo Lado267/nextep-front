@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { FaTwitter, FaLinkedin, FaFacebook, FaWhatsapp, FaReddit } from 'react-icons/fa';
+import Link from 'next/link';
 
 interface SocialShareProps {
   url: string;
@@ -42,7 +43,7 @@ export const SocialShare = ({ url, title, description }: SocialShareProps) => {
 
   return (
     <div className="flex gap-4 items-center py-4">
-      <a
+      <Link
         href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -51,8 +52,8 @@ export const SocialShare = ({ url, title, description }: SocialShareProps) => {
         onClick={() => trackShare('Twitter')}
       >
         <FaTwitter size={24} />
-      </a>
-      <a
+      </Link>
+      <Link
         href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedUrl}&title=${encodedTitle}&summary=${encodedDesc}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -61,8 +62,8 @@ export const SocialShare = ({ url, title, description }: SocialShareProps) => {
         onClick={() => trackShare('LinkedIn')}
       >
         <FaLinkedin size={24} />
-      </a>
-      <a
+      </Link>
+      <Link
         href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -71,8 +72,8 @@ export const SocialShare = ({ url, title, description }: SocialShareProps) => {
         onClick={() => trackShare('Facebook')}
       >
         <FaFacebook size={24} />
-      </a>
-      <a
+      </Link>
+      <Link
         href={`https://reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -81,8 +82,8 @@ export const SocialShare = ({ url, title, description }: SocialShareProps) => {
         onClick={() => trackShare('Reddit')}
       >
         <FaReddit size={24} />
-      </a>
-      <a
+      </Link>
+      <Link
         href={`https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -91,7 +92,7 @@ export const SocialShare = ({ url, title, description }: SocialShareProps) => {
         onClick={() => trackShare('WhatsApp')}
       >
         <FaWhatsapp size={24} />
-      </a>
+      </Link>
     </div>
   );
 };

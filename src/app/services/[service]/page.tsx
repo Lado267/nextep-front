@@ -5,6 +5,11 @@ import { serviceDetails } from "@/utils/serviceDetails";
 export async function generateMetadata({ params }): Promise<Metadata> {
     const { service } = params;
     const serviceData = serviceDetails[service];
+
+    let title = serviceData?.title || 'Service Not Found - NextEp Solutions';
+    if (title.length > 60) { 
+      title = `NextEp | ${serviceData.title} - Digital Presence & Web Solutions`;
+    }
   
     if (!serviceData) {
       return {
@@ -47,7 +52,7 @@ export default async function ServiceDetails({ params }) {
             </div>
             
             <div className="service-content_details">
-                <h2>What We Offer</h2>
+                <h2 className="">What We Offer</h2>
                 <div className="feature-grid">
                     {serviceData.features.map((feature, index) => (
                         <div key={index} className="feature-item">
@@ -57,7 +62,7 @@ export default async function ServiceDetails({ params }) {
                     ))}
                 </div>
                 
-                <h2>Our Process</h2>
+                <p className="section-title-h2">Our Process</p>
                 <div className="process-steps">
                     {serviceData.process.map((step, index) => (
                         <div key={index} className="step">
@@ -70,7 +75,7 @@ export default async function ServiceDetails({ params }) {
                     ))}
                 </div>
                 
-                <h2>Technologies We Use</h2>
+                <p className="section-title-h2">Technologies We Use</p>
                 <div className="tech-list">
                     {serviceData.technologies.map((tech, index) => (
                         <Link key = {index} href={tech.link} ><span key={index} className="tech-tag">{tech.name}</span></Link>
@@ -78,7 +83,7 @@ export default async function ServiceDetails({ params }) {
                 </div>
                 
                 <div className="cta-section">
-                    <h2>Ready to take the next step?</h2>
+                    <p>Ready to take the next step?</p>
                     <p>Let&apos;s discuss how we can help your business grow with our {serviceData.title.toLowerCase()} services.</p>
                     <a href="/contact" className="btn primary-btn large">Contact Us</a>
                 </div>
