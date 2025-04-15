@@ -9,9 +9,31 @@ import { HeroImage } from './hero_image';
 // Move Carousel to a separate client component
 import { TechStackCarousel } from './techstack_carousel';
 
-export async function generateMetadata({ params }): Promise<Metadata> {
-  const { slug } = params;
-  const project = projectDetails[slug];
+// Add this before the generateMetadata function
+interface Project {
+  title: string;
+  projectOverview: string[];
+  mainImage: string;
+  techStack: string[];
+  developmentProcess: string[];
+  gallery?: string[];
+}
+
+interface Params {
+  params: {
+    slug: string;
+  };
+}
+
+interface ProjectDetails {
+  [key: string]: Project;
+}
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+
+  const resolvedParams = await params;
+  const { slug } = resolvedParams;
+  const project = projectDetails[`${slug}`] as Project;
 
   if (!project) {
     return {
@@ -23,7 +45,7 @@ export async function generateMetadata({ params }): Promise<Metadata> {
   }
 
   return {
-    title: `NextEp | ${project.title} - Project Case Study`,
+    title: `NextEp | ${project.title}`,
     description: project.projectOverview[0], // Using first paragraph as description
     alternates: {
       canonical: `https://nextep.solutions/projects/${slug}`,
@@ -33,7 +55,7 @@ export async function generateMetadata({ params }): Promise<Metadata> {
 
 export default async function ProjectDetails({ params }) {
   const { slug } = params;
-  const project = projectDetails[slug];
+  const project = projectDetails[slug] as Project;
 
   return (
     <main className="project-details-container flex flex-col gap-[4px]">
@@ -45,7 +67,7 @@ export default async function ProjectDetails({ params }) {
       </div>
 
       <div className="section">
-        <h2 className="section-title">About the Project</h2>
+        <h1 className="section-title">About the Project</h1>
         <div className="project-description">
           {project.projectOverview.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>

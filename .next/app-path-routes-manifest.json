@@ -1,13 +1,15 @@
 {
   "/_not-found/page": "/_not-found",
-  "/sitemap.xml/route": "/sitemap.xml",
   "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
   "/favicon.ico/route": "/favicon.ico",
-  "/privacy-policy/page": "/privacy-policy",
   "/projects/[slug]/page": "/projects/[slug]",
   "/services/[service]/page": "/services/[service]",
-  "/page": "/",
-  "/projects/page": "/projects",
+  "/privacy-policy/page": "/privacy-policy",
+  "/cookie-policy/page": "/cookie-policy",
   "/contact/page": "/contact",
+  "/projects/page": "/projects",
+  "/page": "/",
+  "/terms-of-service/page": "/terms-of-service",
   "/services/page": "/services"
 }

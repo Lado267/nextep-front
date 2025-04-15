@@ -16,14 +16,8 @@ export default function ProjectsPage() {
   return (
     <div className="projects-container">
       <div className='flex flex-col gap-[12px] mb-[48px]'>
-        <div className="mobile-content-appearance">
-          <div className="mobile-title-appearance">
-            <p className="projects-title">Our Projects</p>
-            <h2 className="projects-subtitle">Digital Services, AI & Web Solutions</h2>
-          </div>
 
-        </div>
-        <div className="desktop-content-appearance">
+      <div className="desktop-content-appearance">
           <div className="desktop-title-appearance">
             <h1 className="projects-title">Our Projects - Digital Services, AI & Web Solutions</h1>
           </div>
@@ -33,6 +27,15 @@ export default function ProjectsPage() {
             </p>
           </div>
         </div>
+
+        <div className="mobile-content-appearance">
+          <div className="mobile-title-appearance">
+            <p className="projects-title">Our Projects</p>
+            <h2 className="projects-subtitle">Digital Services, AI & Web Solutions</h2>
+          </div>
+
+        </div>
+
       </div>
 
       {allProjects.map((section) => (

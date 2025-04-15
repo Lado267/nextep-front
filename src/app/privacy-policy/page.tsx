@@ -2,6 +2,13 @@ import "./page.css"
 
 import React from 'react';
 
+export const metadata = {
+  title: "NextEp | Privacy Policy",
+  alternates: {
+    canonical: "https://nextep.solutions/privacy-policy",
+  },
+};
+
 const PrivacyPolicy = () => {
   return (
     <div className="privacy-policy-container">

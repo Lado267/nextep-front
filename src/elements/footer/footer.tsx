@@ -16,7 +16,7 @@ export default function Footer() {
                 <div className="flex flex-row horizental-gap footer-text-color">
                     <div className="flex flex-col vertical-gap footer-text-color justify-center">
                         <Link href="privacy-policy"><p className="footer-link">Privacy Policy</p></Link>
-                        <Link href="#"><p className="footer-link">Terms of Service</p></Link>
+                        <Link href="terms-of-service"><p className="footer-link">Terms of Service</p></Link>
                         <Link href="#"><p className="footer-link">Cookie Policy</p></Link>
                     </div>
                     <div className="ml-auto mt-auto flex flex-col gap-4">

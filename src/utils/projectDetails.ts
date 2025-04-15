@@ -25,6 +25,7 @@ import RAGMainImage from "../../public/projects/RAG/mainImage.png";
 
 export const projectDetails = {
   silhouette: {
+    title: "Silhouette - Premium Bodywear E-commerce",
     mainImage: SilhouetteMainImage,
     gallery: [SilhouetteMainImage, Silhouette2, Silhouette3],
     techStack: [
@@ -103,6 +104,7 @@ export const projectDetails = {
     ],
   },
   mastery: {
+    title: "Mastery - Speed Learning Platform",
     mainImage: MasteryMainImage,
     gallery: [MasteryMainImage, MasteryChapterPage, MasteryBooksPage],
     techStack: [
@@ -186,6 +188,7 @@ export const projectDetails = {
     ],
   },
   trading: {
+    title: "Trading Strategy Analyst - Crypto Trading Platform",
     mainImage: TradingAnalystMainImage,
     gallery: [
       TradingAnalystMainImage,
@@ -272,6 +275,7 @@ export const projectDetails = {
     ],
   },
   quotie: {
+    title: "Quotie - Inspirational Quote Discovery App",
     mainImage: QuotieMainImage, // Placeholder for main image
     gallery: [
       Quotie2, // Replace with actual image paths
@@ -347,6 +351,7 @@ export const projectDetails = {
     ],
   },
   "ai-db-analyzer": {
+    title: "BiAnalysis - AI-Powered Business Intelligence",
     mainImage: BiAnalysisMainImage,
     gallery: [],
     techStack: [
@@ -410,6 +415,7 @@ export const projectDetails = {
     },
   },
   "ai-incident-manager": {
+    title: "AI Incident Manager - Smart JIRA Integration",
     mainImage: IncidentManagerMainImage,
     gallery: [],
     techStack: [
@@ -473,6 +479,7 @@ export const projectDetails = {
     ],
   },
   insightpedia: {
+    title: "InsightPedia - AI-Enhanced Wikipedia Explorer",
     mainImage: InsightPediaMainImage,
     gallery: [],
     techStack: [
@@ -536,6 +543,7 @@ export const projectDetails = {
     ],
   },
   "legal-rag": {
+    title: "Legal RAG System - Intelligent Document Analysis",
     mainImage: RAGMainImage,
     gallery: [],
     techStack: [

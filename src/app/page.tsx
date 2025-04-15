@@ -21,8 +21,8 @@ export default function Home() {
         <div className="flex flex-col gap-[24px] mt-[8px]">
           <h1>{HomePageAlt.desktop.hero.heroTitle}</h1>
           <div className="flex flex-col gap-[20px]">
-            <h4 className="text-tertiaryProject">{HomePageAlt.desktop.hero.heroSubtitle1}</h4>
-            <h4 className="text-tertiaryProject">{HomePageAlt.desktop.hero.heroSubtitle2}</h4>
+            <h2 className="text-tertiaryProject text-left text-[28px]">{HomePageAlt.desktop.hero.heroSubtitle1}</h2>
+            <h2 className="text-tertiaryProject text-left text-[28px]">{HomePageAlt.desktop.hero.heroSubtitle2}</h2>
             <div className="flex flex-row gap-[16px]">
               <Link href="/services">
                 <Button className="w-[160px] h-[40px] secondary-button-font" variant="projectSecondary">View Services</Button>
